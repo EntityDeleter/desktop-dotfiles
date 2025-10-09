@@ -17,7 +17,7 @@ sudo pacman -Syu --config ~/.pacmanrepofiles/endeavouros.conf --noconfirm |& gre
 topgrade
 arch-update -d -s
 
-# Cleanup
+# Cleanup:
 sudo rm -rf ~/.cache/* /tmp/*
 
 # Update Package Lists:
