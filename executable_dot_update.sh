@@ -20,8 +20,7 @@ arch-update -d -s
 # Cleanup:
 sudo rm -rf ~/.cache/* /tmp/*
 conda clean --all
-nix-store --gc
-
+nix-store --gc | rg -vi "deleting "
 
 # Update Package Lists:
 ~/.diff.sh
