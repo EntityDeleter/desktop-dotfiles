@@ -1,6 +1,7 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: "Jetbrains Mono";
+    font-feature-settings: '"zero", "calt", "ss02", "cv03", "cv04", "cv09", "cv12", "cv18", "cv19"';
     font-size: 13px;
 }
 
@@ -164,14 +165,6 @@ button {
 }
 
 #wireplumber {
-    background-color: #FFFFFF;
-    color: #000000;
-    padding: 0px 10px;
-    margin: 7px 0px 0px 0px;
-    border: 2px solid #33CCFF; border-radius: 0px;
-}
-
-#custom-brightness {
     background-color: #FFFFFF;
     color: #000000;
     padding: 0px 10px;
