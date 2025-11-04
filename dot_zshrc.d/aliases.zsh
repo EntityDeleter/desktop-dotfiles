@@ -1,6 +1,8 @@
 alias update=/home/sudar/.update.sh
 
-alias sudo="sudo "
+alias sudo="sudo-rs "
+alias visudo="visudo-rs "
+alias sudoedit="sudoedit-rs "
 
 alias openssh="ssh -p 39901 "
 alias tailssh="ssh "
