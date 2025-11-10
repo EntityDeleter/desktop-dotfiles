@@ -40,3 +40,5 @@ alias ll="eza --icons=always --color=always --hyperlink -l -b --smart-group -h -
 alias lla="eza --icons=always --color=always --hyperlink -l -b --smart-group -h -m -M --time-style=relative -a"
 alias lld="eza --icons=always --color=always --hyperlink -l -b --smart-group -h -m -M --time-style=relative -T"
 alias llda="eza --icons=always --color=always --hyperlink -l -b --smart-group -h -m -M --time-style=relative -T -a"
+
+alias spotdl="conda activate spotdl && spotdl --of opus --lyrics-provider genius -p /home/sudar/Music/spotify/ --dt 6 --st 3 --m3u "
