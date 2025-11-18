@@ -1732,7 +1732,7 @@
         },
         "Python": {
             "debuggers": ["Debugpy", "PyRight", "python-lsp-server"],
-            "language_servers": ["ty", "basedpywright"]
+            "language_servers": ["basedpywright"]
         },
         "Ruby": {
             "language_servers": [
