@@ -1894,6 +1894,26 @@
                     }
                 }
             }
+        },
+        "ruff": {
+            "initialization_options": {
+                "settings": {
+                    "format": {
+                        "preview": true
+                    },
+                    "lint": {
+                        "preview": true
+                    }
+                }
+            }
+        },
+        "ty": {
+            "settings": {
+                "experimental": {
+                    "rename": true
+                },
+                "diagnosticMode": "workspace"
+            }
         }
     },
     // Common language server settings.
