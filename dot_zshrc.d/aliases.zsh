@@ -26,7 +26,7 @@ cl() {
 alias colorprint="lp -d CanonG3000 -o COlorModel=RGB "
 alias blackprint="lp -d CanonG3000 -o raw -o ColorModel=Gray "
 
-alias ffw='fastfetch -c ~/.config/fastfetch/left.jsonc; print -n "\e[H"; fastfetch -c~/.config/fastfetch/right.jsonc'
+alias ffw='fastfetch -c ~/.config/fastfetch/left.jsonc; print -n "\e[H"; fastfetch -c ~/.config/fastfetch/right.jsonc'
 
 alias pingtest="gping 127.0.0.1 192.168.1.1 1.1.1.1 google.com"
 
