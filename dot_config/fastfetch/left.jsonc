@@ -124,7 +124,7 @@
         "board",
         "host",
         //        "chassis",
-        //        "tpm",
+        "tpm",
 
         {
             "type": "custom", // InformationEnd
@@ -132,7 +132,7 @@
         },
 
         "display",
-        "brightness",
+        //        "brightness",
         //        "monitor",
         "gpu",
 
@@ -167,12 +167,12 @@
         //            "format": "├────────────────────────────────────────────────────────┤"
         //        },
 
-        "sound",
+        //        "sound",
         "camera",
         //        "mouse",
         //        "keyboard",
 
-        "wifi",
+        //        "wifi",
         //        "netio",
         //        "diskio",
 
