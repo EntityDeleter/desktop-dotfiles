@@ -119,7 +119,7 @@
         {
             "type": "custom", // HardwareStart
             // {#1} is equivalent to `\u001b[1m`. {#} is equivalent to `\u001b[m`
-            "format": "┌────────────Software Information{#}{$1}{$1}{$1}┐"
+            "format": "┌────────────Software Information{#}{$1}┐"
         },
         "os",
         //        "bios",
