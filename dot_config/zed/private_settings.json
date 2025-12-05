@@ -867,7 +867,7 @@
         "single_file_review": true,
         // When enabled, show voting thumbs for feedback on agent edits.
         "enable_feedback": true,
-        "default_profile": "ask",
+        "default_profile": "write",
         "profiles": {
             "write": {
                 "name": "Write",
@@ -1821,11 +1821,20 @@
         //            "api_url": "https://generativelanguage.googleapis.com"
         //        },
         "ollama": {
-            "api_url": "http://127.0.0.1:11434",
+            "api_url": "http://100.69.242.6:11434",
             "available_models": [
                 {
                     "name": "QWEN-3-4B:latest",
-                    "display_name": "Qwen3 4B",
+                    "display_name": "QWEN-3-4B",
+                    "max_tokens": 32768,
+                    "supports_tools": true,
+                    "supports_thinking": true,
+                    "keep_alive": 600,
+                    "supports_images": false
+                },
+                {
+                    "name": "QWEN-3-30B:latest",
+                    "display_name": "QWEN-3-30B",
                     "max_tokens": 32768,
                     "supports_tools": true,
                     "supports_thinking": true,
@@ -1834,7 +1843,7 @@
                 },
                 {
                     "name": "GPT-OSS-20B:latest",
-                    "display_name": "GPT OSS 20B",
+                    "display_name": "GPT-OSS-20B",
                     "max_tokens": 32768,
                     "supports_tools": true,
                     "supports_thinking": true,
