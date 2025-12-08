@@ -5,6 +5,11 @@ Color
 CheckSpace
 VerbosePkgLists
 ParallelDownloads = 15
+ILoveCandy
 DownloadUser = alpm
 SigLevel    = Required DatabaseOptional
 LocalFileSigLevel = Optional
+
+[endeavouros]
+SigLevel = PackageRequired
+Include = /etc/pacman.d/endeavouros-mirrorlist

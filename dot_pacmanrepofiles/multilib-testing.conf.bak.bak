@@ -5,6 +5,10 @@ Color
 CheckSpace
 VerbosePkgLists
 ParallelDownloads = 15
+ILoveCandy
 DownloadUser = alpm
 SigLevel    = Required DatabaseOptional
 LocalFileSigLevel = Optional
+
+[multilib-testing]
+Include = /etc/pacman.d/mirrorlist

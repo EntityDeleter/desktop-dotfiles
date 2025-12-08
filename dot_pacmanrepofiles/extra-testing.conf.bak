@@ -5,9 +5,7 @@ Color
 IgnorePkg = cuda
 CheckSpace
 VerbosePkgLists
-PrettyProgressBar
 ParallelDownloads = 15
-ILoveCandy
 DownloadUser = alpm
 SigLevel    = Required DatabaseOptional
 LocalFileSigLevel = Optional
