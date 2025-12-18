@@ -2,7 +2,7 @@
 
 --concurrent-fragments 5
 
---paths /home/sudar/Videos/YouTube/
+--paths /home/sudar/Videos/
 --output "%(title)s.%(ext)s"
 --restrict-filenames
 --windows-filenames
