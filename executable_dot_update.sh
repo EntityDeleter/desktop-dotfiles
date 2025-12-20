@@ -25,6 +25,7 @@ sudo-rs rm -rf ~/.cache/* /tmp/*
 conda clean --all
 sudo-rs rm -rf /var/cache/pacman/pkg/*
 yay -Scc
+yay -Yc
 
 # Update Package Lists:
 pacman -Qqe > /etc/pkglist.txt
