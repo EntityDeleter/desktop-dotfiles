@@ -27,4 +27,5 @@
 
 --prefer-free-formats
 
---extractor-args "youtube:player_client=default"
+--remote-components ejs:github
+--js-runtimes node:/usr/bin/node
