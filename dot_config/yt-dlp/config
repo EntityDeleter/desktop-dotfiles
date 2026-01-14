@@ -26,3 +26,5 @@
 -f "bv+ba/bv*+ba/ba*+bv/b"
 
 --prefer-free-formats
+
+--remote-components ejs:npm
