@@ -26,8 +26,3 @@
 -f "bv+ba/bv*+ba/ba*+bv/b"
 
 --prefer-free-formats
-
-# --extractor-args "youtube:player_client=default"
-
---js-runtimes node:/usr/bin/node
---remote-components ejs:github
