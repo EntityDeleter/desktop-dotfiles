@@ -34,4 +34,3 @@ export MOZ_DISABLE_RDD_SANDBOX=1
 export GST_PLUGIN_FEATURE_RANK=nvmpegvideodec:MAX,nvmpeg2videodec:MAX,nvmpeg4videodec:MAX,nvh264sldec:MAX,nvh264dec:MAX,nvjpegdec:MAX,nvh265sldec:MAX,nvh265dec:MAX,nvvp9dec:MAX,avdec_av1:NONE,av1dec:NONE
 
 export ARCHWEB_USERNAME=EntityDeletr
-export ARCHWEB_PASSWORD="$(sudo \cat /root/.arch-signoff-password)"
