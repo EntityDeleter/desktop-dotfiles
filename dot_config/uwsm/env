@@ -22,7 +22,7 @@ export XDG_SESSION_DESKTOP=Hyprland
 
 export CONDA_ANACONDA_ANON_USAGE=no
 
-export PATH=~/.local/bin:~/.cargo/bin:$PATH
+export PATH=~/.local:~/.cargo/bin:$PATH
 
 export EDITOR=nano
 export VISUAL=nano
