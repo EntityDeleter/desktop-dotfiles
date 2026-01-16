@@ -1,6 +1,7 @@
 export HYPRCURSOR_THEME=Bibata-Modern-Ice
 export XCURSOR_THEME=Bibata-Modern-Ice
 export XCURSOR_SIZE=28
+export XCURSOR_PATH=/usr/share/icons:~/.local/share/icons
 export HYPRCURSOR_SIZE=28
 
 export GDK_BACKEND=wayland
