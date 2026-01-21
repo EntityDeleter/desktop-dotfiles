@@ -765,7 +765,7 @@
         // Whether to show the collaboration panel button in the status bar.
         "button": true,
         // Where to dock the collaboration panel. Can be 'left' or 'right'.
-        "dock": "left",
+        "dock": "right",
         // Default width of the collaboration panel.
         "default_width": 240,
     },
@@ -773,7 +773,7 @@
         // Whether to show the git panel button in the status bar.
         "button": true,
         // Where to dock the git panel. Can be 'left' or 'right'.
-        "dock": "left",
+        "dock": "right",
         // Default width of the git panel.
         "default_width": 360,
         // Style of the git status indicator in the panel.
@@ -823,7 +823,7 @@
         // Whether to show the agent panel button in the status bar.
         "button": true,
         // Where to dock the agent panel. Can be 'left', 'right' or 'bottom'.
-        "dock": "right",
+        "dock": "left",
         // Default width when the agent panel is docked to the left or right.
         "default_width": 640,
         // Default height when the agent panel is docked to the bottom.
