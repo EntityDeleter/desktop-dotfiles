@@ -1,4 +1,15 @@
 {
+    "completion_menu_scrollbar": "auto",
+    "which_key": {
+        "enabled": false,
+    },
+    "sticky_scroll": {
+        "enabled": true,
+    },
+    "minimum_contrast_for_highlights": 60.0,
+    "ui_font_size": 15.0,
+    "text_rendering_mode": "platform_default",
+    "buffer_font_size": 13.0,
     "colorize_brackets": true,
     "project_name": null,
     // The name of the Zed theme to use for the UI.
@@ -7,11 +18,7 @@
     // - "system": Use the theme that corresponds to the system's appearance
     // - "light": Use the theme indicated by the "light" field
     // - "dark": Use the theme indicated by the "dark" field
-    "theme": {
-        "mode": "system",
-        "light": "One Light",
-        "dark": "One Dark",
-    },
+    "theme": "One Dark",
     "icon_theme": "Zed (Default)",
     // The name of a base set of key bindings to use.
     // This setting can take six values, each named after another
@@ -51,7 +58,6 @@
         "cv19": true,
     },
     // The default font size for text in the editor
-    "buffer_font_size": 13,
     // The weight of the editor font in standard CSS units from 100 to 900.
     "buffer_font_weight": 400,
     // Set the buffer's line height.
@@ -64,9 +70,7 @@
     //         "buffer_line_height": {
     //           "custom": 2
     //         },
-    "buffer_line_height": {
-        "custom": 1.2,
-    },
+    "buffer_line_height": "comfortable",
     // The name of a font to use for rendering text in the UI
     // You can set this to ".SystemUIFont" to use the system font
     // ".ZedSans" currently aliases to "IBM Plex Sans", but this may
@@ -90,9 +94,7 @@
         "cv19": true,
     },
     // The weight of the UI font in standard CSS units from 100 to 900.
-    "ui_font_weight": 400,
     // The default font size for text in the UI
-    "ui_font_size": 16,
     // The default font size for text in the agent panel. Falls back to the UI font size if unset.
     "agent_ui_font_size": null,
     // How much to fade out unused code.
@@ -132,7 +134,7 @@
     //    "alt"
     // 2. Maps `Control` on Linux and Windows and to `Command` on MacOS:
     //    "cmd_or_ctrl" (alias: "cmd", "ctrl")
-    "multi_cursor_modifier": "alt",
+    "multi_cursor_modifier": "cmd_or_ctrl",
     // Whether to enable vim modes and key bindings.
     "vim_mode": false,
     // Whether to enable helix mode and key bindings.
@@ -163,7 +165,7 @@
     // Default: true
     "restore_on_file_reopen": true,
     // Whether to automatically close files that have been deleted on disk.
-    "close_on_file_delete": false,
+    "close_on_file_delete": true,
     // Relative size of the drop target in the editor that will open dropped file as a split pane (0-0.5)
     // E.g. 0.25 == If you drop onto the top/bottom quarter of the pane a new vertical split will be used
     //              If you drop onto the left/right quarter of the pane a new horizontal split will be used
@@ -263,7 +265,6 @@
     // - 90: Preferred for body text
     //
     // This only affects text drawn over highlight backgrounds in the editor.
-    "minimum_contrast_for_highlights": 90,
     // Whether to pop the completions menu while typing in an editor without
     // explicitly requesting it.
     "show_completions_on_input": true,
@@ -305,7 +306,6 @@
     //  - "info"
     //  - "hint"
     //  - "all" — allow all diagnostics (default)
-    "diagnostics_max_severity": "hint",
     // Whether to show wrap guides (vertical rulers) in the editor.
     // Setting this to true will show a guide at the 'preferred_line_length' value
     // if 'soft_wrap' is set to 'preferred_line_length', and will show any
@@ -479,7 +479,7 @@
         //    "always"
         // 3. Never show the minimap:
         //    "never" (default)
-        "show": "never",
+        "show": "auto",
         // Where to show the minimap in the editor.
         // This setting can take two values:
         // 1. Show the minimap on the focused editor only:
@@ -538,7 +538,6 @@
         // Whether to show fold buttons in the gutter.
         "folds": true,
         // Minimum number of characters to reserve space for in the gutter.
-        "min_line_number_digits": 4,
     },
     "indent_guides": {
         // Whether to show indent guides in the editor.
@@ -566,7 +565,7 @@
     // The number of lines to keep above/below the cursor when scrolling with the keyboard
     "vertical_scroll_margin": 3,
     // Whether to scroll when clicking near the edge of the visible text area.
-    "autoscroll_on_clicks": false,
+    "autoscroll_on_clicks": true,
     // The number of characters to keep on either side when scrolling with the mouse
     "horizontal_scroll_margin": 5,
     // Scroll sensitivity multiplier. This multiplier is applied
@@ -582,11 +581,12 @@
     // Search options to enable by default when opening new project and buffer searches.
     "search": {
         // Whether to show the project search button in the status bar.
+        "center_on_match": true,
         "button": true,
-        "whole_word": true,
-        "case_sensitive": true,
-        "include_ignored": true,
-        "regex": true,
+        "whole_word": false,
+        "case_sensitive": false,
+        "include_ignored": false,
+        "regex": false,
     },
     // When to populate a new search's query based on the text under the cursor.
     // This setting can take the following three values:
@@ -868,7 +868,7 @@
         "single_file_review": true,
         // When enabled, show voting thumbs for feedback on agent edits.
         "enable_feedback": true,
-        "default_profile": "write",
+        "default_profile": "ask",
         "profiles": {
             "write": {
                 "name": "Write",
@@ -1556,7 +1556,7 @@
         //   (Word-based completions can still be queried via a separate action)
         //
         // Default: fallback
-        "words": "fallback",
+        "words": "enabled",
         // Minimum number of characters required to automatically trigger word-based completions.
         // Before that value, it's still possible to trigger the words-based completion manually with the corresponding editor command.
         //
@@ -1734,6 +1734,9 @@
             "allow_rewrap": "anywhere",
         },
         "Python": {
+            "completions": {
+                "words": "enabled",
+            },
             "debuggers": ["Debugpy", "PyRight", "python-lsp-server"],
             "language_servers": ["basedpyright", "ty", "..."],
             "code_actions_on_format": {
@@ -1743,7 +1746,7 @@
                 "source.fixAll.ruff": true,
             },
             "prettier": {
-                "allowed": true,
+                "allowed": false,
             },
         },
         //        "Ruby": {
