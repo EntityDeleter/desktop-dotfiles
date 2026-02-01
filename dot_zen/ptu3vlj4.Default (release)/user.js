@@ -96,15 +96,15 @@ user_pref(
 );
 
 // # Persistence # //
-user_pref("network.cookie.lifetimePolicy", 2);
-user_pref("privacy.sanitize.sanitizeOnShutdown", true);
+user_pref("network.cookie.lifetimePolicy", 0);
+user_pref("privacy.sanitize.sanitizeOnShutdown", false);
 user_pref("privacy.clearOnShutdown.cache", true);
 user_pref("privacy.clearOnShutdown.cookies", false);
 user_pref("privacy.clearOnShutdown.downloads", true);
 user_pref("privacy.clearOnShutdown.formdata", true);
 user_pref("privacy.clearOnShutdown.history", true);
 user_pref("privacy.clearOnShutdown.offlineApps", true);
-user_pref("privacy.clearOnShutdown.sessions", true);
+user_pref("privacy.clearOnShutdown.sessions", false);
 user_pref("privacy.clearOnShutdown.sitesettings", false);
 
 user_pref("privacy.sanitize.timeSpan", 0);
@@ -129,7 +129,7 @@ user_pref("privacy.clearHistory.siteSettings", false);
 user_pref("privacy.clearHistory.browsingHistoryAndDownloads", true);
 user_pref("privacy.clearHistory.formdata", true);
 
-user_pref("places.history.enabled", false);
+user_pref("places.history.enabled", true);
 
 user_pref("privacy.resistFingerprinting", false);
 defaultPref("privacy.resistFingerprinting.letterboxing", true);
@@ -222,7 +222,7 @@ user_pref("privacy.userContext.ui.enabled", true);
 user_pref("browser.helperApps.deleteTempFileOnExit", true);
 user_pref("browser.uitour.enabled", false);
 user_pref("devtools.debugger.remote-enabled", false);
-user_pref("permissions.default.shortcuts", 2);
+user_pref("permissions.default.shortcuts", 1);
 user_pref("network.IDN_show_punycode", true);
 user_pref("pdfjs.enableScripting", false);
 
@@ -248,7 +248,7 @@ user_pref("browser.link.open_newwindow.restriction", 0);
 
 user_pref("signon.rememberSignons", false);
 
-user_pref("keyword.enabled", false);
+user_pref("keyword.enabled", true);
 
 // # Necessities # //
 user_pref("extensions.blocklist.enabled", true);
@@ -260,6 +260,6 @@ user_pref("security.tls.version.enable-deprecated", false);
 user_pref("extensions.webcompat-reporter.enabled", false);
 user_pref("extensions.quarantinedDomains.enabled", true);
 
-// # Headrs # //
+// # Headers # //
 user_pref("privacy.donottrackheader.enabled", true);
 user_pref("privacy.globalprivacycontrol.enabled", true);
