@@ -32,6 +32,10 @@
     // 6. "TextMate"
     "base_keymap": "VSCode",
     // Features that can be globally enabled or disabled
+    "features": {
+        // Which edit prediction provider to use.
+        "edit_prediction_provider": "supermaven",
+    },
     // The name of a font to use for rendering text in the editor
     // ".ZedMono" currently aliases to Lilex
     // but this may change in the future.
@@ -1257,7 +1261,6 @@
         // Any addition to this list will be merged with the default list.
         // Globs are matched relative to the worktree root,
         // except when starting with a slash (/) or equivalent in Windows.
-        "provider": "supermaven",
         "disabled_globs": [
             "**/.env*",
             "**/*.pem",
@@ -1830,7 +1833,7 @@
                 {
                     "name": "QWEN-3-4B:latest",
                     "display_name": "QWEN-3-4B",
-                    "max_tokens": 16384,
+                    "max_tokens": 32768,
                     "supports_tools": true,
                     "supports_thinking": true,
                     "keep_alive": 600,
