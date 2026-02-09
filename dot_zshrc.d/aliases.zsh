@@ -6,9 +6,9 @@ alias yay="yay --sudo=sudo-rs"
 
 alias cd="z"
 
-alias sudo="sudo-rs "
-alias visudo="visudo-rs "
-alias sudoedit="sudoedit-rs "
+# alias sudo="sudo-rs "
+# alias visudo="visudo-rs "
+# alias sudoedit="sudoedit-rs "
 
 alias openssh="ssh -p 39901 "
 alias tailssh="ssh "
