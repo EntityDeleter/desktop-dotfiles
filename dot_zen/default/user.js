@@ -79,7 +79,7 @@ user_pref("network.negotiate-auth.allow-insecure-ntlm-v1", false);
 // Set Mozilla geolocation service URL
 user_pref(
     "geo.wifi.uri",
-    "https://location.services.mozilla.com/v1/geolocate?key=%MOZILLA_API_KEY%",
+    "https://location.services.mozilla.com/v1/geolocate?key=%MOZILLA_API_KEY%"
 );
 
 // Don't spoof the referer header (false = normal behavior, true would be spoofing)
@@ -275,13 +275,13 @@ user_pref("privacy.partition.serviceWorkers", true);
 // Always partition third-party non-cookie storage (localStorage, etc.)
 user_pref(
     "privacy.partition.always_partition_third_party_non_cookie_storage",
-    true,
+    true
 );
 
 // Exempt sessionStorage from partitioning for compatibility
 user_pref(
     "privacy.partition.always_partition_third_party_non_cookie_storage.exempt_sessionstorage",
-    true,
+    true
 );
 
 // ================================================
@@ -619,13 +619,13 @@ user_pref("browser.discovery.enabled", false);
 // Disable addon recommendations (CFR)
 user_pref(
     "browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons",
-    false,
+    false
 );
 
 // Disable feature recommendations (CFR)
 user_pref(
     "browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features",
-    false,
+    false
 );
 
 // Disable all CFR (Contextual Feature Recommender)
@@ -664,7 +664,7 @@ user_pref("xpinstall.signatures.required", true);
 // Set extension blocklist URL
 user_pref(
     "extensions.blocklist.url",
-    "https://blocklist.addons.mozilla.org/blocklist/3/%APP_ID%/%APP_VERSION%/",
+    "https://blocklist.addons.mozilla.org/blocklist/3/%APP_ID%/%APP_VERSION%/"
 );
 
 // ================================================
@@ -689,7 +689,7 @@ user_pref("browser.safebrowsing.downloads.remote.enabled", true);
 // Block potentially unwanted downloads
 user_pref(
     "browser.safebrowsing.downloads.remote.block_potentially_unwanted",
-    true,
+    true
 );
 
 // Enable blocked URI checking
@@ -698,25 +698,25 @@ user_pref("browser.safebrowsing.blockedURIs.enabled", true);
 // Set Google Safe Browsing v4 hash URL
 user_pref(
     "browser.safebrowsing.provider.google4.gethashURL",
-    "https://safebrowsing.googleapis.com/v4/fullHashes:find?$ct=application/x-protobuf&key=%GOOGLE_SAFEBROWSING_API_KEY%&$httpMethod=POST",
+    "https://safebrowsing.googleapis.com/v4/fullHashes:find?$ct=application/x-protobuf&key=%GOOGLE_SAFEBROWSING_API_KEY%&$httpMethod=POST"
 );
 
 // Set Google Safe Browsing v4 update URL
 user_pref(
     "browser.safebrowsing.provider.google4.updateURL",
-    "https://safebrowsing.googleapis.com/v4/threatListUpdates:fetch?$ct=application/x-protobuf&key=%GOOGLE_SAFEBROWSING_API_KEY%&$httpMethod=POST",
+    "https://safebrowsing.googleapis.com/v4/threatListUpdates:fetch?$ct=application/x-protobuf&key=%GOOGLE_SAFEBROWSING_API_KEY%&$httpMethod=POST"
 );
 
 // Set Google Safe Browsing v2 hash URL
 user_pref(
     "browser.safebrowsing.provider.google.gethashURL",
-    "https://safebrowsing.google.com/safebrowsing/gethash?client=SAFEBROWSING_ID&appver=%MAJOR_VERSION%&pver=2.2",
+    "https://safebrowsing.google.com/safebrowsing/gethash?client=SAFEBROWSING_ID&appver=%MAJOR_VERSION%&pver=2.2"
 );
 
 // Set Google Safe Browsing v2 update URL
 user_pref(
     "browser.safebrowsing.provider.google.updateURL",
-    "https://safebrowsing.google.com/safebrowsing/downloads?client=SAFEBROWSING_ID&appver=%MAJOR_VERSION%&pver=2.2&key=%GOOGLE_SAFEBROWSING_API_KEY%",
+    "https://safebrowsing.google.com/safebrowsing/downloads?client=SAFEBROWSING_ID&appver=%MAJOR_VERSION%&pver=2.2&key=%GOOGLE_SAFEBROWSING_API_KEY%"
 );
 
 // Block uncommon downloads
