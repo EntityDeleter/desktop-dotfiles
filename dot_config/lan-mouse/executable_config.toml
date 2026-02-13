@@ -1,0 +1,23 @@
+# example configuration
+
+# configure release bind
+release_bind = [ "KeyA", "KeyS", "KeyD", "KeyF" ]
+
+# optional port (defaults to 4242)
+port = 4242
+
+# list of authorized tls certificate fingerprints that
+# are accepted for incoming traffic
+[authorized_fingerprints]
+"75:d4:6c:aa:7e:41:6e:b4:ab:d7:cd:52:55:f3:b3:9a:96:49:6a:0f:d9:96:74:75:08:12:eb:dd:65:09:34:b2" = "arch-laptop"
+
+# define a client on the right side with host name "iridium"
+[[clients]]
+# position (left | right | top | bottom)
+position = "right"
+# hostname
+hostname = "arch-laptop"
+# activate this client immediately when lan-mouse is started
+activate_on_startup = true
+# optional list of (known) ip addresses
+ips = ["100.118.150.32"]
