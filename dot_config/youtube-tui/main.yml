@@ -25,6 +25,6 @@ env:
   browser: xdg-open
   youtube-downloader: yt-dlp
   save-path: ~/Videos/youtube-tui
+  video-player: mpv
   download-path: ~/Videos/Downloads/%(title)s-%(id)s.%(ext)s
   terminal-emulator: kitty
-  video-player: mpv
