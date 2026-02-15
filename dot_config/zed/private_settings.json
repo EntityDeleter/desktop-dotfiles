@@ -815,7 +815,7 @@
         "use_modifier_to_send": true,
         "enabled": true,
         /// What completion mode to start new threads in, if available. Can be 'normal' or 'burn'.
-        "preferred_completion_mode": "normal",
+        // "preferred_completion_mode": "normal",
         // Whether to show the agent panel button in the status bar.
         "button": true,
         // Where to dock the agent panel. Can be 'left', 'right' or 'bottom'.
@@ -1925,14 +1925,14 @@
                 },
             },
         },
-        "ty": {
-            "settings": {
-                "experimental": {
-                    "rename": true,
-                },
-                "diagnosticMode": "workspace",
-            },
-        },
+        //        "ty": {
+        //            "settings": {
+        //                "experimental": {
+        //                    "rename": true,
+        //                },
+        //                "diagnosticMode": "workspace",
+        //            },
+        //        },
     },
     // Common language server settings.
     "global_lsp_settings": {
