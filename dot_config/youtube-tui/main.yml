@@ -22,9 +22,9 @@ api_key: YOUR API KEY HERE
 shell: zsh
 legacy_input_handling: false
 env:
-  download-path: ~/Videos/Downloads/%(title)s-%(id)s.%(ext)s
-  video-player: mpv
-  youtube-downloader: yt-dlp
   save-path: ~/Videos/youtube-tui
-  terminal-emulator: kitty
+  download-path: ~/Videos/Downloads/%(title)s-%(id)s.%(ext)s
+  youtube-downloader: yt-dlp
   browser: xdg-open
+  video-player: mpv
+  terminal-emulator: kitty
