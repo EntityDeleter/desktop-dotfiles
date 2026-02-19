@@ -21,16 +21,8 @@ export XDG_CURRENT_DESKTOP=Hyprland
 export XDG_SESSION_TYPE=wayland
 export XDG_SESSION_DESKTOP=Hyprland
 
-export CONDA_ANACONDA_ANON_USAGE=no
-
-export PATH=~/.local/bin:~/.cargo/bin:$PATH
-
 export EDITOR=nano
 export VISUAL=nano
-
-export HOMEBREW_NO_ANALYTICS=1
-
-export MOZ_DISABLE_RDD_SANDBOX=1
 
 export GST_PLUGIN_FEATURE_RANK=nvmpegvideodec:MAX,nvmpeg2videodec:MAX,nvmpeg4videodec:MAX,nvh264sldec:MAX,nvh264dec:MAX,nvjpegdec:MAX,nvh265sldec:MAX,nvh265dec:MAX,nvvp9dec:MAX,avdec_av1:NONE,av1dec:NONE
 
