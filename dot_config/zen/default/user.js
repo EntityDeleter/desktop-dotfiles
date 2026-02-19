@@ -937,6 +937,9 @@ user_pref("browser.send_pings.require_same_host", true);
 // Disable X11 clipboard autocopy
 user_pref("clipboard.autocopy", false);
 
+// Force usage of XDG desktop portals
+user_pref("widget.use-xdg-desktop-portal.file-picker", 1);
+
 // ================================================
 // PLUGINS
 // ================================================
@@ -1050,3 +1053,4 @@ user_pref("dom.flyweb.enabled", false);
 
 // IDN Punycode - Shows ASCII for international domains (cosmetic, not breaking)
 user_pref("network.IDN_show_punycode", true);
+
