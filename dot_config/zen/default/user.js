@@ -10,7 +10,7 @@
 user_pref("media.ffmpeg.vaapi.enabled", true);
 
 // Don't force hardware video decoding - let Firefox decide based on system capabilities
-user_pref("media.hardware-video-decoding.force-enabled", true);
+user_pref("media.hardware-video-decoding.force-enabled", false);
 
 // Enable Remote Data Decoder (RDD) process for FFmpeg - improves security by isolating media decoding
 user_pref("media.rdd-ffmpeg.enabled", true);
