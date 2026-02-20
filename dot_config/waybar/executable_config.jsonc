@@ -2,7 +2,7 @@
 {
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    "output": "",
+    "output": "DP-1",
     // "height": 10, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 0, // Gaps between modules (4px)
@@ -19,6 +19,7 @@
         "memory",
         "backlight",
         "battery",
+        "custom/wpm-live",
         "clock",
         //        "bluetooth",
         "tray",
@@ -127,6 +128,13 @@
         "format-tooltip": "{time}\n{icon}",
         "format-alt": "{power}W\n{icon}",
         "format-icons": ["", "", "", "", ""],
+        "justify": "center",
+    },
+    "custom/wpm-live": {
+        "exec": "~/.local/bin/wpm-monitor",
+        "return-type": "json",
+        "on-click-right": "pkill -USR1 -f wpm-monitor",
+        "tooltip": true,
         "justify": "center",
     },
     "network": {

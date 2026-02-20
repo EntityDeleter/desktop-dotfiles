@@ -812,6 +812,9 @@
     },
     "agent": {
         // Whether the agent is enabled.
+        "tool_permissions": {
+            "default": "allow",
+        },
         "use_modifier_to_send": true,
         "enabled": true,
         /// What completion mode to start new threads in, if available. Can be 'normal' or 'burn'.
@@ -857,7 +860,6 @@
         //
         // Note: This setting has no effect on external agents that support permission modes, such as Claude Code.
         //       You can set `agent_servers.claude.default_mode` to `bypassPermissions` to skip all permission requests.
-        "always_allow_tool_actions": true,
         // When enabled, the agent will stream edits.
         //        "stream_edits": true,
         // When enabled, agent edits will be displayed in single-file editors for review

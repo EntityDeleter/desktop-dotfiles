@@ -32,10 +32,6 @@
     // 6. "TextMate"
     "base_keymap": "VSCode",
     // Features that can be globally enabled or disabled
-    "features": {
-        // Which edit prediction provider to use.
-        "edit_prediction_provider": "supermaven",
-    },
     // The name of a font to use for rendering text in the editor
     // ".ZedMono" currently aliases to Lilex
     // but this may change in the future.
@@ -819,7 +815,7 @@
         "use_modifier_to_send": true,
         "enabled": true,
         /// What completion mode to start new threads in, if available. Can be 'normal' or 'burn'.
-        "preferred_completion_mode": "normal",
+        // "preferred_completion_mode": "normal",
         // Whether to show the agent panel button in the status bar.
         "button": true,
         // Where to dock the agent panel. Can be 'left', 'right' or 'bottom'.
@@ -1261,6 +1257,7 @@
         // Any addition to this list will be merged with the default list.
         // Globs are matched relative to the worktree root,
         // except when starting with a slash (/) or equivalent in Windows.
+        "provider": "supermaven",
         "disabled_globs": [
             "**/.env*",
             "**/*.pem",
@@ -1833,7 +1830,7 @@
                 {
                     "name": "QWEN-3-4B:latest",
                     "display_name": "QWEN-3-4B",
-                    "max_tokens": 32768,
+                    "max_tokens": 16384,
                     "supports_tools": true,
                     "supports_thinking": true,
                     "keep_alive": 600,
@@ -1928,14 +1925,14 @@
                 },
             },
         },
-        "ty": {
-            "settings": {
-                "experimental": {
-                    "rename": true,
-                },
-                "diagnosticMode": "workspace",
-            },
-        },
+        //        "ty": {
+        //            "settings": {
+        //                "experimental": {
+        //                    "rename": true,
+        //                },
+        //                "diagnosticMode": "workspace",
+        //            },
+        //        },
     },
     // Common language server settings.
     "global_lsp_settings": {
