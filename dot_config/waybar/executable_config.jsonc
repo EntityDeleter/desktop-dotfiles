@@ -19,7 +19,7 @@
         "memory",
         "backlight",
         "battery",
-        "custom/wpm-live",
+        "custom/wpm",
         "clock",
         //        "bluetooth",
         "tray",
@@ -130,11 +130,11 @@
         "format-icons": ["", "", "", "", ""],
         "justify": "center",
     },
-    "custom/wpm-live": {
-        "exec": "~/.local/bin/wpm-monitor",
+        "custom/wpm": {
+        "format": "KPM\n{}",
+        "exec": "python3 /home/sudar/.local/bin/wpm_tracker.py",
         "return-type": "json",
-        "on-click-right": "pkill -USR1 -f wpm-monitor",
-        "tooltip": true,
+        "restart-interval": 5,
         "justify": "center",
     },
     "network": {

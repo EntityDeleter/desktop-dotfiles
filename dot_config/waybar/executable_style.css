@@ -228,15 +228,11 @@ button {
     margin: 7px 0px 0px 0px;
 }
 
-#custom-wpm-live {
+#custom-wpm {
     background-color: #ffffff;
     color: #000000;
     padding: 0px 10px;
     margin: 7px 0px 0px 0px;
     border: 2px solid #33ccff;
     border-radius: 0px;
-}
-
-#custom-wpm-live.active {
-    color: #f38d70;
 }
