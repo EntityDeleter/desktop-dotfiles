@@ -519,6 +519,12 @@ user_pref("browser.cache.disk.parent_directory", "/run/user/1000/firefox");
 // Disable SSL disk cache (don't cache HTTPS content to disk)
 user_pref("browser.cache.disk_cache_ssl", false);
 
+// Disable disk cache
+user_pref("browser.cache.disk.enable", true);
+
+// Enable memory cache
+user_pref("browser.cache.memory.enable", false);
+
 // Disable offline cache
 user_pref("browser.cache.offline.enable", false);
 
