@@ -28,4 +28,4 @@ export GST_PLUGIN_FEATURE_RANK=nvmpegvideodec:MAX,nvmpeg2videodec:MAX,nvmpeg4vid
 
 export ARCHWEB_USERNAME=EntityDeletr
 
-export PATH=/home/sudar/local/bin:$PATH
+export PATH=/home/sudar/.local/bin:$PATH
