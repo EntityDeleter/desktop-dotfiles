@@ -1,0 +1,4 @@
+[Bookmarks]
+[Recent]
+/home/sudar/.cache/blender/
+/usr/share/fonts/
