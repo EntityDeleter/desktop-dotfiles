@@ -1,0 +1,11 @@
+[Unit]
+Description=Zen profile memory cache
+
+[Install]
+WantedBy=default.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=%h/.local/bin/zen-sync.sh %i
+ExecStop=%h/.local/bin/zen-sync.sh %i
