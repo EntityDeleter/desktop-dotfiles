@@ -1,0 +1,61 @@
+[2026-02-24 08:32:21.076]: Warning: [h264_nvenc @ 0x560de638e740] Multiple reference frames are not supported by the device
+[2026-02-24 08:32:21.076]: Error: [h264_nvenc @ 0x560de638e740] Provided device doesn't support required NVENC features
+[2026-02-24 08:32:21.350]: Error: Could not open codec [h264_nvenc]: Function not implemented
+[2026-02-24 08:32:21.669]: Warning: [hevc_nvenc @ 0x560de638e740] Multiple reference frames are not supported by the device
+[2026-02-24 08:32:21.669]: Error: [hevc_nvenc @ 0x560de638e740] Provided device doesn't support required NVENC features
+[2026-02-24 08:32:21.919]: Error: Could not open codec [hevc_nvenc]: Function not implemented
+[2026-02-24 08:32:22.181]: Warning: [av1_nvenc @ 0x560de638e740] Codec not supported
+[2026-02-24 08:32:22.181]: Error: [av1_nvenc @ 0x560de638e740] Provided device doesn't support required NVENC features
+[2026-02-24 08:32:22.431]: Error: Could not open codec [av1_nvenc]: Function not implemented
+[2026-02-24 08:32:22.436]: Warning: [av1_nvenc @ 0x560de638e740] Codec not supported
+[2026-02-24 08:32:22.436]: Error: [av1_nvenc @ 0x560de638e740] Provided device doesn't support required NVENC features
+[2026-02-24 08:32:22.687]: Error: Could not open codec [av1_nvenc]: Function not implemented
+[2026-02-24 08:32:22.947]: Error: Failed to create client: Daemon not running
+[2026-02-24 13:08:22.373]: Warning: [h264_nvenc @ 0x7f2f1c4043c0] Multiple reference frames are not supported by the device
+[2026-02-24 13:08:22.373]: Error: [h264_nvenc @ 0x7f2f1c4043c0] Provided device doesn't support required NVENC features
+[2026-02-24 13:08:22.624]: Error: Could not open codec [h264_nvenc]: Function not implemented
+[2026-02-24 13:08:22.892]: Warning: [hevc_nvenc @ 0x7f2f1c4043c0] Multiple reference frames are not supported by the device
+[2026-02-24 13:08:22.892]: Error: [hevc_nvenc @ 0x7f2f1c4043c0] Provided device doesn't support required NVENC features
+[2026-02-24 13:08:23.143]: Error: Could not open codec [hevc_nvenc]: Function not implemented
+[2026-02-24 13:08:23.409]: Warning: [av1_nvenc @ 0x7f2f1c4043c0] Codec not supported
+[2026-02-24 13:08:23.409]: Error: [av1_nvenc @ 0x7f2f1c4043c0] Provided device doesn't support required NVENC features
+[2026-02-24 13:08:23.661]: Error: Could not open codec [av1_nvenc]: Function not implemented
+[2026-02-24 13:08:23.667]: Warning: [av1_nvenc @ 0x7f2f1c4043c0] Codec not supported
+[2026-02-24 13:08:23.667]: Error: [av1_nvenc @ 0x7f2f1c4043c0] Provided device doesn't support required NVENC features
+[2026-02-24 13:08:23.918]: Error: Could not open codec [av1_nvenc]: Function not implemented
+[2026-02-24 13:10:05.135]: Warning: [h264_nvenc @ 0x7f2f1c4043c0] Multiple reference frames are not supported by the device
+[2026-02-24 13:10:05.135]: Error: [h264_nvenc @ 0x7f2f1c4043c0] Provided device doesn't support required NVENC features
+[2026-02-24 13:10:05.386]: Error: Could not open codec [h264_nvenc]: Function not implemented
+[2026-02-24 13:10:05.653]: Warning: [hevc_nvenc @ 0x7f2f1c4043c0] Multiple reference frames are not supported by the device
+[2026-02-24 13:10:05.653]: Error: [hevc_nvenc @ 0x7f2f1c4043c0] Provided device doesn't support required NVENC features
+[2026-02-24 13:10:05.904]: Error: Could not open codec [hevc_nvenc]: Function not implemented
+[2026-02-24 13:10:06.171]: Warning: [av1_nvenc @ 0x7f2f1c4043c0] Codec not supported
+[2026-02-24 13:10:06.171]: Error: [av1_nvenc @ 0x7f2f1c4043c0] Provided device doesn't support required NVENC features
+[2026-02-24 13:10:06.422]: Error: Could not open codec [av1_nvenc]: Function not implemented
+[2026-02-24 13:10:06.429]: Warning: [av1_nvenc @ 0x7f2f1c4043c0] Codec not supported
+[2026-02-24 13:10:06.429]: Error: [av1_nvenc @ 0x7f2f1c4043c0] Provided device doesn't support required NVENC features
+[2026-02-24 13:10:06.680]: Error: Could not open codec [av1_nvenc]: Function not implemented
+[2026-02-24 13:22:56.231]: Warning: [h264_nvenc @ 0x7f2f1c4043c0] Multiple reference frames are not supported by the device
+[2026-02-24 13:22:56.231]: Error: [h264_nvenc @ 0x7f2f1c4043c0] Provided device doesn't support required NVENC features
+[2026-02-24 13:22:56.481]: Error: Could not open codec [h264_nvenc]: Function not implemented
+[2026-02-24 13:22:56.749]: Warning: [hevc_nvenc @ 0x7f2f1c4043c0] Multiple reference frames are not supported by the device
+[2026-02-24 13:22:56.749]: Error: [hevc_nvenc @ 0x7f2f1c4043c0] Provided device doesn't support required NVENC features
+[2026-02-24 13:22:57.001]: Error: Could not open codec [hevc_nvenc]: Function not implemented
+[2026-02-24 13:22:57.267]: Warning: [av1_nvenc @ 0x7f2f1c4043c0] Codec not supported
+[2026-02-24 13:22:57.267]: Error: [av1_nvenc @ 0x7f2f1c4043c0] Provided device doesn't support required NVENC features
+[2026-02-24 13:22:57.518]: Error: Could not open codec [av1_nvenc]: Function not implemented
+[2026-02-24 13:22:57.525]: Warning: [av1_nvenc @ 0x7f2f1c4043c0] Codec not supported
+[2026-02-24 13:22:57.525]: Error: [av1_nvenc @ 0x7f2f1c4043c0] Provided device doesn't support required NVENC features
+[2026-02-24 13:22:57.775]: Error: Could not open codec [av1_nvenc]: Function not implemented
+[2026-02-24 13:23:55.913]: Warning: [h264_nvenc @ 0x7f2f1c4043c0] Multiple reference frames are not supported by the device
+[2026-02-24 13:23:55.913]: Error: [h264_nvenc @ 0x7f2f1c4043c0] Provided device doesn't support required NVENC features
+[2026-02-24 13:23:56.164]: Error: Could not open codec [h264_nvenc]: Function not implemented
+[2026-02-24 13:23:56.431]: Warning: [hevc_nvenc @ 0x7f2f1c4043c0] Multiple reference frames are not supported by the device
+[2026-02-24 13:23:56.431]: Error: [hevc_nvenc @ 0x7f2f1c4043c0] Provided device doesn't support required NVENC features
+[2026-02-24 13:23:56.682]: Error: Could not open codec [hevc_nvenc]: Function not implemented
+[2026-02-24 13:23:56.949]: Warning: [av1_nvenc @ 0x7f2f1c4043c0] Codec not supported
+[2026-02-24 13:23:56.949]: Error: [av1_nvenc @ 0x7f2f1c4043c0] Provided device doesn't support required NVENC features
+[2026-02-24 13:23:57.200]: Error: Could not open codec [av1_nvenc]: Function not implemented
+[2026-02-24 13:23:57.207]: Warning: [av1_nvenc @ 0x7f2f1c4043c0] Codec not supported
+[2026-02-24 13:23:57.207]: Error: [av1_nvenc @ 0x7f2f1c4043c0] Provided device doesn't support required NVENC features
+[2026-02-24 13:23:57.457]: Error: Could not open codec [av1_nvenc]: Function not implemented

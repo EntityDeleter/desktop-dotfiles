@@ -9,7 +9,7 @@
             "prep-cmd": [
                 {
                     "do": "hyprctl keyword monitor DVI-D-1,disabled",
-                    "undo": "hyprctl keyword monitor DVI-D-1, 1280x1024@60, auto-right, 1"
+                    "undo": "hyprctl keyword monitor DVI-D-1, 1280x1024@60, auto-left, 1"
                 }
             ],
             "wait-all": true
