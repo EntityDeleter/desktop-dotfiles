@@ -1,0 +1,21 @@
+{
+    "apps": [
+        {
+            "auto-detach": true,
+            "exclude-global-prep-cmd": false,
+            "exit-timeout": 5,
+            "image-path": "desktop.png",
+            "name": "Desktop (Single Monitor)",
+            "prep-cmd": [
+                {
+                    "do": "hyprctl keyword monitor DVI-D-1,disabled",
+                    "undo": "hyprctl keyword monitor DVI-D-1, 1280x1024@60, auto-right, 1"
+                }
+            ],
+            "wait-all": true
+        }
+    ],
+    "env": {
+        "PATH": "$(PATH):$(HOME)/.local/bin"
+    }
+}
