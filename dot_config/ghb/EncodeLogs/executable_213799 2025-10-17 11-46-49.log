@@ -1,0 +1,333 @@
+Handbrake Version: 20250906052339-dddf75f75-makepkg (2025100401)
+
+(fr.handbrake.ghb:5): GLib-GIO-CRITICAL **: 11:46:49.117: g_bus_watch_name_on_connection: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+
+(fr.handbrake.ghb:5): GLib-GIO-CRITICAL **: 11:46:49.117: g_dbus_connection_signal_subscribe: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+
+(fr.handbrake.ghb:5): GLib-GIO-CRITICAL **: 11:46:49.117: g_dbus_connection_call_internal: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+[11:46:49] gtkgui: Custom Preset: /Custom/CPU (With FIlters) (VP9)
+[11:46:49] Starting work at: Fri Oct 17 11:46:49 2025
+
+[11:46:49] 1 job(s) to process
+[11:46:49] json job:
+{
+    "Audio": {
+        "AudioList": [
+            {
+                "Bitrate": 160,
+                "CompressionLevel": -1.0,
+                "DRC": 0.0,
+                "DitherMethod": "auto",
+                "Encoder": "av_aac",
+                "Gain": 0.0,
+                "Mixdown": "stereo",
+                "Name": "Stereo",
+                "NormalizeMixLevel": false,
+                "PresetEncoder": "av_aac",
+                "Quality": -3.0,
+                "Samplerate": 0,
+                "Track": 0
+            }
+        ],
+        "CopyMask": [
+            "copy:aac"
+        ],
+        "FallbackEncoder": "av_aac"
+    },
+    "Destination": {
+        "AlignAVStart": false,
+        "ChapterList": [
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 0,
+                    "Seconds": 18,
+                    "Ticks": 1672499
+                },
+                "Name": ""
+            }
+        ],
+        "ChapterMarkers": false,
+        "File": "/mnt/iMac/DaVinci Resolve/IICAQM/213799.mkv",
+        "InlineParameterSets": false,
+        "Mux": "mkv",
+        "Options": {
+            "IpodAtom": false,
+            "Optimize": false
+        }
+    },
+    "Filters": {
+        "FilterList": [
+            {
+                "ID": 4,
+                "Settings": {
+                    "block-height": "16",
+                    "block-thresh": "40",
+                    "block-width": "16",
+                    "filter-mode": "2",
+                    "mode": "3",
+                    "motion-thresh": "3",
+                    "spatial-metric": "2",
+                    "spatial-thresh": "3"
+                }
+            },
+            {
+                "ID": 6,
+                "Settings": {
+                    "mode": "15"
+                }
+            },
+            {
+                "ID": 11,
+                "Settings": {
+                    "mode": 0
+                }
+            },
+            {
+                "ID": 20,
+                "Settings": {
+                    "crop-bottom": 0,
+                    "crop-left": 0,
+                    "crop-right": 0,
+                    "crop-top": 0,
+                    "height": 1080,
+                    "width": 1920
+                }
+            },
+            {
+                "ID": 28,
+                "Settings": {
+                    "bottom": "0",
+                    "color": "black",
+                    "left": "0",
+                    "right": "0",
+                    "top": "0"
+                }
+            }
+        ]
+    },
+    "Metadata": {
+        "CreationTime": "2024-05-26T15:28:17.000000Z",
+        "Location": "+41.8833+012.4903+022.586/",
+        "RecordCompany": "Apple",
+        "ReleaseDate": "2024-05-26T17:28:17+0200"
+    },
+    "PAR": {
+        "Den": 256,
+        "Num": 81
+    },
+    "SequenceID": 0,
+    "Source": {
+        "Angle": 0,
+        "HWDecode": 0,
+        "KeepDuplicateTitles": false,
+        "Path": "/home/sudar/Downloads/213799.mov",
+        "Range": {
+            "End": 1,
+            "Start": 1,
+            "Type": "chapter"
+        },
+        "Title": 6
+    },
+    "Subtitle": {
+        "Search": {
+            "Burn": true,
+            "Default": false,
+            "Enable": false,
+            "Forced": false
+        },
+        "SubtitleList": []
+    },
+    "Video": {
+        "AdapterIndex": -1,
+        "AsyncDepth": 0,
+        "ChromaLocation": 1,
+        "ColorInputFormat": 0,
+        "ColorMatrix": 1,
+        "ColorOutputFormat": 0,
+        "ColorPrimaries": 1,
+        "ColorRange": 0,
+        "ColorTransfer": 1,
+        "Encoder": "VP9",
+        "HardwareDecode": 0,
+        "Level": "auto",
+        "MultiPass": true,
+        "Options": "",
+        "PasshtruHDRDynamicMetadata": 6,
+        "Preset": "medium",
+        "Profile": "auto",
+        "Quality": 22.0,
+        "Tune": "",
+        "Turbo": true
+    }
+}
+[11:46:49] CPU: Intel(R) Xeon(R) W-2135 CPU @ 3.70GHz
+[11:46:49]  - logical processor count: 12
+[11:46:49] Intel Quick Sync Video support: no
+[11:46:49] hb_scan: path=/home/sudar/Downloads/213799.mov, title_index=6
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/home/sudar/Downloads/213799.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    creation_time   : 2024-05-26T15:28:17.000000Z
+    com.apple.quicktime.location.accuracy.horizontal: 4.765079
+    com.apple.quicktime.location.ISO6709: +41.8833+012.4903+022.586/
+    com.apple.quicktime.make: Apple
+    com.apple.quicktime.model: iPhone 15 Pro Max
+    com.apple.quicktime.software: 17.5.1
+    com.apple.quicktime.creationdate: 2024-05-26T17:28:17+0200
+  Duration: 00:00:18.58, start: 0.000000, bitrate: 15700 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080, 15445 kb/s, 29.97 fps, 29.97 tbr, 600 tbn (default)
+      Metadata:
+        creation_time   : 2024-05-26T15:28:17.000000Z
+        handler_name    : Core Media Video
+        vendor_id       : [0][0][0][0]
+        encoder         : H.264
+      Side data:
+        displaymatrix: rotation of -90.00 degrees
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 171 kb/s (default)
+      Metadata:
+        creation_time   : 2024-05-26T15:28:17.000000Z
+        handler_name    : Core Media Audio
+        vendor_id       : [0][0][0][0]
+  Stream #0:2[0x3](und): Data: none (mebx / 0x7862656D), 0 kb/s (default)
+      Metadata:
+        creation_time   : 2024-05-26T15:28:17.000000Z
+        handler_name    : Core Media Metadata
+  Stream #0:3[0x4](und): Data: none (mebx / 0x7862656D), 24 kb/s (default)
+      Metadata:
+        creation_time   : 2024-05-26T15:28:17.000000Z
+        handler_name    : Core Media Metadata
+  Stream #0:4[0x5](und): Data: none (mebx / 0x7862656D), 42 kb/s (default)
+      Metadata:
+        creation_time   : 2024-05-26T15:28:17.000000Z
+        handler_name    : Core Media Metadata
+[11:46:49] scan: decoding previews for title 6
+[11:46:49] scan: audio 0x1: aac, rate=44100Hz, bitrate=171420 Unknown (AAC LC, 2.0 ch, 171 kbps)
+[11:46:49] Auto-Rotating video 270 degrees
+[11:46:49] scan: 10 previews, 1080x1920, 29.970 fps, autocrop = 0/0/0/0, aspect 1:1.78, PAR 1:1, color profile: 1-1-1, chroma location: left
+[11:46:49] libhb: scan thread found 1 valid title(s)
+[11:46:49] Starting Task: Analysis Pass
+[11:46:49] job configuration:
+[11:46:49]  * source
+[11:46:49]    + /home/sudar/Downloads/213799.mov
+[11:46:49]    + title 6, chapter(s) 1 to 1
+[11:46:49]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[11:46:49]    + data rate: 15700 kbps
+[11:46:49]  * destination
+[11:46:49]    + /mnt/iMac/DaVinci Resolve/IICAQM/213799.mkv
+[11:46:49]    + container: Matroska (libavformat)
+[11:46:49]  * video track
+[11:46:49]    + decoder: h264 8-bit (yuv420p)
+[11:46:49]      + bitrate 15445 kbps
+[11:46:49]    + filters
+[11:46:49]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=3:spatial-thresh=3:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[11:46:49]      + Decomb (mode=47)
+[11:46:49]      + Framerate Shaper (mode=0)
+[11:46:49]        + frame rate: same as source (around 29.970 fps)
+[11:46:49]      + Crop and Scale (width=1920:height=1080:crop-top=0:crop-bottom=0:crop-left=0:crop-right=0)
+[11:46:49]        + source: 1080 * 1920, crop (0/0/0/0): 1080 * 1920, scale: 1920 * 1080
+[11:46:49]      + Pad (color=black:top=0:bottom=0:left=0:right=0)
+[11:46:49]    + Output geometry
+[11:46:49]      + storage dimensions: 1920 x 1080
+[11:46:49]      + pixel aspect ratio: 81 : 256
+[11:46:49]      + display dimensions: 607 x 1080
+[11:46:49]    + encoder: VP9 (libvpx)
+[11:46:49]      + preset:  medium
+[11:46:49]      + profile: auto
+[11:46:49]      + level:   auto
+[11:46:49]      + quality: 22.00 (CQ)
+[11:46:49]      + color profile: 1-1-1
+[11:46:49]      + color range: tv
+[11:46:49]      + chroma location: left
+[11:46:49]  * audio track 1
+[11:46:49]    + name: Stereo
+[11:46:49]    + decoder: Unknown (AAC LC, 2.0 ch, 171 kbps) (track 1, id 0x1)
+[11:46:49]      + bitrate: 171 kbps, samplerate: 44100 Hz
+[11:46:49]    + mixdown: Stereo
+[11:46:49]    + encoder: AAC (libavcodec)
+[11:46:49]      + bitrate: 160 kbps, samplerate: 44100 Hz
+[11:46:49] sync: expecting 556 video frames
+[11:46:49] encavcodecInit: VP9 encoder
+[11:46:49] encavcodec: encoding at CQ 22.00
+[11:46:49] encavcodec: encoding with stored aspect 81/256
+[11:46:49] Auto-Rotating video 270 degrees
+[11:46:49] sync: first pts audio 0x1 is 0
+[11:46:49] sync: first pts video is 130
+[11:46:49] sync: Chapter 1 at frame 1 time 130
+[11:46:59] reader: done. 1 scr changes
+[11:47:01] work: average encoding speed for job is 51.417339 fps
+[11:47:01] comb detect: heavy 1 | light 8 | uncombed 548 | total 557
+[11:47:01] decomb: deinterlaced 1 | blended 8 | unfiltered 548 | total 557
+[11:47:01] vfr: 557 frames output, 0 dropped
+[11:47:01] vfr: lost time: 0 (0 frames)
+[11:47:01] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[11:47:01] aac-decoder done: 801 frames, 0 decoder errors
+[11:47:01] h264-decoder done: 557 frames, 0 decoder errors
+[11:47:01] sync: got 557 frames, 556 expected
+[11:47:01] sync: framerate min 29.970 fps, max 29.973 fps, avg 29.970 fps
+[11:47:01] Starting Task: Encoding Pass
+[11:47:01] job configuration:
+[11:47:01]  * source
+[11:47:01]    + /home/sudar/Downloads/213799.mov
+[11:47:01]    + title 6, chapter(s) 1 to 1
+[11:47:01]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[11:47:01]    + data rate: 15700 kbps
+[11:47:01]  * destination
+[11:47:01]    + /mnt/iMac/DaVinci Resolve/IICAQM/213799.mkv
+[11:47:01]    + container: Matroska (libavformat)
+[11:47:01]  * video track
+[11:47:01]    + decoder: h264 8-bit (yuv420p)
+[11:47:01]      + bitrate 15445 kbps
+[11:47:01]    + filters
+[11:47:01]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=3:spatial-thresh=3:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[11:47:01]      + Decomb (mode=47)
+[11:47:01]      + Framerate Shaper (mode=0)
+[11:47:01]        + frame rate: same as source (around 29.970 fps)
+[11:47:01]      + Crop and Scale (width=1920:height=1080:crop-top=0:crop-bottom=0:crop-left=0:crop-right=0)
+[11:47:01]        + source: 1080 * 1920, crop (0/0/0/0): 1080 * 1920, scale: 1920 * 1080
+[11:47:01]      + Pad (color=black:top=0:bottom=0:left=0:right=0)
+[11:47:01]    + Output geometry
+[11:47:01]      + storage dimensions: 1920 x 1080
+[11:47:01]      + pixel aspect ratio: 81 : 256
+[11:47:01]      + display dimensions: 607 x 1080
+[11:47:01]    + encoder: VP9 (libvpx)
+[11:47:01]      + preset:  medium
+[11:47:01]      + profile: auto
+[11:47:01]      + level:   auto
+[11:47:01]      + quality: 22.00 (CQ)
+[11:47:01]      + color profile: 1-1-1
+[11:47:01]      + color range: tv
+[11:47:01]      + chroma location: left
+[11:47:01]  * audio track 1
+[11:47:01]    + name: Stereo
+[11:47:01]    + decoder: Unknown (AAC LC, 2.0 ch, 171 kbps) (track 1, id 0x1)
+[11:47:01]      + bitrate: 171 kbps, samplerate: 44100 Hz
+[11:47:01]    + mixdown: Stereo
+[11:47:01]    + encoder: AAC (libavcodec)
+[11:47:01]      + bitrate: 160 kbps, samplerate: 44100 Hz
+[11:47:01] sync: expecting 557 video frames
+[11:47:01] encavcodecInit: VP9 encoder
+[11:47:01] encavcodec: encoding at CQ 22.00
+[11:47:01] encavcodec: encoding with stored aspect 81/256
+[11:47:01] Auto-Rotating video 270 degrees
+[11:47:01] sync: first pts audio 0x1 is 0
+[11:47:01] sync: first pts video is 130
+[11:47:01] sync: Chapter 1 at frame 1 time 130
+[11:49:23] reader: done. 1 scr changes
+[11:50:10] work: average encoding speed for job is 3.339245 fps
+[11:50:10] comb detect: heavy 1 | light 8 | uncombed 548 | total 557
+[11:50:10] decomb: deinterlaced 1 | blended 8 | unfiltered 548 | total 557
+[11:50:10] vfr: 557 frames output, 0 dropped
+[11:50:10] vfr: lost time: 0 (0 frames)
+[11:50:10] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[11:50:11] aac-decoder done: 801 frames, 0 decoder errors
+[11:50:11] h264-decoder done: 557 frames, 0 decoder errors
+[11:50:11] sync: got 557 frames, 557 expected
+[11:50:11] sync: framerate min 29.970 fps, max 29.973 fps, avg 29.970 fps
+[11:50:18] mux: track 0, 557 frames, 63508276 bytes, 27288.10 kbps, fifo 128
+[11:50:18] mux: track 1, 802 frames, 396279 bytes, 170.27 kbps, fifo 512
+[11:50:18] Finished work at: Fri Oct 17 11:50:18 2025
+
+[11:50:18] libhb: work result = 0

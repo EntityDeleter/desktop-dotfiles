@@ -1,0 +1,307 @@
+Handbrake Version: 20250906052339-dddf75f75-makepkg (2025100401)
+
+(fr.handbrake.ghb:5): GLib-GIO-CRITICAL **: 17:35:59.058: g_bus_watch_name_on_connection: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+
+(fr.handbrake.ghb:5): GLib-GIO-CRITICAL **: 17:35:59.058: g_dbus_connection_signal_subscribe: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+
+(fr.handbrake.ghb:5): GLib-GIO-CRITICAL **: 17:35:59.058: g_dbus_connection_call_internal: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+[17:35:59] gtkgui: Custom Preset: /Custom/CPU (With FIlters) (VP9)
+[17:35:59] Starting work at: Fri Oct 17 17:35:59 2025
+
+[17:35:59] 1 job(s) to process
+[17:35:59] json job:
+{
+    "Audio": {
+        "AudioList": [
+            {
+                "Bitrate": 160,
+                "CompressionLevel": -1.0,
+                "DRC": 0.0,
+                "DitherMethod": "auto",
+                "Encoder": "av_aac",
+                "Gain": 0.0,
+                "Mixdown": "stereo",
+                "Name": "Stereo",
+                "NormalizeMixLevel": false,
+                "PresetEncoder": "av_aac",
+                "Quality": -3.0,
+                "Samplerate": 0,
+                "Track": 0
+            }
+        ],
+        "CopyMask": [
+            "copy:aac"
+        ],
+        "FallbackEncoder": "av_aac"
+    },
+    "Destination": {
+        "AlignAVStart": false,
+        "ChapterList": [
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 0,
+                    "Seconds": 12,
+                    "Ticks": 1159499
+                },
+                "Name": ""
+            }
+        ],
+        "ChapterMarkers": false,
+        "File": "/mnt/iMac/DaVinci Resolve/IICAQM/1473151_People_Nature_1920x1080.mkv",
+        "InlineParameterSets": false,
+        "Mux": "mkv",
+        "Options": {
+            "IpodAtom": false,
+            "Optimize": false
+        }
+    },
+    "Filters": {
+        "FilterList": [
+            {
+                "ID": 4,
+                "Settings": {
+                    "block-height": "16",
+                    "block-thresh": "40",
+                    "block-width": "16",
+                    "filter-mode": "2",
+                    "mode": "3",
+                    "motion-thresh": "3",
+                    "spatial-metric": "2",
+                    "spatial-thresh": "3"
+                }
+            },
+            {
+                "ID": 6,
+                "Settings": {
+                    "mode": "15"
+                }
+            },
+            {
+                "ID": 11,
+                "Settings": {
+                    "mode": 0
+                }
+            },
+            {
+                "ID": 20,
+                "Settings": {
+                    "crop-bottom": 0,
+                    "crop-left": 0,
+                    "crop-right": 0,
+                    "crop-top": 0,
+                    "height": 1080,
+                    "width": 1920
+                }
+            },
+            {
+                "ID": 28,
+                "Settings": {
+                    "bottom": "0",
+                    "color": "black",
+                    "left": "0",
+                    "right": "0",
+                    "top": "0"
+                }
+            }
+        ]
+    },
+    "Metadata": {},
+    "PAR": {
+        "Den": 1,
+        "Num": 1
+    },
+    "SequenceID": 0,
+    "Source": {
+        "Angle": 0,
+        "HWDecode": 0,
+        "KeepDuplicateTitles": false,
+        "Path": "/home/sudar/Downloads/1473151_People_Nature_1920x1080.mp4",
+        "Range": {
+            "End": 1,
+            "Start": 1,
+            "Type": "chapter"
+        },
+        "Title": 3
+    },
+    "Subtitle": {
+        "Search": {
+            "Burn": true,
+            "Default": false,
+            "Enable": false,
+            "Forced": false
+        },
+        "SubtitleList": []
+    },
+    "Video": {
+        "AdapterIndex": -1,
+        "AsyncDepth": 0,
+        "ChromaLocation": 1,
+        "ColorInputFormat": 0,
+        "ColorMatrix": 1,
+        "ColorOutputFormat": 0,
+        "ColorPrimaries": 1,
+        "ColorRange": 0,
+        "ColorTransfer": 1,
+        "Encoder": "VP9",
+        "HardwareDecode": 0,
+        "Level": "auto",
+        "MultiPass": true,
+        "Options": "",
+        "PasshtruHDRDynamicMetadata": 6,
+        "Preset": "medium",
+        "Profile": "auto",
+        "Quality": 22.0,
+        "Tune": "",
+        "Turbo": true
+    }
+}
+[17:35:59] CPU: Intel(R) Xeon(R) W-2135 CPU @ 3.70GHz
+[17:35:59]  - logical processor count: 12
+[17:35:59] Intel Quick Sync Video support: no
+[17:35:59] hb_scan: path=/home/sudar/Downloads/1473151_People_Nature_1920x1080.mp4, title_index=3
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/home/sudar/Downloads/1473151_People_Nature_1920x1080.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.45.100
+  Duration: 00:00:12.88, start: 0.000000, bitrate: 12170 kb/s
+  Stream #0:0[0x1](eng): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 12028 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+      Metadata:
+        handler_name    : Apple Video Media Handler
+        vendor_id       : [0][0][0][0]
+        timecode        : 00:11:41:52
+  Stream #0:1[0x2](eng): Audio: mp3 (mp3float) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 128 kb/s (default)
+      Metadata:
+        handler_name    : Apple Sound Media Handler
+        vendor_id       : [0][0][0][0]
+  Stream #0:2[0x3](eng): Data: none (tmcd / 0x64636D74), 0 kb/s
+      Metadata:
+        handler_name    : Apple Video Media Handler
+        timecode        : 00:11:41:52
+[17:35:59] scan: decoding previews for title 3
+[17:35:59] scan: audio 0x1: mp3float, rate=48000Hz, bitrate=128055 English (MP3, 2.0 ch, 128 kbps)
+[17:35:59] using container PAR 1:1
+[17:35:59] scan: 10 previews, 1920x1080, 60.000 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1, color profile: 1-1-1, chroma location: left
+[17:35:59] libhb: scan thread found 1 valid title(s)
+[17:35:59] Starting Task: Analysis Pass
+[17:35:59] work: skipping crop/scale filter
+[17:35:59] job configuration:
+[17:35:59]  * source
+[17:35:59]    + /home/sudar/Downloads/1473151_People_Nature_1920x1080.mp4
+[17:35:59]    + title 3, chapter(s) 1 to 1
+[17:35:59]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[17:35:59]    + data rate: 12170 kbps
+[17:35:59]  * destination
+[17:35:59]    + /mnt/iMac/DaVinci Resolve/IICAQM/1473151_People_Nature_1920x1080.mkv
+[17:35:59]    + container: Matroska (libavformat)
+[17:35:59]  * video track
+[17:35:59]    + decoder: h264 8-bit (yuv420p)
+[17:35:59]      + bitrate 12028 kbps
+[17:35:59]    + filters
+[17:35:59]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=3:spatial-thresh=3:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[17:35:59]      + Decomb (mode=47)
+[17:35:59]      + Framerate Shaper (mode=0)
+[17:35:59]        + frame rate: same as source (around 60.000 fps)
+[17:35:59]      + Pad (color=black:top=0:bottom=0:left=0:right=0)
+[17:35:59]    + Output geometry
+[17:35:59]      + storage dimensions: 1920 x 1080
+[17:35:59]      + pixel aspect ratio: 1 : 1
+[17:35:59]      + display dimensions: 1920 x 1080
+[17:35:59]    + encoder: VP9 (libvpx)
+[17:35:59]      + preset:  medium
+[17:35:59]      + profile: auto
+[17:35:59]      + level:   auto
+[17:35:59]      + quality: 22.00 (CQ)
+[17:35:59]      + color profile: 1-1-1
+[17:35:59]      + color range: tv
+[17:35:59]      + chroma location: left
+[17:35:59]  * audio track 1
+[17:35:59]    + name: Stereo
+[17:35:59]    + decoder: English (MP3, 2.0 ch, 128 kbps) (track 1, id 0x1)
+[17:35:59]      + bitrate: 128 kbps, samplerate: 48000 Hz
+[17:35:59]    + mixdown: Stereo
+[17:35:59]    + encoder: AAC (libavcodec)
+[17:35:59]      + bitrate: 160 kbps, samplerate: 48000 Hz
+[17:35:59] sync: expecting 772 video frames
+[17:35:59] encavcodecInit: VP9 encoder
+[17:35:59] encavcodec: encoding at CQ 22.00
+[17:35:59] encavcodec: encoding with stored aspect 1/1
+[17:35:59] sync: first pts audio 0x1 is 0
+[17:35:59] sync: first pts video is 2071
+[17:35:59] sync: Chapter 1 at frame 1 time 2071
+[17:36:10] reader: done. 1 scr changes
+[17:36:11] work: average encoding speed for job is 68.104744 fps
+[17:36:11] comb detect: heavy 0 | light 0 | uncombed 773 | total 773
+[17:36:11] decomb: deinterlaced 0 | blended 0 | unfiltered 773 | total 773
+[17:36:11] vfr: 773 frames output, 0 dropped
+[17:36:11] vfr: lost time: 0 (0 frames)
+[17:36:11] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[17:36:11] mp3float-decoder done: 538 frames, 0 decoder errors
+[17:36:11] h264-decoder done: 773 frames, 0 decoder errors
+[17:36:11] sync: got 773 frames, 772 expected
+[17:36:11] sync: framerate min 60.000 fps, max 60.000 fps, avg 60.000 fps
+[17:36:11] Starting Task: Encoding Pass
+[17:36:11] work: skipping crop/scale filter
+[17:36:11] work: correcting framerate, 27000000/450000 -> 27000000/450450
+[17:36:11] job configuration:
+[17:36:11]  * source
+[17:36:11]    + /home/sudar/Downloads/1473151_People_Nature_1920x1080.mp4
+[17:36:11]    + title 3, chapter(s) 1 to 1
+[17:36:11]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[17:36:11]    + data rate: 12170 kbps
+[17:36:11]  * destination
+[17:36:11]    + /mnt/iMac/DaVinci Resolve/IICAQM/1473151_People_Nature_1920x1080.mkv
+[17:36:11]    + container: Matroska (libavformat)
+[17:36:11]  * video track
+[17:36:11]    + decoder: h264 8-bit (yuv420p)
+[17:36:11]      + bitrate 12028 kbps
+[17:36:11]    + filters
+[17:36:11]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=3:spatial-thresh=3:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[17:36:11]      + Decomb (mode=47)
+[17:36:11]      + Framerate Shaper (mode=0)
+[17:36:11]        + frame rate: same as source (around 60.000 fps)
+[17:36:11]      + Pad (color=black:top=0:bottom=0:left=0:right=0)
+[17:36:11]    + Output geometry
+[17:36:11]      + storage dimensions: 1920 x 1080
+[17:36:11]      + pixel aspect ratio: 1 : 1
+[17:36:11]      + display dimensions: 1920 x 1080
+[17:36:11]    + encoder: VP9 (libvpx)
+[17:36:11]      + preset:  medium
+[17:36:11]      + profile: auto
+[17:36:11]      + level:   auto
+[17:36:11]      + quality: 22.00 (CQ)
+[17:36:11]      + color profile: 1-1-1
+[17:36:11]      + color range: tv
+[17:36:11]      + chroma location: left
+[17:36:11]  * audio track 1
+[17:36:11]    + name: Stereo
+[17:36:11]    + decoder: English (MP3, 2.0 ch, 128 kbps) (track 1, id 0x1)
+[17:36:11]      + bitrate: 128 kbps, samplerate: 48000 Hz
+[17:36:11]    + mixdown: Stereo
+[17:36:11]    + encoder: AAC (libavcodec)
+[17:36:11]      + bitrate: 160 kbps, samplerate: 48000 Hz
+[17:36:11] sync: expecting 773 video frames
+[17:36:11] encavcodecInit: VP9 encoder
+[17:36:11] encavcodec: encoding at CQ 22.00
+[17:36:11] encavcodec: encoding with stored aspect 1/1
+[17:36:11] sync: first pts audio 0x1 is 0
+[17:36:11] sync: first pts video is 2071
+[17:36:11] sync: Chapter 1 at frame 1 time 2071
+[17:38:30] reader: done. 1 scr changes
+[17:38:58] work: average encoding speed for job is 5.111683 fps
+[17:38:58] comb detect: heavy 0 | light 0 | uncombed 773 | total 773
+[17:38:58] decomb: deinterlaced 0 | blended 0 | unfiltered 773 | total 773
+[17:38:58] vfr: 773 frames output, 0 dropped
+[17:38:58] vfr: lost time: 0 (0 frames)
+[17:38:58] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[17:38:58] mp3float-decoder done: 538 frames, 0 decoder errors
+[17:38:58] h264-decoder done: 773 frames, 0 decoder errors
+[17:38:58] sync: got 773 frames, 773 expected
+[17:38:58] sync: framerate min 60.000 fps, max 60.000 fps, avg 60.000 fps
+[17:39:00] mux: track 0, 773 frames, 26305118 bytes, 16296.95 kbps, fifo 512
+[17:39:00] mux: track 1, 606 frames, 3687 bytes, 2.28 kbps, fifo 512
+[17:39:00] Finished work at: Fri Oct 17 17:39:00 2025
+
+[17:39:00] libhb: work result = 0

@@ -1,0 +1,236 @@
+Handbrake Version: 20250906052339-dddf75f75-makepkg (2025100401)
+[17:12:47] gtkgui: Modified Custom Preset: /Custom/NVENC (No Filters)
+[17:12:47] Starting work at: Mon Oct  6 17:12:47 2025
+
+[17:12:47] 1 job(s) to process
+[17:12:47] json job:
+{
+    "Audio": {
+        "AudioList": [],
+        "CopyMask": [],
+        "FallbackEncoder": 0
+    },
+    "Destination": {
+        "AlignAVStart": false,
+        "ChapterList": [
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 7,
+                    "Seconds": 56,
+                    "Ticks": 42800760
+                },
+                "Name": "We Found a Loophole to Survive the End of the Universe"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 0,
+                    "Seconds": 1,
+                    "Ticks": 90000
+                },
+                "Name": "[SponsorBlock]: Highlight"
+            },
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 2,
+                    "Seconds": 42,
+                    "Ticks": 14608558
+                },
+                "Name": "We Found a Loophole to Survive the End of the Universe"
+            }
+        ],
+        "ChapterMarkers": true,
+        "File": "/home/sudar/Videos/HandBrake/H264 (2).mkv",
+        "InlineParameterSets": false,
+        "Mux": "mkv",
+        "Options": {
+            "IpodAtom": false,
+            "Optimize": false
+        }
+    },
+    "Filters": {
+        "FilterList": [
+            {
+                "ID": 11,
+                "Settings": {
+                    "mode": 0
+                }
+            },
+            {
+                "ID": 20,
+                "Settings": {
+                    "crop-bottom": 0,
+                    "crop-left": 0,
+                    "crop-right": 0,
+                    "crop-top": 0,
+                    "height": 1080,
+                    "width": 1920
+                }
+            },
+            {
+                "ID": 28,
+                "Settings": {
+                    "bottom": "0",
+                    "color": "black",
+                    "left": "0",
+                    "right": "0",
+                    "top": "0"
+                }
+            }
+        ]
+    },
+    "Metadata": {},
+    "PAR": {
+        "Den": 1,
+        "Num": 1
+    },
+    "SequenceID": 0,
+    "Source": {
+        "Angle": 0,
+        "HWDecode": 0,
+        "KeepDuplicateTitles": false,
+        "Path": "/home/sudar/Videos/YouTube/H264.mp4",
+        "Range": {
+            "End": 3,
+            "Start": 1,
+            "Type": "chapter"
+        },
+        "Title": 1
+    },
+    "Subtitle": {
+        "Search": {
+            "Burn": true,
+            "Default": false,
+            "Enable": false,
+            "Forced": false
+        },
+        "SubtitleList": []
+    },
+    "Video": {
+        "AdapterIndex": -1,
+        "AsyncDepth": 0,
+        "ChromaLocation": 1,
+        "ColorInputFormat": 0,
+        "ColorMatrix": 1,
+        "ColorOutputFormat": 0,
+        "ColorPrimaries": 1,
+        "ColorRange": 0,
+        "ColorTransfer": 1,
+        "Encoder": "x264",
+        "HardwareDecode": 0,
+        "Level": "auto",
+        "MultiPass": true,
+        "Options": "",
+        "PasshtruHDRDynamicMetadata": 6,
+        "Preset": "placebo",
+        "Profile": "auto",
+        "Quality": 1.0,
+        "Tune": "",
+        "Turbo": true
+    }
+}
+[17:12:47] CPU: Intel(R) Xeon(R) W-2135 CPU @ 3.70GHz
+[17:12:47]  - logical processor count: 12
+[17:12:47] Intel Quick Sync Video support: no
+[17:12:47] hb_scan: path=/home/sudar/Videos/YouTube/H264.mp4, title_index=1
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/home/sudar/Videos/YouTube/H264.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.100
+  Duration: 00:10:38.88, start: 0.000000, bitrate: 53 kb/s
+  Chapters:
+    Chapter #0:0: start 0.000000, end 475.564000
+      Metadata:
+        title           : We Found a Loophole to Survive the End of the Universe
+    Chapter #0:1: start 475.564000, end 476.564000
+      Metadata:
+        title           : [SponsorBlock]: Highlight
+    Chapter #0:2: start 476.564000, end 638.834000
+      Metadata:
+        title           : We Found a Loophole to Survive the End of the Universe
+  Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 256x144 [SAR 1:1 DAR 16:9], 51 kb/s, 30.12 fps, 30 tbr, 15360 tbn (default)
+      Metadata:
+        handler_name    : ISO Media file produced by Google Inc.
+        vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](eng): Data: bin_data (text / 0x74786574), 0 kb/s
+      Metadata:
+        handler_name    : SubtitleHandler
+[17:12:47] scan: decoding previews for title 1
+[17:12:47] using container PAR 1:1
+[17:12:47] scan: 10 previews, 256x144, 30.115 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1, color profile: 1-1-1, chroma location: left
+[17:12:47] libhb: scan thread found 1 valid title(s)
+[17:12:47] Starting Task: Encoding Pass
+[17:12:47] job configuration:
+[17:12:47]  * source
+[17:12:47]    + /home/sudar/Videos/YouTube/H264.mp4
+[17:12:47]    + title 1, chapter(s) 1 to 3
+[17:12:47]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[17:12:47]    + data rate: 53 kbps
+[17:12:47]  * destination
+[17:12:47]    + /home/sudar/Videos/HandBrake/H264 (2).mkv
+[17:12:47]    + container: Matroska (libavformat)
+[17:12:47]      + chapter markers
+[17:12:47]  * video track
+[17:12:47]    + decoder: h264 8-bit (yuv420p)
+[17:12:47]      + bitrate 51 kbps
+[17:12:47]    + filters
+[17:12:47]      + Framerate Shaper (mode=0)
+[17:12:47]        + frame rate: same as source (around 30.115 fps)
+[17:12:47]      + Crop and Scale (width=1920:height=1080:crop-top=0:crop-bottom=0:crop-left=0:crop-right=0)
+[17:12:47]        + source: 256 * 144, crop (0/0/0/0): 256 * 144, scale: 1920 * 1080
+[17:12:47]      + Pad (color=black:top=0:bottom=0:left=0:right=0)
+[17:12:47]    + Output geometry
+[17:12:47]      + storage dimensions: 1920 x 1080
+[17:12:47]      + pixel aspect ratio: 1 : 1
+[17:12:47]      + display dimensions: 1920 x 1080
+[17:12:47]    + encoder: H.264 (libx264)
+[17:12:47]      + preset:  placebo
+[17:12:47]      + profile: auto
+[17:12:47]      + level:   auto
+[17:12:47]      + quality: 1.00 (RF)
+[17:12:47]      + color profile: 1-1-1
+[17:12:47]      + color range: tv
+[17:12:47]      + chroma location: left
+[17:12:47] sync: expecting 19240 video frames
+[17:12:47] encx264: min-keyint: 30, keyint: 300
+[17:12:47] encx264: encoding at constant RF 1.000000
+[17:12:47] encx264: unparsed options: ref=16:bframes=16:b-adapt=2:direct=auto:analyse=all:me=tesa:merange=24:subme=11:trellis=2:fast-pskip=0:rc-lookahead=60
+x264 [info]: using SAR=1/1
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+x264 [info]: profile High, level 5.1, 4:2:0, 8-bit
+[17:12:47] sync: first pts video is 0
+[17:12:47] sync: "We Found a Loophole to Survive the End of the Universe" (1) at frame 1 time 0
+[17:14:05] work: average encoding speed for job is 5.198608 fps
+[17:14:06] vfr: 372 frames output, 0 dropped
+[17:14:06] vfr: lost time: 0 (0 frames)
+[17:14:06] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[17:14:06] h264-decoder done: 429 frames, 0 decoder errors
+[17:14:06] sync: got 392 frames, 19240 expected
+[17:14:06] sync: framerate min 30.000 fps, max 30.115 fps, avg 30.025 fps
+x264 [info]: frame I:1     Avg QP: 0.68  size:275143
+x264 [info]: frame P:91    Avg QP: 0.95  size:158913
+x264 [info]: frame B:170   Avg QP: 1.72  size:103115
+x264 [info]: consecutive B-frames: 14.9%  5.3% 10.3% 24.4% 15.3% 29.8%  0.0%  0.0%  0.0%  0.0%  0.0%  0.0%  0.0%  0.0%  0.0%  0.0%  0.0%
+x264 [info]: mb I  I16..4: 46.2% 15.7% 38.2%
+x264 [info]: mb P  I16..4: 10.9% 10.2% 15.4%  P16..4:  9.2%  6.7%  3.5%  1.6%  0.4%    skip:42.1%
+x264 [info]: mb B  I16..4:  2.7%  6.6%  7.8%  B16..8: 15.2%  8.0%  3.0%  direct: 4.4%  skip:52.4%  L0:44.7% L1:41.2% BI:14.1%
+x264 [info]: 8x8 transform intra:32.6% inter:20.8%
+x264 [info]: direct mvs  spatial:94.7% temporal:5.3%
+x264 [info]: coded y,uvDC,uvAC intra: 69.7% 80.4% 79.9% inter: 17.4% 23.8% 22.0%
+x264 [info]: i16 v,h,dc,p: 70% 20%  5%  6%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 32% 27% 19%  3%  3%  3%  3%  5%  4%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 24% 20% 20%  6%  8%  6%  6%  5%  5%
+x264 [info]: i8c dc,h,v,p: 21% 43% 24% 13%
+x264 [info]: Weighted P-Frames: Y:9.9% UV:9.9%
+x264 [info]: ref P L0: 65.5%  5.2% 13.6%  4.7%  2.9%  2.0%  1.4%  0.9%  0.7%  0.6%  0.5%  0.4%  0.4%  0.4%  0.3%  0.3%
+x264 [info]: ref B L0: 84.2%  8.2%  3.2%  1.3%  0.8%  0.6%  0.4%  0.3%  0.2%  0.2%  0.2%  0.2%  0.1%  0.1%  0.0%
+x264 [info]: ref B L1: 96.5%  3.5%
+x264 [info]: kb/s:29593.61
+[17:14:14] mux: track 0, 261 frames, 32187691 bytes, 29598.07 kbps, fifo 128
+[17:14:14] Finished work at: Mon Oct  6 17:14:14 2025
+
+[17:14:14] libhb: work result = 1

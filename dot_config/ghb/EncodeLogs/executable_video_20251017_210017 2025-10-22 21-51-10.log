@@ -1,0 +1,314 @@
+Handbrake Version: 20250906052339-dddf75f75-makepkg (2025100401)
+
+(fr.handbrake.ghb:5): GLib-GIO-CRITICAL **: 21:51:10.152: g_bus_watch_name_on_connection: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+
+(fr.handbrake.ghb:5): GLib-GIO-CRITICAL **: 21:51:10.152: g_dbus_connection_signal_subscribe: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+
+(fr.handbrake.ghb:5): GLib-GIO-CRITICAL **: 21:51:10.152: g_dbus_connection_call_internal: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+[21:51:10] gtkgui: Custom Preset: /Custom/CPU (With FIlters) (VP9)
+[21:51:10] Starting work at: Wed Oct 22 21:51:10 2025
+
+[21:51:10] 1 job(s) to process
+[21:51:10] json job:
+{
+    "Audio": {
+        "AudioList": [
+            {
+                "Bitrate": -1,
+                "CompressionLevel": -1.0,
+                "DRC": 0.0,
+                "DitherMethod": "auto",
+                "Encoder": "flac24",
+                "Gain": 0.0,
+                "Mixdown": "stereo",
+                "Name": "Stereo",
+                "NormalizeMixLevel": false,
+                "PresetEncoder": "av_aac",
+                "Quality": -3.0,
+                "Samplerate": 0,
+                "Track": 0
+            }
+        ],
+        "CopyMask": [
+            "copy:aac"
+        ],
+        "FallbackEncoder": "av_aac"
+    },
+    "Destination": {
+        "AlignAVStart": false,
+        "ChapterList": [
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 0,
+                    "Seconds": 8,
+                    "Ticks": 754848
+                },
+                "Name": ""
+            }
+        ],
+        "ChapterMarkers": false,
+        "File": "/mnt/iMac/DaVinci Resolve/IICAQM/video_20251017_210017.mkv",
+        "InlineParameterSets": false,
+        "Mux": "mkv",
+        "Options": {
+            "IpodAtom": false,
+            "Optimize": false
+        }
+    },
+    "Filters": {
+        "FilterList": [
+            {
+                "ID": 4,
+                "Settings": {
+                    "block-height": "16",
+                    "block-thresh": "40",
+                    "block-width": "16",
+                    "filter-mode": "2",
+                    "mode": "3",
+                    "motion-thresh": "3",
+                    "spatial-metric": "2",
+                    "spatial-thresh": "3"
+                }
+            },
+            {
+                "ID": 6,
+                "Settings": {
+                    "mode": "15"
+                }
+            },
+            {
+                "ID": 11,
+                "Settings": {
+                    "mode": 0
+                }
+            },
+            {
+                "ID": 20,
+                "Settings": {
+                    "crop-bottom": 0,
+                    "crop-left": 0,
+                    "crop-right": 0,
+                    "crop-top": 0,
+                    "height": 1080,
+                    "width": 1920
+                }
+            },
+            {
+                "ID": 28,
+                "Settings": {
+                    "bottom": "0",
+                    "color": "black",
+                    "left": "0",
+                    "right": "0",
+                    "top": "0"
+                }
+            }
+        ]
+    },
+    "Metadata": {
+        "CreationTime": "2025-10-17T15:30:26.000000Z",
+        "Location": "+13.0224+080.2649/",
+        "ReleaseDate": "2025-10-17T15:30:26+0000"
+    },
+    "PAR": {
+        "Den": 1,
+        "Num": 1
+    },
+    "SequenceID": 0,
+    "Source": {
+        "Angle": 0,
+        "HWDecode": 0,
+        "KeepDuplicateTitles": false,
+        "Path": "/home/sudar/Downloads/video_20251017_210017.mp4",
+        "Range": {
+            "End": 1,
+            "Start": 1,
+            "Type": "chapter"
+        },
+        "Title": 1
+    },
+    "Subtitle": {
+        "Search": {
+            "Burn": true,
+            "Default": false,
+            "Enable": false,
+            "Forced": false
+        },
+        "SubtitleList": []
+    },
+    "Video": {
+        "AdapterIndex": -1,
+        "AsyncDepth": 0,
+        "ChromaLocation": 1,
+        "ColorInputFormat": 0,
+        "ColorMatrix": 1,
+        "ColorOutputFormat": 0,
+        "ColorPrimaries": 1,
+        "ColorRange": 0,
+        "ColorTransfer": 1,
+        "Encoder": "VP9",
+        "HardwareDecode": 0,
+        "Level": "auto",
+        "MultiPass": true,
+        "Options": "",
+        "PasshtruHDRDynamicMetadata": 6,
+        "Preset": "medium",
+        "Profile": "auto",
+        "Quality": 22.0,
+        "Tune": "",
+        "Turbo": true
+    }
+}
+[21:51:10] CPU: Intel(R) Xeon(R) W-2135 CPU @ 3.70GHz
+[21:51:10]  - logical processor count: 12
+[21:51:10] Intel Quick Sync Video support: no
+[21:51:10] hb_scan: path=/home/sudar/Downloads/video_20251017_210017.mp4, title_index=1
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/home/sudar/Downloads/video_20251017_210017.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: isommp42
+    creation_time   : 2025-10-17T15:30:26.000000Z
+    location        : +13.0224+080.2649/
+    location-eng    : +13.0224+080.2649/
+    com.android.version: 15
+  Duration: 00:00:08.39, start: 0.000000, bitrate: 9287 kb/s
+  Stream #0:0[0x1](eng): Video: hevc (Main) (hvc1 / 0x31637668), yuv420p(tv, bt709), 1920x1080, 8647 kb/s, 30.05 fps, 30 tbr, 90k tbn (default)
+      Metadata:
+        creation_time   : 2025-10-17T15:30:26.000000Z
+        handler_name    : VideoHandle
+        vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 256 kb/s (default)
+      Metadata:
+        creation_time   : 2025-10-17T15:30:26.000000Z
+        handler_name    : SoundHandle
+        vendor_id       : [0][0][0][0]
+[21:51:10] scan: decoding previews for title 1
+[21:51:10] scan: audio 0x1: aac, rate=48000Hz, bitrate=256398 English (AAC LC, 2.0 ch, 256 kbps)
+[21:51:10] scan: 10 previews, 1920x1080, 30.053 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1, color profile: 1-1-1, chroma location: left
+[21:51:10] libhb: scan thread found 1 valid title(s)
+[21:51:10] Starting Task: Analysis Pass
+[21:51:10] work: skipping crop/scale filter
+[21:51:10] work: compression level not specified, track 1 setting compression level 5.00
+[21:51:10] job configuration:
+[21:51:10]  * source
+[21:51:10]    + /home/sudar/Downloads/video_20251017_210017.mp4
+[21:51:10]    + title 1, chapter(s) 1 to 1
+[21:51:10]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[21:51:10]    + data rate: 9287 kbps
+[21:51:10]  * destination
+[21:51:10]    + /mnt/iMac/DaVinci Resolve/IICAQM/video_20251017_210017.mkv
+[21:51:10]    + container: Matroska (libavformat)
+[21:51:10]  * video track
+[21:51:10]    + decoder: hevc 8-bit (yuv420p)
+[21:51:10]      + bitrate 8647 kbps
+[21:51:10]    + filters
+[21:51:10]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=3:spatial-thresh=3:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[21:51:10]      + Decomb (mode=47)
+[21:51:10]      + Framerate Shaper (mode=0)
+[21:51:10]        + frame rate: same as source (around 30.053 fps)
+[21:51:10]      + Pad (color=black:top=0:bottom=0:left=0:right=0)
+[21:51:10]    + Output geometry
+[21:51:10]      + storage dimensions: 1920 x 1080
+[21:51:10]      + pixel aspect ratio: 1 : 1
+[21:51:10]      + display dimensions: 1920 x 1080
+[21:51:10]    + encoder: VP9 (libvpx)
+[21:51:10]      + preset:  medium
+[21:51:10]      + profile: auto
+[21:51:10]      + level:   auto
+[21:51:10]      + quality: 22.00 (CQ)
+[21:51:10]      + color profile: 1-1-1
+[21:51:10]      + color range: tv
+[21:51:10]      + chroma location: left
+[21:51:10]  * audio track 1
+[21:51:10]    + name: Stereo
+[21:51:10]    + decoder: English (AAC LC, 2.0 ch, 256 kbps) (track 1, id 0x1)
+[21:51:10]      + bitrate: 256 kbps, samplerate: 48000 Hz
+[21:51:10]    + mixdown: Stereo
+[21:51:10]    + encoder: FLAC 24-bit (libavcodec)
+[21:51:10]      + samplerate: 48000 Hz
+[21:51:10]      + compression level: 5.00
+[21:51:10] sync: expecting 252 video frames
+[21:51:10] encavcodecInit: VP9 encoder
+[21:51:10] encavcodec: encoding at CQ 22.00
+[21:51:10] encavcodec: encoding with stored aspect 1/1
+[21:51:10] sync: first pts audio 0x1 is 0
+[21:51:10] sync: first pts video is 171
+[21:51:10] sync: Chapter 1 at frame 1 time 171
+[21:51:13] reader: done. 1 scr changes
+[21:51:15] work: average encoding speed for job is 0.000000 fps
+[21:51:15] comb detect: heavy 0 | light 5 | uncombed 247 | total 252
+[21:51:15] decomb: deinterlaced 0 | blended 5 | unfiltered 247 | total 252
+[21:51:15] vfr: 252 frames output, 0 dropped
+[21:51:15] vfr: lost time: 0 (0 frames)
+[21:51:15] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[21:51:15] aac-decoder done: 392 frames, 0 decoder errors
+[21:51:15] hevc-decoder done: 252 frames, 0 decoder errors
+[21:51:15] sync: got 252 frames, 252 expected
+[21:51:15] sync: framerate min 30.053 fps, max 30.053 fps, avg 30.053 fps
+[21:51:15] Starting Task: Encoding Pass
+[21:51:15] work: skipping crop/scale filter
+[21:51:15] work: correcting framerate, 27000000/898425 -> 27000000/900000
+[21:51:15] work: compression level not specified, track 1 setting compression level 5.00
+[21:51:15] job configuration:
+[21:51:15]  * source
+[21:51:15]    + /home/sudar/Downloads/video_20251017_210017.mp4
+[21:51:15]    + title 1, chapter(s) 1 to 1
+[21:51:15]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[21:51:15]    + data rate: 9287 kbps
+[21:51:15]  * destination
+[21:51:15]    + /mnt/iMac/DaVinci Resolve/IICAQM/video_20251017_210017.mkv
+[21:51:15]    + container: Matroska (libavformat)
+[21:51:15]  * video track
+[21:51:15]    + decoder: hevc 8-bit (yuv420p)
+[21:51:15]      + bitrate 8647 kbps
+[21:51:15]    + filters
+[21:51:15]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=3:spatial-thresh=3:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[21:51:15]      + Decomb (mode=47)
+[21:51:15]      + Framerate Shaper (mode=0)
+[21:51:15]        + frame rate: same as source (around 30.053 fps)
+[21:51:15]      + Pad (color=black:top=0:bottom=0:left=0:right=0)
+[21:51:15]    + Output geometry
+[21:51:15]      + storage dimensions: 1920 x 1080
+[21:51:15]      + pixel aspect ratio: 1 : 1
+[21:51:15]      + display dimensions: 1920 x 1080
+[21:51:15]    + encoder: VP9 (libvpx)
+[21:51:15]      + preset:  medium
+[21:51:15]      + profile: auto
+[21:51:15]      + level:   auto
+[21:51:15]      + quality: 22.00 (CQ)
+[21:51:15]      + color profile: 1-1-1
+[21:51:15]      + color range: tv
+[21:51:15]      + chroma location: left
+[21:51:15]  * audio track 1
+[21:51:15]    + name: Stereo
+[21:51:15]    + decoder: English (AAC LC, 2.0 ch, 256 kbps) (track 1, id 0x1)
+[21:51:15]      + bitrate: 256 kbps, samplerate: 48000 Hz
+[21:51:15]    + mixdown: Stereo
+[21:51:15]    + encoder: FLAC 24-bit (libavcodec)
+[21:51:15]      + samplerate: 48000 Hz
+[21:51:15]      + compression level: 5.00
+[21:51:15] sync: expecting 252 video frames
+[21:51:15] encavcodecInit: VP9 encoder
+[21:51:15] encavcodec: encoding at CQ 22.00
+[21:51:15] encavcodec: encoding with stored aspect 1/1
+[21:51:15] sync: first pts audio 0x1 is 0
+[21:51:15] sync: first pts video is 171
+[21:51:15] sync: Chapter 1 at frame 1 time 171
+[21:51:43] reader: done. 1 scr changes
+[21:52:18] work: average encoding speed for job is 5.690860 fps
+[21:52:18] comb detect: heavy 0 | light 5 | uncombed 247 | total 252
+[21:52:18] decomb: deinterlaced 0 | blended 5 | unfiltered 247 | total 252
+[21:52:18] vfr: 252 frames output, 0 dropped
+[21:52:18] vfr: lost time: 0 (0 frames)
+[21:52:18] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[21:52:19] aac-decoder done: 392 frames, 0 decoder errors
+[21:52:19] hevc-decoder done: 252 frames, 0 decoder errors
+[21:52:19] sync: got 252 frames, 252 expected
+[21:52:19] sync: framerate min 30.053 fps, max 30.053 fps, avg 30.053 fps
+[21:52:20] mux: track 0, 252 frames, 18583078 bytes, 17698.17 kbps, fifo 256
+[21:52:20] mux: track 1, 88 frames, 1238244 bytes, 1179.28 kbps, fifo 128
+[21:52:20] Finished work at: Wed Oct 22 21:52:20 2025
+
+[21:52:20] libhb: work result = 0

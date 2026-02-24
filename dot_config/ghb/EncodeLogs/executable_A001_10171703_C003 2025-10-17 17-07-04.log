@@ -1,0 +1,382 @@
+Handbrake Version: 20250906052339-dddf75f75-makepkg (2025100401)
+[17:07:04] gtkgui: Modified Custom Preset: /Custom/CPU (With FIlters) (VP9)
+[17:07:04] Starting work at: Fri Oct 17 17:07:04 2025
+
+[17:07:04] 1 job(s) to process
+[17:07:04] json job:
+{
+    "Audio": {
+        "AudioList": [
+            {
+                "Bitrate": 160,
+                "CompressionLevel": -1.0,
+                "DRC": 0.0,
+                "DitherMethod": "auto",
+                "Encoder": "av_aac",
+                "Gain": 0.0,
+                "Mixdown": "stereo",
+                "Name": "Stereo",
+                "NormalizeMixLevel": false,
+                "PresetEncoder": "av_aac",
+                "Quality": -3.0,
+                "Samplerate": 0,
+                "Track": 0
+            }
+        ],
+        "CopyMask": [
+            "copy:aac"
+        ],
+        "FallbackEncoder": "av_aac"
+    },
+    "Destination": {
+        "AlignAVStart": false,
+        "ChapterList": [
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 0,
+                    "Seconds": 10,
+                    "Ticks": 945892
+                },
+                "Name": ""
+            }
+        ],
+        "ChapterMarkers": false,
+        "File": "/mnt/iMac/DaVinci Resolve/IICAQM/A001_10171703_C003.mkv",
+        "InlineParameterSets": false,
+        "Mux": "mkv",
+        "Options": {
+            "IpodAtom": false,
+            "Optimize": false
+        }
+    },
+    "Filters": {
+        "FilterList": [
+            {
+                "ID": 4,
+                "Settings": {
+                    "block-height": "16",
+                    "block-thresh": "40",
+                    "block-width": "16",
+                    "filter-mode": "2",
+                    "mode": "3",
+                    "motion-thresh": "3",
+                    "spatial-metric": "2",
+                    "spatial-thresh": "3"
+                }
+            },
+            {
+                "ID": 6,
+                "Settings": {
+                    "mode": "15"
+                }
+            },
+            {
+                "ID": 11,
+                "Settings": {
+                    "mode": 0
+                }
+            },
+            {
+                "ID": 14,
+                "Settings": {
+                    "cb-frame-count": 2,
+                    "cb-origin-tune": 0.8,
+                    "cb-patch-size": 7,
+                    "cb-prefilter": 0,
+                    "cb-range": 3,
+                    "cb-strength": 6.0,
+                    "y-frame-count": 2,
+                    "y-origin-tune": 0.8,
+                    "y-patch-size": 7,
+                    "y-prefilter": 0,
+                    "y-range": 3,
+                    "y-strength": 0.0
+                }
+            },
+            {
+                "ID": 20,
+                "Settings": {
+                    "crop-bottom": 0,
+                    "crop-left": 0,
+                    "crop-right": 0,
+                    "crop-top": 0,
+                    "height": 1080,
+                    "width": 1920
+                }
+            },
+            {
+                "ID": 28,
+                "Settings": {
+                    "bottom": "0",
+                    "color": "black",
+                    "left": "0",
+                    "right": "0",
+                    "top": "0"
+                }
+            }
+        ]
+    },
+    "Metadata": {
+        "CreationTime": "2025-10-17T11:33:12.000000Z",
+        "Location": "+13.0223543+80.2648844/",
+        "ReleaseDate": "2025-10-17T11:33:12+0000"
+    },
+    "PAR": {
+        "Den": 256,
+        "Num": 81
+    },
+    "SequenceID": 0,
+    "Source": {
+        "Angle": 0,
+        "HWDecode": 0,
+        "KeepDuplicateTitles": false,
+        "Path": "/home/sudar/Downloads/A001_10171703_C003.mp4",
+        "Range": {
+            "End": 1,
+            "Start": 1,
+            "Type": "chapter"
+        },
+        "Title": 1
+    },
+    "Subtitle": {
+        "Search": {
+            "Burn": true,
+            "Default": false,
+            "Enable": false,
+            "Forced": false
+        },
+        "SubtitleList": []
+    },
+    "Video": {
+        "AdapterIndex": -1,
+        "AsyncDepth": 0,
+        "ChromaLocation": 1,
+        "ColorInputFormat": 0,
+        "ColorMatrix": 1,
+        "ColorOutputFormat": 0,
+        "ColorPrimaries": 1,
+        "ColorRange": 0,
+        "ColorTransfer": 1,
+        "Encoder": "VP9",
+        "HardwareDecode": 0,
+        "Level": "auto",
+        "MultiPass": true,
+        "Options": "",
+        "PasshtruHDRDynamicMetadata": 6,
+        "Preset": "medium",
+        "Profile": "auto",
+        "Quality": 22.0,
+        "Tune": "",
+        "Turbo": true
+    }
+}
+[17:07:04] CPU: Intel(R) Xeon(R) W-2135 CPU @ 3.70GHz
+[17:07:04]  - logical processor count: 12
+[17:07:04] Intel Quick Sync Video support: no
+[17:07:04] hb_scan: path=/home/sudar/Downloads/A001_10171703_C003.mp4, title_index=1
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/home/sudar/Downloads/A001_10171703_C003.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: isommp42
+    creation_time   : 2025-10-17T11:33:12.000000Z
+    location        : +13.0224+080.2649/
+    location-eng    : +13.0224+080.2649/
+    com.android.version: 15
+    com.blackmagic-design.camera.reelNumber: 1
+    com.blackmagic-design.camera.scene: 1
+    com.blackmagic-design.camera.take: 1
+    com.blackmagic-design.camera.dayNight: Day
+    com.blackmagic-design.camera.environment: Interior
+    com.blackmagic-design.camera.goodTake: 0
+    com.blackmagic-design.camera.dateRecorded: 2025-10-17T17:03:02+0530
+    com.blackmagic-design.camera.guides.aspectRatio: 0.56
+    com.blackmagic-design.camera.guides.safeArea: 100.0
+    com.blackmagic-design.camera.iso: 99
+    com.blackmagic-design.camera.shutterAngle: 108.0°
+    com.blackmagic-design.shutterSpeed: 1 / 100.0
+    com.blackmagic-design.shutterMode: speed
+    com.blackmagic-design.camera.whiteBalanceKelvin: 7177
+    com.blackmagic-design.camera.whiteBalanceTint: 43
+    com.blackmagic-design.camera.aperture: f1.88
+    com.blackmagic-design.camera.lensType: vivo  V2246 24mm
+    com.blackmagic-design.sensorFPS: 30.0
+    com.blackmagic-design.camera.cameraNumber: A
+    com.apple.proapps.manufacturer: vivo
+    com.apple.proapps.cameraName: A
+    com.apple.proapps.clipID: A001_10171703_C003
+    com.apple.proapps.isGood: 0
+    com.apple.proapps.reel: 1
+    com.apple.proapps.scene: 1
+    com.apple.proapps.shot: 1
+    com.blackmagic-design.camera.android.gamma: Rec.709
+    com.apple.quicktime.location.ISO6709: +13.0223543+80.2648844/
+    com_apple_quicktime_software: Blackmagic Cam 1.0.1.0011
+    com_apple_quicktime_model: vivo  V2246 24mm
+    com_apple_quicktime_creationdate: 2025-10-17T17:03:02+0530
+    com.blackmagic-design.camera.android.audio.bitDepth: 16
+    com.blackmagic-design.camera.android.audio.channels: 2
+    com.blackmagic-design.camera.android.audio.tracks: 1
+    com.blackmagic-design.camera.android.audio.sampleRate: 48000
+    com.blackmagic-design.camera.android.audio.codecFormat: AAC
+    com.blackmagic-design.camera.android.audio.codecName: c2.android.aac.encoder
+    com.blackmagic-design.camera.android.video.codecName: c2.mtk.hevc.encoder
+    com.blackmagic-design.camera.android.video.colorStandard: BT709
+    com.blackmagic-design.camera.android.video.colorTransfer: SDR_VIDEO
+    com.blackmagic-design.camera.android.video.codecFormat: HEVC
+    com.blackmagic-design.camera.android.video.codecProfile: Main
+    com.blackmagic-design.camera.android.video.codecLevel: 5.1
+    com.blackmagic-design.camera.android.cameraId: 0
+    com.blackmagic-design.camera.android.pixelAspectRatio: 1.0
+    com.blackmagic-design.camera.android.guidesAspectRatio: R_9x16
+    com.blackmagic-design.camera.android.exposure: 0.0
+  Duration: 00:00:10.51, start: 0.000000, bitrate: 37200 kb/s
+  Stream #0:0[0x1](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 255 kb/s (default)
+      Metadata:
+        creation_time   : 2025-10-17T11:33:12.000000Z
+        handler_name    : SoundHandle
+        vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](eng): Video: hevc (Main) (hvc1 / 0x31637668), yuv420p(tv, bt709), 3840x2160, 37227 kb/s, 29.92 fps, 59.94 tbr, 90k tbn (default)
+      Metadata:
+        creation_time   : 2025-10-17T11:33:12.000000Z
+        handler_name    : VideoHandle
+        vendor_id       : [0][0][0][0]
+      Side data:
+        displaymatrix: rotation of -90.00 degrees
+[17:07:04] scan: decoding previews for title 1
+[17:07:04] Auto-Rotating video 270 degrees
+[17:07:05] scan: audio 0x0: aac, rate=48000Hz, bitrate=255875 English (AAC LC, 2.0 ch, 255 kbps)
+[17:07:06] scan: 10 previews, 2160x3840, 29.918 fps, autocrop = 0/0/0/0, aspect 1:1.78, PAR 1:1, color profile: 1-1-1, chroma location: left
+[17:07:06] libhb: scan thread found 1 valid title(s)
+[17:07:06] Starting Task: Analysis Pass
+[17:07:06] NLMeans using SSE2 optimizations
+[17:07:06] NLMeans using 12 threads
+[17:07:06] job configuration:
+[17:07:06]  * source
+[17:07:06]    + /home/sudar/Downloads/A001_10171703_C003.mp4
+[17:07:06]    + title 1, chapter(s) 1 to 1
+[17:07:06]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[17:07:06]    + data rate: 37200 kbps
+[17:07:06]  * destination
+[17:07:06]    + /mnt/iMac/DaVinci Resolve/IICAQM/A001_10171703_C003.mkv
+[17:07:06]    + container: Matroska (libavformat)
+[17:07:06]  * video track
+[17:07:06]    + decoder: hevc 8-bit (yuv420p)
+[17:07:06]      + bitrate 37227 kbps
+[17:07:06]    + filters
+[17:07:06]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=3:spatial-thresh=3:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[17:07:06]      + Decomb (mode=47)
+[17:07:06]      + Framerate Shaper (mode=0)
+[17:07:06]        + frame rate: same as source (around 29.918 fps)
+[17:07:06]      + Denoise (nlmeans) (y-strength=0:y-origin-tune=0.8:y-patch-size=7:y-range=3:y-frame-count=2:y-prefilter=0:cb-strength=6:cb-origin-tune=0.8:cb-patch-size=7:cb-range=3:cb-frame-count=2:cb-prefilter=0)
+[17:07:06]      + Crop and Scale (width=1920:height=1080:crop-top=0:crop-bottom=0:crop-left=0:crop-right=0)
+[17:07:06]        + source: 2160 * 3840, crop (0/0/0/0): 2160 * 3840, scale: 1920 * 1080
+[17:07:06]      + Pad (color=black:top=0:bottom=0:left=0:right=0)
+[17:07:06]    + Output geometry
+[17:07:06]      + storage dimensions: 1920 x 1080
+[17:07:06]      + pixel aspect ratio: 81 : 256
+[17:07:06]      + display dimensions: 607 x 1080
+[17:07:06]    + encoder: VP9 (libvpx)
+[17:07:06]      + preset:  medium
+[17:07:06]      + profile: auto
+[17:07:06]      + level:   auto
+[17:07:06]      + quality: 22.00 (CQ)
+[17:07:06]      + color profile: 1-1-1
+[17:07:06]      + color range: tv
+[17:07:06]      + chroma location: left
+[17:07:06]  * audio track 1
+[17:07:06]    + name: Stereo
+[17:07:06]    + decoder: English (AAC LC, 2.0 ch, 255 kbps) (track 1, id 0x0)
+[17:07:06]      + bitrate: 255 kbps, samplerate: 48000 Hz
+[17:07:06]    + mixdown: Stereo
+[17:07:06]    + encoder: AAC (libavcodec)
+[17:07:06]      + bitrate: 160 kbps, samplerate: 48000 Hz
+[17:07:06] sync: expecting 314 video frames
+[17:07:06] encavcodecInit: VP9 encoder
+[17:07:06] encavcodec: truncating framerate 27000000 / 902473
+[17:07:06] encavcodec: encoding at CQ 22.00
+[17:07:06] encavcodec: encoding with stored aspect 81/256
+[17:07:06] Auto-Rotating video 270 degrees
+[17:07:07] sync: first pts video is 0
+[17:07:07] sync: Chapter 1 at frame 1 time 0
+[17:07:07] sync: first pts audio 0x0 is 20088
+[17:07:26] reader: done. 1 scr changes
+[17:07:38] work: average encoding speed for job is 12.508818 fps
+[17:07:38] comb detect: heavy 0 | light 0 | uncombed 312 | total 312
+[17:07:38] decomb: deinterlaced 0 | blended 0 | unfiltered 312 | total 312
+[17:07:38] vfr: 312 frames output, 0 dropped
+[17:07:38] vfr: lost time: 0 (0 frames)
+[17:07:38] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[17:07:38] aac-decoder done: 482 frames, 0 decoder errors
+[17:07:38] hevc-decoder done: 312 frames, 0 decoder errors
+[17:07:38] sync: got 312 frames, 314 expected
+[17:07:38] sync: framerate min 29.918 fps, max 42.755 fps, avg 29.947 fps
+[17:07:38] Starting Task: Encoding Pass
+[17:07:38] NLMeans using SSE2 optimizations
+[17:07:38] NLMeans using 12 threads
+[17:07:38] work: correcting framerate, 27000000/902473 -> 27000000/900900
+[17:07:38] job configuration:
+[17:07:38]  * source
+[17:07:38]    + /home/sudar/Downloads/A001_10171703_C003.mp4
+[17:07:38]    + title 1, chapter(s) 1 to 1
+[17:07:38]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[17:07:38]    + data rate: 37200 kbps
+[17:07:38]  * destination
+[17:07:38]    + /mnt/iMac/DaVinci Resolve/IICAQM/A001_10171703_C003.mkv
+[17:07:38]    + container: Matroska (libavformat)
+[17:07:38]  * video track
+[17:07:38]    + decoder: hevc 8-bit (yuv420p)
+[17:07:38]      + bitrate 37227 kbps
+[17:07:38]    + filters
+[17:07:38]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=3:spatial-thresh=3:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[17:07:38]      + Decomb (mode=47)
+[17:07:38]      + Framerate Shaper (mode=0)
+[17:07:38]        + frame rate: same as source (around 29.918 fps)
+[17:07:38]      + Denoise (nlmeans) (y-strength=0:y-origin-tune=0.8:y-patch-size=7:y-range=3:y-frame-count=2:y-prefilter=0:cb-strength=6:cb-origin-tune=0.8:cb-patch-size=7:cb-range=3:cb-frame-count=2:cb-prefilter=0)
+[17:07:38]      + Crop and Scale (width=1920:height=1080:crop-top=0:crop-bottom=0:crop-left=0:crop-right=0)
+[17:07:38]        + source: 2160 * 3840, crop (0/0/0/0): 2160 * 3840, scale: 1920 * 1080
+[17:07:38]      + Pad (color=black:top=0:bottom=0:left=0:right=0)
+[17:07:38]    + Output geometry
+[17:07:38]      + storage dimensions: 1920 x 1080
+[17:07:38]      + pixel aspect ratio: 81 : 256
+[17:07:38]      + display dimensions: 607 x 1080
+[17:07:38]    + encoder: VP9 (libvpx)
+[17:07:38]      + preset:  medium
+[17:07:38]      + profile: auto
+[17:07:38]      + level:   auto
+[17:07:38]      + quality: 22.00 (CQ)
+[17:07:38]      + color profile: 1-1-1
+[17:07:38]      + color range: tv
+[17:07:38]      + chroma location: left
+[17:07:38]  * audio track 1
+[17:07:38]    + name: Stereo
+[17:07:38]    + decoder: English (AAC LC, 2.0 ch, 255 kbps) (track 1, id 0x0)
+[17:07:38]      + bitrate: 255 kbps, samplerate: 48000 Hz
+[17:07:38]    + mixdown: Stereo
+[17:07:38]    + encoder: AAC (libavcodec)
+[17:07:38]      + bitrate: 160 kbps, samplerate: 48000 Hz
+[17:07:38] sync: expecting 312 video frames
+[17:07:38] encavcodecInit: VP9 encoder
+[17:07:38] encavcodec: encoding at CQ 22.00
+[17:07:38] encavcodec: encoding with stored aspect 81/256
+[17:07:39] Auto-Rotating video 270 degrees
+[17:07:40] sync: first pts video is 0
+[17:07:40] sync: Chapter 1 at frame 1 time 0
+[17:07:40] sync: first pts audio 0x0 is 20088
+[17:08:46] reader: done. 1 scr changes
+[17:09:40] work: average encoding speed for job is 3.524033 fps
+[17:09:40] comb detect: heavy 0 | light 0 | uncombed 312 | total 312
+[17:09:40] decomb: deinterlaced 0 | blended 0 | unfiltered 312 | total 312
+[17:09:40] vfr: 312 frames output, 0 dropped
+[17:09:40] vfr: lost time: 0 (0 frames)
+[17:09:40] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[17:09:40] aac-decoder done: 482 frames, 0 decoder errors
+[17:09:40] hevc-decoder done: 312 frames, 0 decoder errors
+[17:09:40] sync: got 312 frames, 312 expected
+[17:09:40] sync: framerate min 29.918 fps, max 42.755 fps, avg 29.947 fps
+[17:09:41] mux: track 0, 312 frames, 49288188 bytes, 37396.67 kbps, fifo 128
+[17:09:41] mux: track 1, 483 frames, 206347 bytes, 156.56 kbps, fifo 512
+[17:09:41] Finished work at: Fri Oct 17 17:09:41 2025
+
+[17:09:41] libhb: work result = 0

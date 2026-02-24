@@ -1,0 +1,299 @@
+Handbrake Version: 20250906052339-dddf75f75-makepkg (2025100401)
+[20:18:08] gtkgui: Modified Custom Preset: /Custom/CPU (With FIlters)
+[20:18:08] Starting work at: Thu Oct 16 20:18:08 2025
+
+[20:18:08] 1 job(s) to process
+[20:18:08] json job:
+{
+    "Audio": {
+        "AudioList": [
+            {
+                "Bitrate": 160,
+                "CompressionLevel": -1.0,
+                "DRC": 0.0,
+                "DitherMethod": "auto",
+                "Encoder": "av_aac",
+                "Gain": 0.0,
+                "Mixdown": "stereo",
+                "Name": "Stereo",
+                "NormalizeMixLevel": false,
+                "PresetEncoder": "av_aac",
+                "Quality": -3.0,
+                "Samplerate": 0,
+                "Track": 0
+            }
+        ],
+        "CopyMask": [
+            "copy:aac"
+        ],
+        "FallbackEncoder": "av_aac"
+    },
+    "Destination": {
+        "AlignAVStart": false,
+        "ChapterList": [
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 0,
+                    "Seconds": 27,
+                    "Ticks": 2453699
+                },
+                "Name": ""
+            }
+        ],
+        "ChapterMarkers": false,
+        "File": "/home/sudar/Videos/HandBrake/IdlingCarExhaust.mkv",
+        "InlineParameterSets": false,
+        "Mux": "mkv",
+        "Options": {
+            "IpodAtom": false,
+            "Optimize": false
+        }
+    },
+    "Filters": {
+        "FilterList": [
+            {
+                "ID": 4,
+                "Settings": {
+                    "block-height": "16",
+                    "block-thresh": "40",
+                    "block-width": "16",
+                    "filter-mode": "2",
+                    "mode": "3",
+                    "motion-thresh": "3",
+                    "spatial-metric": "2",
+                    "spatial-thresh": "3"
+                }
+            },
+            {
+                "ID": 6,
+                "Settings": {
+                    "mode": "15"
+                }
+            },
+            {
+                "ID": 11,
+                "Settings": {
+                    "mode": 0
+                }
+            },
+            {
+                "ID": 20,
+                "Settings": {
+                    "crop-bottom": 0,
+                    "crop-left": 0,
+                    "crop-right": 0,
+                    "crop-top": 0,
+                    "height": 1080,
+                    "width": 1920
+                }
+            },
+            {
+                "ID": 28,
+                "Settings": {
+                    "bottom": "0",
+                    "color": "black",
+                    "left": "0",
+                    "right": "0",
+                    "top": "0"
+                }
+            }
+        ]
+    },
+    "Metadata": {
+        "CreationTime": "2020-12-11T17:54:58.000000Z"
+    },
+    "PAR": {
+        "Den": 1,
+        "Num": 1
+    },
+    "SequenceID": 0,
+    "Source": {
+        "Angle": 0,
+        "HWDecode": 0,
+        "KeepDuplicateTitles": false,
+        "Path": "/home/sudar/Downloads/6160044-hd_1920_1080_24fps.mp4",
+        "Range": {
+            "End": 1,
+            "Start": 1,
+            "Type": "chapter"
+        },
+        "Title": 1
+    },
+    "Subtitle": {
+        "Search": {
+            "Burn": true,
+            "Default": false,
+            "Enable": false,
+            "Forced": false
+        },
+        "SubtitleList": []
+    },
+    "Video": {
+        "AdapterIndex": -1,
+        "AsyncDepth": 0,
+        "ChromaLocation": 1,
+        "ColorInputFormat": 0,
+        "ColorMatrix": 1,
+        "ColorOutputFormat": 0,
+        "ColorPrimaries": 1,
+        "ColorRange": 0,
+        "ColorTransfer": 1,
+        "Encoder": "ffv1",
+        "HardwareDecode": 0,
+        "Level": "auto",
+        "MultiPass": true,
+        "Options": "",
+        "PasshtruHDRDynamicMetadata": 6,
+        "Preset": "preservation",
+        "Profile": "auto",
+        "Quality": 0.0,
+        "Tune": "",
+        "Turbo": true
+    }
+}
+[20:18:08] CPU: Intel(R) Xeon(R) W-2135 CPU @ 3.70GHz
+[20:18:08]  - logical processor count: 12
+[20:18:08] Intel Quick Sync Video support: no
+[20:18:08] hb_scan: path=/home/sudar/Downloads/6160044-hd_1920_1080_24fps.mp4, title_index=1
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/home/sudar/Downloads/6160044-hd_1920_1080_24fps.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41isomavc1
+    creation_time   : 2020-12-11T17:54:58.000000Z
+  Duration: 00:00:27.26, start: 0.000000, bitrate: 4417 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080, 4162 kb/s, 24 fps, 24 tbr, 24 tbn (default)
+      Metadata:
+        creation_time   : 2020-12-11T17:54:58.000000Z
+        handler_name    : L-SMASH Video Handler
+        vendor_id       : [0][0][0][0]
+        encoder         : AVC Coding
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 253 kb/s (default)
+      Metadata:
+        creation_time   : 2020-12-11T17:54:58.000000Z
+        handler_name    : L-SMASH Audio Handler
+        vendor_id       : [0][0][0][0]
+[20:18:08] scan: decoding previews for title 1
+[20:18:08] scan: audio 0x1: aac, rate=48000Hz, bitrate=253375 Unknown (AAC LC, 2.0 ch, 253 kbps)
+[20:18:09] scan: 10 previews, 1920x1080, 24.000 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1, color profile: 1-1-1, chroma location: left
+[20:18:09] libhb: scan thread found 1 valid title(s)
+[20:18:09] Starting Task: Analysis Pass
+[20:18:09] work: skipping crop/scale filter
+[20:18:09] job configuration:
+[20:18:09]  * source
+[20:18:09]    + /home/sudar/Downloads/6160044-hd_1920_1080_24fps.mp4
+[20:18:09]    + title 1, chapter(s) 1 to 1
+[20:18:09]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[20:18:09]    + data rate: 4417 kbps
+[20:18:09]  * destination
+[20:18:09]    + /home/sudar/Videos/HandBrake/IdlingCarExhaust.mkv
+[20:18:09]    + container: Matroska (libavformat)
+[20:18:09]  * video track
+[20:18:09]    + decoder: h264 8-bit (yuv420p)
+[20:18:09]      + bitrate 4162 kbps
+[20:18:09]    + filters
+[20:18:09]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=3:spatial-thresh=3:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[20:18:09]      + Decomb (mode=47)
+[20:18:09]      + Framerate Shaper (mode=0)
+[20:18:09]        + frame rate: same as source (around 24.000 fps)
+[20:18:09]      + Pad (color=black:top=0:bottom=0:left=0:right=0)
+[20:18:09]    + Output geometry
+[20:18:09]      + storage dimensions: 1920 x 1080
+[20:18:09]      + pixel aspect ratio: 1 : 1
+[20:18:09]      + display dimensions: 1920 x 1080
+[20:18:09]    + encoder: FFV1 (libavcodec)
+[20:18:09]      + preset:  preservation
+[20:18:09]      + profile: auto
+[20:18:09]      + level:   auto
+[20:18:09]      + quality: 0.00 (QP)
+[20:18:09]      + color profile: 1-1-1
+[20:18:09]      + color range: tv
+[20:18:09]      + chroma location: left
+[20:18:09]  * audio track 1
+[20:18:09]    + name: Stereo
+[20:18:09]    + decoder: Unknown (AAC LC, 2.0 ch, 253 kbps) (track 1, id 0x1)
+[20:18:09]      + bitrate: 253 kbps, samplerate: 48000 Hz
+[20:18:09]    + mixdown: Stereo
+[20:18:09]    + encoder: AAC (libavcodec)
+[20:18:09]      + bitrate: 160 kbps, samplerate: 48000 Hz
+[20:18:09] sync: expecting 654 video frames
+[20:18:09] encavcodecInit: FFV1 (libavcodec)
+[20:18:09] encavcodec: encoding at constant quantizer 0
+[20:18:09] encavcodec: encoding with stored aspect 1/1
+[20:18:09] sync: first pts video is 0
+[20:18:09] sync: Chapter 1 at frame 1 time 0
+[20:18:09] sync: first pts audio 0x1 is 0
+[20:18:18] reader: done. 1 scr changes
+[20:18:20] work: average encoding speed for job is 63.772194 fps
+[20:18:20] comb detect: heavy 0 | light 0 | uncombed 654 | total 654
+[20:18:20] decomb: deinterlaced 0 | blended 0 | unfiltered 654 | total 654
+[20:18:20] vfr: 654 frames output, 0 dropped
+[20:18:20] vfr: lost time: 0 (0 frames)
+[20:18:20] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[20:18:20] aac-decoder done: 1278 frames, 0 decoder errors
+[20:18:20] h264-decoder done: 654 frames, 0 decoder errors
+[20:18:20] sync: got 654 frames, 654 expected
+[20:18:20] sync: framerate min 24.000 fps, max 24.000 fps, avg 24.000 fps
+[20:18:20] Starting Task: Encoding Pass
+[20:18:20] work: skipping crop/scale filter
+[20:18:20] job configuration:
+[20:18:20]  * source
+[20:18:20]    + /home/sudar/Downloads/6160044-hd_1920_1080_24fps.mp4
+[20:18:20]    + title 1, chapter(s) 1 to 1
+[20:18:20]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[20:18:20]    + data rate: 4417 kbps
+[20:18:20]  * destination
+[20:18:20]    + /home/sudar/Videos/HandBrake/IdlingCarExhaust.mkv
+[20:18:20]    + container: Matroska (libavformat)
+[20:18:20]  * video track
+[20:18:20]    + decoder: h264 8-bit (yuv420p)
+[20:18:20]      + bitrate 4162 kbps
+[20:18:20]    + filters
+[20:18:20]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=3:spatial-thresh=3:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[20:18:20]      + Decomb (mode=47)
+[20:18:20]      + Framerate Shaper (mode=0)
+[20:18:20]        + frame rate: same as source (around 24.000 fps)
+[20:18:20]      + Pad (color=black:top=0:bottom=0:left=0:right=0)
+[20:18:20]    + Output geometry
+[20:18:20]      + storage dimensions: 1920 x 1080
+[20:18:20]      + pixel aspect ratio: 1 : 1
+[20:18:20]      + display dimensions: 1920 x 1080
+[20:18:20]    + encoder: FFV1 (libavcodec)
+[20:18:20]      + preset:  preservation
+[20:18:20]      + profile: auto
+[20:18:20]      + level:   auto
+[20:18:20]      + quality: 0.00 (QP)
+[20:18:20]      + color profile: 1-1-1
+[20:18:20]      + color range: tv
+[20:18:20]      + chroma location: left
+[20:18:20]  * audio track 1
+[20:18:20]    + name: Stereo
+[20:18:20]    + decoder: Unknown (AAC LC, 2.0 ch, 253 kbps) (track 1, id 0x1)
+[20:18:20]      + bitrate: 253 kbps, samplerate: 48000 Hz
+[20:18:20]    + mixdown: Stereo
+[20:18:20]    + encoder: AAC (libavcodec)
+[20:18:20]      + bitrate: 160 kbps, samplerate: 48000 Hz
+[20:18:20] sync: expecting 654 video frames
+[20:18:20] encavcodecInit: FFV1 (libavcodec)
+[20:18:20] encavcodec: encoding at constant quantizer 0
+[20:18:20] encavcodec: encoding with stored aspect 1/1
+[20:18:21] sync: first pts video is 0
+[20:18:21] sync: Chapter 1 at frame 1 time 0
+[20:18:21] sync: first pts audio 0x1 is 0
+[20:18:29] reader: done. 1 scr changes
+[20:18:30] work: average encoding speed for job is 75.409401 fps
+[20:18:30] comb detect: heavy 0 | light 0 | uncombed 654 | total 654
+[20:18:30] decomb: deinterlaced 0 | blended 0 | unfiltered 654 | total 654
+[20:18:30] vfr: 654 frames output, 0 dropped
+[20:18:30] vfr: lost time: 0 (0 frames)
+[20:18:30] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[20:18:30] aac-decoder done: 1278 frames, 0 decoder errors
+[20:18:30] h264-decoder done: 654 frames, 0 decoder errors
+[20:18:30] sync: got 654 frames, 654 expected
+[20:18:30] sync: framerate min 24.000 fps, max 24.000 fps, avg 24.000 fps
+[20:18:30] mux: track 0, 654 frames, 432323166 bytes, 126726.79 kbps, fifo 32
+[20:18:30] mux: track 1, 1279 frames, 7759 bytes, 2.27 kbps, fifo 256
+[20:18:30] Finished work at: Thu Oct 16 20:18:30 2025
+
+[20:18:30] libhb: work result = 0

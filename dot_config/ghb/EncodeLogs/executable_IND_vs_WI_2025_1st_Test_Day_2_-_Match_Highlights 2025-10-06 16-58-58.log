@@ -1,0 +1,218 @@
+Handbrake Version: 20250906052339-dddf75f75-makepkg (2025100401)
+[16:58:58] gtkgui: Custom Preset: /Custom/NVENC (No Filters)
+[16:58:58] Starting work at: Mon Oct  6 16:58:58 2025
+
+[16:58:58] 1 job(s) to process
+[16:58:58] json job:
+{
+    "Audio": {
+        "AudioList": [
+            {
+                "Bitrate": 512,
+                "CompressionLevel": -1.0,
+                "DRC": 0.0,
+                "DitherMethod": "auto",
+                "Encoder": "opus",
+                "Gain": 0.0,
+                "Mixdown": "stereo",
+                "Name": "Stereo",
+                "NormalizeMixLevel": false,
+                "PresetEncoder": "av_aac",
+                "Quality": -3.0,
+                "Samplerate": 0,
+                "Track": 0
+            }
+        ],
+        "CopyMask": [
+            "copy:aac"
+        ],
+        "FallbackEncoder": "av_aac"
+    },
+    "Destination": {
+        "AlignAVStart": false,
+        "ChapterList": [
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 10,
+                    "Seconds": 47,
+                    "Ticks": 58247010
+                },
+                "Name": ""
+            }
+        ],
+        "ChapterMarkers": false,
+        "File": "/home/sudar/Videos/HandBrake/IND_vs_WI_2025_1st_Test_Day_2_-_Match_Highlights.mkv",
+        "InlineParameterSets": false,
+        "Mux": "mkv",
+        "Options": {
+            "IpodAtom": false,
+            "Optimize": false
+        }
+    },
+    "Filters": {
+        "FilterList": [
+            {
+                "ID": 11,
+                "Settings": {
+                    "mode": 0
+                }
+            },
+            {
+                "ID": 20,
+                "Settings": {
+                    "crop-bottom": 0,
+                    "crop-left": 0,
+                    "crop-right": 0,
+                    "crop-top": 0,
+                    "height": 1080,
+                    "width": 1920
+                }
+            },
+            {
+                "ID": 28,
+                "Settings": {
+                    "bottom": "0",
+                    "color": "black",
+                    "left": "0",
+                    "right": "0",
+                    "top": "0"
+                }
+            }
+        ]
+    },
+    "Metadata": {},
+    "PAR": {
+        "Den": 1,
+        "Num": 1
+    },
+    "SequenceID": 0,
+    "Source": {
+        "Angle": 0,
+        "HWDecode": 0,
+        "KeepDuplicateTitles": false,
+        "Path": "/home/sudar/Videos/YouTube/IND_vs_WI_2025_1st_Test_Day_2_-_Match_Highlights.mkv",
+        "Range": {
+            "End": 1,
+            "Start": 1,
+            "Type": "chapter"
+        },
+        "Title": 1
+    },
+    "Subtitle": {
+        "Search": {
+            "Burn": true,
+            "Default": false,
+            "Enable": false,
+            "Forced": false
+        },
+        "SubtitleList": []
+    },
+    "Video": {
+        "AdapterIndex": -1,
+        "AsyncDepth": 0,
+        "ChromaLocation": 1,
+        "ColorInputFormat": 0,
+        "ColorMatrix": 1,
+        "ColorOutputFormat": 0,
+        "ColorPrimaries": 1,
+        "ColorRange": 0,
+        "ColorTransfer": 1,
+        "Encoder": "nvenc_h265",
+        "HardwareDecode": 0,
+        "Level": "auto",
+        "MultiPass": false,
+        "Options": "",
+        "PasshtruHDRDynamicMetadata": 6,
+        "Preset": "slowest",
+        "Profile": "auto",
+        "Quality": 1.0,
+        "Tune": "",
+        "Turbo": false
+    }
+}
+[16:58:58] CPU: Intel(R) Xeon(R) W-2135 CPU @ 3.70GHz
+[16:58:58]  - logical processor count: 12
+[16:58:58] Intel Quick Sync Video support: no
+[16:58:58] hb_scan: path=/home/sudar/Videos/YouTube/IND_vs_WI_2025_1st_Test_Day_2_-_Match_Highlights.mkv, title_index=1
+Input #0, matroska,webm, from '/home/sudar/Videos/YouTube/IND_vs_WI_2025_1st_Test_Day_2_-_Match_Highlights.mkv':
+  Metadata:
+    COMPATIBLE_BRANDS: isomiso2avc1mp41
+    MAJOR_BRAND     : isom
+    MINOR_VERSION   : 512
+    ENCODER         : Lavf62.3.100
+  Duration: 00:10:47.19, start: 0.000000, bitrate: 3685 kb/s
+  Stream #0:0: Video: h264 (High), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 25 fps, 25 tbr, 1k tbn (default)
+      Metadata:
+        HANDLER_NAME    : VideoHandler
+        VENDOR_ID       : [0][0][0][0]
+        DURATION        : 00:10:47.120000000
+  Stream #0:1(eng): Audio: aac (LC), 48000 Hz, stereo, fltp (default)
+      Metadata:
+        HANDLER_NAME    : Bento4 Sound Handler
+        VENDOR_ID       : [0][0][0][0]
+        DURATION        : 00:10:47.189000000
+[16:58:58] scan: decoding previews for title 1
+[16:58:58] scan: audio 0x1: aac, rate=48000Hz, bitrate=1 English (AAC LC, 2.0 ch)
+[16:58:58] using container PAR 1:1
+[16:58:58] scan: 10 previews, 1920x1080, 25.000 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1, color profile: 1-1-1, chroma location: left
+[16:58:58] libhb: scan thread found 1 valid title(s)
+[16:58:58] Starting Task: Encoding Pass
+[16:58:58] work: skipping crop/scale filter
+[16:58:58] work: compression level not specified, track 1 setting compression level 10.00
+[16:58:58] job configuration:
+[16:58:58]  * source
+[16:58:58]    + /home/sudar/Videos/YouTube/IND_vs_WI_2025_1st_Test_Day_2_-_Match_Highlights.mkv
+[16:58:58]    + title 1, chapter(s) 1 to 1
+[16:58:58]    + container: matroska,webm
+[16:58:58]    + data rate: 3685 kbps
+[16:58:58]  * destination
+[16:58:58]    + /home/sudar/Videos/HandBrake/IND_vs_WI_2025_1st_Test_Day_2_-_Match_Highlights.mkv
+[16:58:58]    + container: Matroska (libavformat)
+[16:58:58]  * video track
+[16:58:58]    + decoder: h264 8-bit (yuv420p)
+[16:58:58]    + filters
+[16:58:58]      + Framerate Shaper (mode=0)
+[16:58:58]        + frame rate: same as source (around 25.000 fps)
+[16:58:58]      + Pad (color=black:top=0:bottom=0:left=0:right=0)
+[16:58:58]    + Output geometry
+[16:58:58]      + storage dimensions: 1920 x 1080
+[16:58:58]      + pixel aspect ratio: 1 : 1
+[16:58:58]      + display dimensions: 1920 x 1080
+[16:58:58]    + encoder: H.265 (NVEnc)
+[16:58:58]      + preset:  slowest
+[16:58:58]      + profile: auto
+[16:58:58]      + level:   auto
+[16:58:58]      + quality: 1.00 (CQ)
+[16:58:58]      + color profile: 1-1-1
+[16:58:58]      + color range: tv
+[16:58:58]      + chroma location: left
+[16:58:58]  * audio track 1
+[16:58:58]    + name: Stereo
+[16:58:58]    + decoder: English (AAC LC, 2.0 ch) (track 1, id 0x1)
+[16:58:58]      + samplerate: 48000 Hz
+[16:58:58]    + mixdown: Stereo
+[16:58:58]    + encoder: Opus (libopus)
+[16:58:58]      + bitrate: 512 kbps, samplerate: 48000 Hz
+[16:58:58]      + compression level: 10.00
+[16:58:58] sync: expecting 16179 video frames
+[16:58:58] encavcodecInit: H.265 (Nvidia NVENC)
+[16:58:58] encavcodec: encoding at rc=vbr, 1.00
+[16:58:58] encavcodec: encoding with stored aspect 1/1
+[16:58:58] sync: first pts video is 0
+[16:58:58] sync: Chapter 1 at frame 1 time 0
+[16:58:58] sync: first pts audio 0x1 is 0
+[17:00:33] reader: done. 1 scr changes
+[17:00:34] work: average encoding speed for job is 169.617050 fps
+[17:00:34] vfr: 16178 frames output, 0 dropped
+[17:00:34] vfr: lost time: 0 (0 frames)
+[17:00:34] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[17:00:34] aac-decoder done: 30337 frames, 0 decoder errors
+[17:00:34] h264-decoder done: 16178 frames, 0 decoder errors
+[17:00:34] sync: got 16178 frames, 16179 expected
+[17:00:34] sync: framerate min 25.000 fps, max 25.000 fps, avg 25.000 fps
+[17:00:34] mux: track 0, 16178 frames, 776631659 bytes, 9599.30 kbps, fifo 256
+[17:00:34] mux: track 1, 32360 frames, 38891089 bytes, 480.70 kbps, fifo 1024
+[17:00:34] Finished work at: Mon Oct  6 17:00:34 2025
+
+[17:00:34] libhb: work result = 0

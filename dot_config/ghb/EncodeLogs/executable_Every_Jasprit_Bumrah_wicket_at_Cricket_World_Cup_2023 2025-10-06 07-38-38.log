@@ -1,0 +1,206 @@
+Handbrake Version: 20250906052339-dddf75f75-makepkg (2025100401)
+[07:38:38] gtkgui: Custom Preset: /Custom/NVENC (No Filters)
+[07:38:38] Starting work at: Mon Oct  6 07:38:38 2025
+
+[07:38:38] 1 job(s) to process
+[07:38:38] json job:
+{
+    "Audio": {
+        "AudioList": [
+            {
+                "Bitrate": 160,
+                "CompressionLevel": -1.0,
+                "DRC": 0.0,
+                "DitherMethod": "auto",
+                "Encoder": "copy:opus",
+                "Gain": 0.0,
+                "Mixdown": "none",
+                "Name": "Stereo",
+                "NormalizeMixLevel": false,
+                "PresetEncoder": "av_aac",
+                "Quality": -3.0,
+                "Samplerate": 0,
+                "Track": 0
+            }
+        ],
+        "CopyMask": [
+            "copy:aac"
+        ],
+        "FallbackEncoder": "av_aac"
+    },
+    "Destination": {
+        "AlignAVStart": false,
+        "ChapterList": [
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 6,
+                    "Seconds": 9,
+                    "Ticks": 33244920
+                },
+                "Name": ""
+            }
+        ],
+        "ChapterMarkers": false,
+        "File": "/home/sudar/Videos/HandBrake/Every_Jasprit_Bumrah_wicket_at_Cricket_World_Cup_2023.mkv",
+        "InlineParameterSets": false,
+        "Mux": "mkv",
+        "Options": {
+            "IpodAtom": false,
+            "Optimize": false
+        }
+    },
+    "Filters": {
+        "FilterList": [
+            {
+                "ID": 11,
+                "Settings": {
+                    "mode": 0
+                }
+            },
+            {
+                "ID": 20,
+                "Settings": {
+                    "crop-bottom": 0,
+                    "crop-left": 0,
+                    "crop-right": 0,
+                    "crop-top": 0,
+                    "height": 1080,
+                    "width": 1920
+                }
+            },
+            {
+                "ID": 28,
+                "Settings": {
+                    "bottom": "0",
+                    "color": "black",
+                    "left": "0",
+                    "right": "0",
+                    "top": "0"
+                }
+            }
+        ]
+    },
+    "Metadata": {},
+    "PAR": {
+        "Den": 1,
+        "Num": 1
+    },
+    "SequenceID": 0,
+    "Source": {
+        "Angle": 0,
+        "HWDecode": 0,
+        "KeepDuplicateTitles": false,
+        "Path": "/home/sudar/Videos/YouTube/Every_Jasprit_Bumrah_wicket_at_Cricket_World_Cup_2023.webm",
+        "Range": {
+            "End": 1,
+            "Start": 1,
+            "Type": "chapter"
+        },
+        "Title": 1
+    },
+    "Subtitle": {
+        "Search": {
+            "Burn": true,
+            "Default": false,
+            "Enable": false,
+            "Forced": false
+        },
+        "SubtitleList": []
+    },
+    "Video": {
+        "AdapterIndex": -1,
+        "AsyncDepth": 0,
+        "ChromaLocation": 0,
+        "ColorInputFormat": 0,
+        "ColorMatrix": 1,
+        "ColorOutputFormat": 0,
+        "ColorPrimaries": 1,
+        "ColorRange": 0,
+        "ColorTransfer": 1,
+        "Encoder": "nvenc_h265",
+        "HardwareDecode": 0,
+        "Level": "auto",
+        "MultiPass": false,
+        "Options": "",
+        "PasshtruHDRDynamicMetadata": 6,
+        "Preset": "slowest",
+        "Profile": "auto",
+        "Quality": 1.0,
+        "Tune": "",
+        "Turbo": false
+    }
+}
+[07:38:38] CPU: Intel(R) Xeon(R) W-2135 CPU @ 3.70GHz
+[07:38:38]  - logical processor count: 12
+[07:38:38] Intel Quick Sync Video support: no
+[07:38:38] hb_scan: path=/home/sudar/Videos/YouTube/Every_Jasprit_Bumrah_wicket_at_Cricket_World_Cup_2023.webm, title_index=1
+Input #0, matroska,webm, from '/home/sudar/Videos/YouTube/Every_Jasprit_Bumrah_wicket_at_Cricket_World_Cup_2023.webm':
+  Metadata:
+    ENCODER         : Lavf61.7.100
+  Duration: 00:06:09.39, start: 0.000000, bitrate: 1389 kb/s
+  Stream #0:0(eng): Video: vp9 (Profile 0), yuv420p(tv, bt709), 1920x1080, SAR 1:1 DAR 16:9, 25 fps, 25 tbr, 1k tbn (default)
+      Metadata:
+        DURATION        : 00:06:09.360000000
+  Stream #0:1(eng): Audio: opus, 48000 Hz, stereo, fltp (default)
+      Metadata:
+        DURATION        : 00:06:09.388000000
+[07:38:38] scan: decoding previews for title 1
+[07:38:38] scan: audio 0x1: opus, rate=48000Hz, bitrate=1 English (Opus, 2.0 ch)
+[07:38:38] scan: 10 previews, 1920x1080, 25.000 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1, color profile: 1-1-1, chroma location: unspecified
+[07:38:38] libhb: scan thread found 1 valid title(s)
+[07:38:38] Starting Task: Encoding Pass
+[07:38:38] work: skipping crop/scale filter
+[07:38:38] job configuration:
+[07:38:38]  * source
+[07:38:38]    + /home/sudar/Videos/YouTube/Every_Jasprit_Bumrah_wicket_at_Cricket_World_Cup_2023.webm
+[07:38:38]    + title 1, chapter(s) 1 to 1
+[07:38:38]    + container: matroska,webm
+[07:38:38]    + data rate: 1389 kbps
+[07:38:38]  * destination
+[07:38:38]    + /home/sudar/Videos/HandBrake/Every_Jasprit_Bumrah_wicket_at_Cricket_World_Cup_2023.mkv
+[07:38:38]    + container: Matroska (libavformat)
+[07:38:38]  * video track
+[07:38:38]    + decoder: vp9 8-bit (yuv420p)
+[07:38:38]    + filters
+[07:38:38]      + Framerate Shaper (mode=0)
+[07:38:38]        + frame rate: same as source (around 25.000 fps)
+[07:38:38]      + Pad (color=black:top=0:bottom=0:left=0:right=0)
+[07:38:38]    + Output geometry
+[07:38:38]      + storage dimensions: 1920 x 1080
+[07:38:38]      + pixel aspect ratio: 1 : 1
+[07:38:38]      + display dimensions: 1920 x 1080
+[07:38:38]    + encoder: H.265 (NVEnc)
+[07:38:38]      + preset:  slowest
+[07:38:38]      + profile: auto
+[07:38:38]      + level:   auto
+[07:38:38]      + quality: 1.00 (CQ)
+[07:38:38]      + color profile: 1-1-1
+[07:38:38]      + color range: tv
+[07:38:38]      + chroma location: unspecified
+[07:38:38]  * audio track 1
+[07:38:38]    + name: Stereo
+[07:38:38]    + decoder: English (Opus, 2.0 ch) (track 1, id 0x1)
+[07:38:38]      + samplerate: 48000 Hz
+[07:38:38]    + Opus Passthru
+[07:38:38] sync: expecting 9234 video frames
+[07:38:38] encavcodecInit: H.265 (Nvidia NVENC)
+[07:38:38] encavcodec: encoding at rc=vbr, 1.00
+[07:38:38] encavcodec: encoding with stored aspect 1/1
+[07:38:38] sync: first pts video is 0
+[07:38:38] sync: Chapter 1 at frame 1 time 0
+[07:38:38] sync: first pts audio 0x1 is 585
+[07:39:33] reader: done. 1 scr changes
+[07:39:34] work: average encoding speed for job is 167.249420 fps
+[07:39:34] vfr: 9234 frames output, 0 dropped
+[07:39:34] vfr: lost time: 0 (0 frames)
+[07:39:34] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[07:39:34] opus-decoder done: 18469 frames, 0 decoder errors
+[07:39:34] vp9-decoder done: 9234 frames, 0 decoder errors
+[07:39:34] sync: got 9234 frames, 9234 expected
+[07:39:34] sync: framerate min 25.000 fps, max 25.000 fps, avg 25.000 fps
+[07:39:34] mux: track 0, 9234 frames, 440694469 bytes, 9542.97 kbps, fifo 256
+[07:39:34] mux: track 1, 18469 frames, 5619577 bytes, 121.69 kbps, fifo 1024
+[07:39:34] Finished work at: Mon Oct  6 07:39:34 2025
+
+[07:39:34] libhb: work result = 0

@@ -1,0 +1,289 @@
+Handbrake Version: 20250906052339-dddf75f75-makepkg (2025100401)
+[19:35:48] gtkgui: Custom Preset: /Custom/CPU (With FIlters) (VP9)
+[19:35:48] Starting work at: Mon Dec 22 19:35:48 2025
+
+[19:35:48] 1 job(s) to process
+[19:35:48] json job:
+{
+    "Audio": {
+        "AudioList": [
+            {
+                "Bitrate": 160,
+                "CompressionLevel": -1.0,
+                "DRC": 0.0,
+                "DitherMethod": "auto",
+                "Encoder": "av_aac",
+                "Gain": 0.0,
+                "Mixdown": "stereo",
+                "Name": "Stereo",
+                "NormalizeMixLevel": false,
+                "PresetEncoder": "av_aac",
+                "Quality": -3.0,
+                "Samplerate": 0,
+                "Track": 0
+            }
+        ],
+        "CopyMask": [
+            "copy:aac"
+        ],
+        "FallbackEncoder": "av_aac"
+    },
+    "Destination": {
+        "AlignAVStart": false,
+        "ChapterList": [
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 0,
+                    "Seconds": 26,
+                    "Ticks": 2389140
+                },
+                "Name": ""
+            }
+        ],
+        "ChapterMarkers": false,
+        "File": "/home/sudar/Downloads/My video - Date5.mkv",
+        "InlineParameterSets": false,
+        "Mux": "mkv",
+        "Options": {
+            "IpodAtom": false,
+            "Optimize": false
+        }
+    },
+    "Filters": {
+        "FilterList": [
+            {
+                "ID": 4,
+                "Settings": {
+                    "block-height": "16",
+                    "block-thresh": "40",
+                    "block-width": "16",
+                    "filter-mode": "2",
+                    "mode": "3",
+                    "motion-thresh": "3",
+                    "spatial-metric": "2",
+                    "spatial-thresh": "3"
+                }
+            },
+            {
+                "ID": 6,
+                "Settings": {
+                    "mode": "15"
+                }
+            },
+            {
+                "ID": 11,
+                "Settings": {
+                    "mode": 0
+                }
+            },
+            {
+                "ID": 20,
+                "Settings": {
+                    "crop-bottom": 0,
+                    "crop-left": 0,
+                    "crop-right": 0,
+                    "crop-top": 0,
+                    "height": 1080,
+                    "width": 1920
+                }
+            },
+            {
+                "ID": 28,
+                "Settings": {
+                    "bottom": "0",
+                    "color": "black",
+                    "left": "0",
+                    "right": "0",
+                    "top": "0"
+                }
+            }
+        ]
+    },
+    "Metadata": {},
+    "PAR": {
+        "Den": 1,
+        "Num": 1
+    },
+    "SequenceID": 0,
+    "Source": {
+        "Angle": 0,
+        "HWDecode": 0,
+        "KeepDuplicateTitles": false,
+        "Path": "/home/sudar/Downloads/My video - Date5.webm",
+        "Range": {
+            "End": 1,
+            "Start": 1,
+            "Type": "chapter"
+        },
+        "Title": 1
+    },
+    "Subtitle": {
+        "Search": {
+            "Burn": true,
+            "Default": false,
+            "Enable": false,
+            "Forced": false
+        },
+        "SubtitleList": []
+    },
+    "Video": {
+        "AdapterIndex": -1,
+        "AsyncDepth": 0,
+        "ChromaLocation": 0,
+        "ColorInputFormat": 0,
+        "ColorMatrix": 5,
+        "ColorOutputFormat": 0,
+        "ColorPrimaries": 1,
+        "ColorRange": 0,
+        "ColorTransfer": 1,
+        "Encoder": "VP9",
+        "HardwareDecode": 0,
+        "Level": "auto",
+        "MultiPass": true,
+        "Options": "",
+        "PasshtruHDRDynamicMetadata": 6,
+        "Preset": "medium",
+        "Profile": "auto",
+        "Quality": 22.0,
+        "Tune": "",
+        "Turbo": true
+    }
+}
+[19:35:48] CPU: Intel(R) Xeon(R) W-2135 CPU @ 3.70GHz
+[19:35:48]  - logical processor count: 12
+[19:35:48] Intel Quick Sync Video support: no
+[19:35:48] hb_scan: path=/home/sudar/Downloads/My video - Date5.webm, title_index=1
+Input #0, matroska,webm, from '/home/sudar/Downloads/My video - Date5.webm':
+  Metadata:
+    ENCODER         : Lavf58.20.100
+  Duration: 00:00:26.55, start: -0.007000, bitrate: 2621 kb/s
+  Stream #0:0(eng): Video: vp8, yuv420p(progressive), 1280x720, SAR 1:1 DAR 16:9, 14.99 fps, 14.99 tbr, 1k tbn (default)
+      Metadata:
+        DURATION        : 00:00:26.546000000
+  Stream #0:1(eng): Audio: opus, 48000 Hz, stereo, fltp (default)
+      Metadata:
+        DURATION        : 00:00:26.520000000
+[19:35:48] scan: decoding previews for title 1
+[19:35:48] scan: audio 0x1: opus, rate=48000Hz, bitrate=1 English (Opus, 2.0 ch)
+[19:35:48] scan: 10 previews, 1280x720, 14.985 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1, color profile: 1-1-5, chroma location: unspecified
+[19:35:48] libhb: scan thread found 1 valid title(s)
+[19:35:48] Starting Task: Analysis Pass
+[19:35:48] job configuration:
+[19:35:48]  * source
+[19:35:48]    + /home/sudar/Downloads/My video - Date5.webm
+[19:35:48]    + title 1, chapter(s) 1 to 1
+[19:35:48]    + container: matroska,webm
+[19:35:48]    + data rate: 2621 kbps
+[19:35:48]  * destination
+[19:35:48]    + /home/sudar/Downloads/My video - Date5.mkv
+[19:35:48]    + container: Matroska (libavformat)
+[19:35:48]  * video track
+[19:35:48]    + decoder: vp8 8-bit (yuv420p)
+[19:35:48]    + filters
+[19:35:48]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=3:spatial-thresh=3:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[19:35:48]      + Decomb (mode=47)
+[19:35:48]      + Framerate Shaper (mode=0)
+[19:35:48]        + frame rate: same as source (around 14.985 fps)
+[19:35:48]      + Crop and Scale (width=1920:height=1080:crop-top=0:crop-bottom=0:crop-left=0:crop-right=0)
+[19:35:48]        + source: 1280 * 720, crop (0/0/0/0): 1280 * 720, scale: 1920 * 1080
+[19:35:48]      + Pad (color=black:top=0:bottom=0:left=0:right=0)
+[19:35:48]    + Output geometry
+[19:35:48]      + storage dimensions: 1920 x 1080
+[19:35:48]      + pixel aspect ratio: 1 : 1
+[19:35:48]      + display dimensions: 1920 x 1080
+[19:35:48]    + encoder: VP9 (libvpx)
+[19:35:48]      + preset:  medium
+[19:35:48]      + profile: auto
+[19:35:48]      + level:   auto
+[19:35:48]      + quality: 22.00 (CQ)
+[19:35:48]      + color profile: 1-1-5
+[19:35:48]      + color range: tv
+[19:35:48]      + chroma location: unspecified
+[19:35:48]  * audio track 1
+[19:35:48]    + name: Stereo
+[19:35:48]    + decoder: English (Opus, 2.0 ch) (track 1, id 0x1)
+[19:35:48]      + samplerate: 48000 Hz
+[19:35:48]    + mixdown: Stereo
+[19:35:48]    + encoder: AAC (libavcodec)
+[19:35:48]      + bitrate: 160 kbps, samplerate: 48000 Hz
+[19:35:48] sync: expecting 397 video frames
+[19:35:48] encavcodecInit: VP9 encoder
+[19:35:48] encavcodec: encoding at CQ 22.00
+[19:35:48] encavcodec: encoding with stored aspect 1/1
+[19:35:48] sync: first pts video is 0
+[19:35:48] sync: Chapter 1 at frame 1 time 0
+[19:35:48] sync: first pts audio 0x1 is 450
+[19:35:54] reader: done. 1 scr changes
+[19:35:56] work: average encoding speed for job is 60.376625 fps
+[19:35:56] comb detect: heavy 0 | light 4 | uncombed 393 | total 397
+[19:35:56] decomb: deinterlaced 0 | blended 4 | unfiltered 393 | total 397
+[19:35:56] vfr: 397 frames output, 0 dropped
+[19:35:56] vfr: lost time: 0 (0 frames)
+[19:35:56] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[19:35:56] opus-decoder done: 1327 frames, 0 decoder errors
+[19:35:56] vp8-decoder done: 397 frames, 0 decoder errors
+[19:35:56] sync: got 397 frames, 397 expected
+[19:35:56] sync: framerate min 10.870 fps, max 14.985 fps, avg 14.967 fps
+[19:35:56] Starting Task: Encoding Pass
+[19:35:56] job configuration:
+[19:35:56]  * source
+[19:35:56]    + /home/sudar/Downloads/My video - Date5.webm
+[19:35:56]    + title 1, chapter(s) 1 to 1
+[19:35:56]    + container: matroska,webm
+[19:35:56]    + data rate: 2621 kbps
+[19:35:56]  * destination
+[19:35:56]    + /home/sudar/Downloads/My video - Date5.mkv
+[19:35:56]    + container: Matroska (libavformat)
+[19:35:56]  * video track
+[19:35:56]    + decoder: vp8 8-bit (yuv420p)
+[19:35:56]    + filters
+[19:35:56]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=3:spatial-thresh=3:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[19:35:56]      + Decomb (mode=47)
+[19:35:56]      + Framerate Shaper (mode=0)
+[19:35:56]        + frame rate: same as source (around 14.985 fps)
+[19:35:56]      + Crop and Scale (width=1920:height=1080:crop-top=0:crop-bottom=0:crop-left=0:crop-right=0)
+[19:35:56]        + source: 1280 * 720, crop (0/0/0/0): 1280 * 720, scale: 1920 * 1080
+[19:35:56]      + Pad (color=black:top=0:bottom=0:left=0:right=0)
+[19:35:56]    + Output geometry
+[19:35:56]      + storage dimensions: 1920 x 1080
+[19:35:56]      + pixel aspect ratio: 1 : 1
+[19:35:56]      + display dimensions: 1920 x 1080
+[19:35:56]    + encoder: VP9 (libvpx)
+[19:35:56]      + preset:  medium
+[19:35:56]      + profile: auto
+[19:35:56]      + level:   auto
+[19:35:56]      + quality: 22.00 (CQ)
+[19:35:56]      + color profile: 1-1-5
+[19:35:56]      + color range: tv
+[19:35:56]      + chroma location: unspecified
+[19:35:56]  * audio track 1
+[19:35:56]    + name: Stereo
+[19:35:56]    + decoder: English (Opus, 2.0 ch) (track 1, id 0x1)
+[19:35:56]      + samplerate: 48000 Hz
+[19:35:56]    + mixdown: Stereo
+[19:35:56]    + encoder: AAC (libavcodec)
+[19:35:56]      + bitrate: 160 kbps, samplerate: 48000 Hz
+[19:35:56] sync: expecting 397 video frames
+[19:35:56] encavcodecInit: VP9 encoder
+[19:35:56] encavcodec: encoding at CQ 22.00
+[19:35:56] encavcodec: encoding with stored aspect 1/1
+[19:35:56] sync: first pts video is 0
+[19:35:56] sync: Chapter 1 at frame 1 time 0
+[19:35:56] sync: first pts audio 0x1 is 450
+[19:36:47] reader: done. 1 scr changes
+[19:37:11] work: average encoding speed for job is 6.361599 fps
+[19:37:11] comb detect: heavy 0 | light 4 | uncombed 393 | total 397
+[19:37:12] decomb: deinterlaced 0 | blended 4 | unfiltered 393 | total 397
+[19:37:12] vfr: 397 frames output, 0 dropped
+[19:37:12] vfr: lost time: 0 (0 frames)
+[19:37:12] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[19:37:12] opus-decoder done: 1327 frames, 0 decoder errors
+[19:37:12] vp8-decoder done: 397 frames, 0 decoder errors
+[19:37:12] sync: got 397 frames, 397 expected
+[19:37:12] sync: framerate min 10.870 fps, max 14.985 fps, avg 14.967 fps
+[19:37:12] mux: track 0, 397 frames, 14132319 bytes, 4250.32 kbps, fifo 512
+[19:37:12] mux: track 1, 1244 frames, 156282 bytes, 47.00 kbps, fifo 2048
+[19:37:12] Finished work at: Mon Dec 22 19:37:12 2025
+
+[19:37:12] libhb: work result = 0

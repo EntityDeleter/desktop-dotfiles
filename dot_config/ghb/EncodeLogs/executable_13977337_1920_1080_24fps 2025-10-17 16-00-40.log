@@ -1,0 +1,265 @@
+Handbrake Version: 20250906052339-dddf75f75-makepkg (2025100401)
+
+(fr.handbrake.ghb:5): GLib-GIO-CRITICAL **: 16:00:40.723: g_bus_watch_name_on_connection: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+
+(fr.handbrake.ghb:5): GLib-GIO-CRITICAL **: 16:00:40.723: g_dbus_connection_signal_subscribe: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+
+(fr.handbrake.ghb:5): GLib-GIO-CRITICAL **: 16:00:40.723: g_dbus_connection_call_internal: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+[16:00:40] gtkgui: Custom Preset: /Custom/CPU (With FIlters) (VP9)
+[16:00:40] Starting work at: Fri Oct 17 16:00:40 2025
+
+[16:00:40] 1 job(s) to process
+[16:00:40] json job:
+{
+    "Audio": {
+        "AudioList": [],
+        "CopyMask": [],
+        "FallbackEncoder": 0
+    },
+    "Destination": {
+        "AlignAVStart": false,
+        "ChapterList": [
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 0,
+                    "Seconds": 6,
+                    "Ticks": 563062
+                },
+                "Name": ""
+            }
+        ],
+        "ChapterMarkers": false,
+        "File": "/mnt/iMac/DaVinci Resolve/IICAQM/13977337_1920_1080_24fps.mkv",
+        "InlineParameterSets": false,
+        "Mux": "mkv",
+        "Options": {
+            "IpodAtom": false,
+            "Optimize": false
+        }
+    },
+    "Filters": {
+        "FilterList": [
+            {
+                "ID": 4,
+                "Settings": {
+                    "block-height": "16",
+                    "block-thresh": "40",
+                    "block-width": "16",
+                    "filter-mode": "2",
+                    "mode": "3",
+                    "motion-thresh": "3",
+                    "spatial-metric": "2",
+                    "spatial-thresh": "3"
+                }
+            },
+            {
+                "ID": 6,
+                "Settings": {
+                    "mode": "15"
+                }
+            },
+            {
+                "ID": 11,
+                "Settings": {
+                    "mode": 0
+                }
+            },
+            {
+                "ID": 20,
+                "Settings": {
+                    "crop-bottom": 0,
+                    "crop-left": 0,
+                    "crop-right": 0,
+                    "crop-top": 0,
+                    "height": 1080,
+                    "width": 1920
+                }
+            },
+            {
+                "ID": 28,
+                "Settings": {
+                    "bottom": "0",
+                    "color": "black",
+                    "left": "0",
+                    "right": "0",
+                    "top": "0"
+                }
+            }
+        ]
+    },
+    "Metadata": {},
+    "PAR": {
+        "Den": 1,
+        "Num": 1
+    },
+    "SequenceID": 0,
+    "Source": {
+        "Angle": 0,
+        "HWDecode": 0,
+        "KeepDuplicateTitles": false,
+        "Path": "/home/sudar/Downloads/13977337_1920_1080_24fps.mp4",
+        "Range": {
+            "End": 1,
+            "Start": 1,
+            "Type": "chapter"
+        },
+        "Title": 5
+    },
+    "Subtitle": {
+        "Search": {
+            "Burn": true,
+            "Default": false,
+            "Enable": false,
+            "Forced": false
+        },
+        "SubtitleList": []
+    },
+    "Video": {
+        "AdapterIndex": -1,
+        "AsyncDepth": 0,
+        "ChromaLocation": 1,
+        "ColorInputFormat": 0,
+        "ColorMatrix": 1,
+        "ColorOutputFormat": 0,
+        "ColorPrimaries": 1,
+        "ColorRange": 0,
+        "ColorTransfer": 1,
+        "Encoder": "VP9",
+        "HardwareDecode": 0,
+        "Level": "auto",
+        "MultiPass": true,
+        "Options": "",
+        "PasshtruHDRDynamicMetadata": 6,
+        "Preset": "medium",
+        "Profile": "auto",
+        "Quality": 22.0,
+        "Tune": "",
+        "Turbo": true
+    }
+}
+[16:00:40] CPU: Intel(R) Xeon(R) W-2135 CPU @ 3.70GHz
+[16:00:40]  - logical processor count: 12
+[16:00:40] Intel Quick Sync Video support: no
+[16:00:40] hb_scan: path=/home/sudar/Downloads/13977337_1920_1080_24fps.mp4, title_index=5
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/home/sudar/Downloads/13977337_1920_1080_24fps.mp4':
+  Metadata:
+    major_brand     : iso5
+    minor_version   : 512
+    compatible_brands: iso5iso6mp41
+    encoder         : Lavf60.16.100
+  Duration: 00:00:06.26, start: 0.000000, bitrate: 5170 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709/bt709/unknown, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 5166 kb/s, 23.98 fps, 23.98 tbr, 24k tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc60.31.102 libx264
+        timecode        : 00:00:02:09
+  Stream #0:1[0x2](eng): Data: none (tmcd / 0x64636D74), 0 kb/s
+      Metadata:
+        handler_name    : VideoHandler
+        timecode        : 00:00:02:09
+[16:00:40] scan: decoding previews for title 5
+[16:00:41] using container PAR 1:1
+[16:00:41] scan: 10 previews, 1920x1080, 23.976 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1, color profile: 1-1-1, chroma location: left
+[16:00:41] libhb: scan thread found 1 valid title(s)
+[16:00:41] Starting Task: Analysis Pass
+[16:00:41] work: skipping crop/scale filter
+[16:00:41] job configuration:
+[16:00:41]  * source
+[16:00:41]    + /home/sudar/Downloads/13977337_1920_1080_24fps.mp4
+[16:00:41]    + title 5, chapter(s) 1 to 1
+[16:00:41]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[16:00:41]    + data rate: 5170 kbps
+[16:00:41]  * destination
+[16:00:41]    + /mnt/iMac/DaVinci Resolve/IICAQM/13977337_1920_1080_24fps.mkv
+[16:00:41]    + container: Matroska (libavformat)
+[16:00:41]  * video track
+[16:00:41]    + decoder: h264 8-bit (yuv420p)
+[16:00:41]      + bitrate 5166 kbps
+[16:00:41]    + filters
+[16:00:41]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=3:spatial-thresh=3:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[16:00:41]      + Decomb (mode=47)
+[16:00:41]      + Framerate Shaper (mode=0)
+[16:00:41]        + frame rate: same as source (around 23.976 fps)
+[16:00:41]      + Pad (color=black:top=0:bottom=0:left=0:right=0)
+[16:00:41]    + Output geometry
+[16:00:41]      + storage dimensions: 1920 x 1080
+[16:00:41]      + pixel aspect ratio: 1 : 1
+[16:00:41]      + display dimensions: 1920 x 1080
+[16:00:41]    + encoder: VP9 (libvpx)
+[16:00:41]      + preset:  medium
+[16:00:41]      + profile: auto
+[16:00:41]      + level:   auto
+[16:00:41]      + quality: 22.00 (CQ)
+[16:00:41]      + color profile: 1-1-1
+[16:00:41]      + color range: tv
+[16:00:41]      + chroma location: left
+[16:00:41] sync: expecting 149 video frames
+[16:00:41] encavcodecInit: VP9 encoder
+[16:00:41] encavcodec: encoding at CQ 22.00
+[16:00:41] encavcodec: encoding with stored aspect 1/1
+[16:00:41] sync: first pts video is 0
+[16:00:41] sync: Chapter 1 at frame 1 time 0
+[16:00:42] reader: done. 1 scr changes
+[16:00:43] work: average encoding speed for job is 0.000000 fps
+[16:00:43] comb detect: heavy 0 | light 1 | uncombed 149 | total 150
+[16:00:43] decomb: deinterlaced 0 | blended 1 | unfiltered 149 | total 150
+[16:00:43] vfr: 150 frames output, 0 dropped
+[16:00:43] vfr: lost time: 0 (0 frames)
+[16:00:43] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[16:00:43] h264-decoder done: 150 frames, 0 decoder errors
+[16:00:43] sync: got 150 frames, 149 expected
+[16:00:43] sync: framerate min 23.976 fps, max 23.976 fps, avg 23.976 fps
+[16:00:43] Starting Task: Encoding Pass
+[16:00:43] work: skipping crop/scale filter
+[16:00:43] job configuration:
+[16:00:43]  * source
+[16:00:43]    + /home/sudar/Downloads/13977337_1920_1080_24fps.mp4
+[16:00:43]    + title 5, chapter(s) 1 to 1
+[16:00:43]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[16:00:43]    + data rate: 5170 kbps
+[16:00:43]  * destination
+[16:00:43]    + /mnt/iMac/DaVinci Resolve/IICAQM/13977337_1920_1080_24fps.mkv
+[16:00:43]    + container: Matroska (libavformat)
+[16:00:43]  * video track
+[16:00:43]    + decoder: h264 8-bit (yuv420p)
+[16:00:43]      + bitrate 5166 kbps
+[16:00:43]    + filters
+[16:00:43]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=3:spatial-thresh=3:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[16:00:43]      + Decomb (mode=47)
+[16:00:43]      + Framerate Shaper (mode=0)
+[16:00:43]        + frame rate: same as source (around 23.976 fps)
+[16:00:43]      + Pad (color=black:top=0:bottom=0:left=0:right=0)
+[16:00:43]    + Output geometry
+[16:00:43]      + storage dimensions: 1920 x 1080
+[16:00:43]      + pixel aspect ratio: 1 : 1
+[16:00:43]      + display dimensions: 1920 x 1080
+[16:00:43]    + encoder: VP9 (libvpx)
+[16:00:43]      + preset:  medium
+[16:00:43]      + profile: auto
+[16:00:43]      + level:   auto
+[16:00:43]      + quality: 22.00 (CQ)
+[16:00:43]      + color profile: 1-1-1
+[16:00:43]      + color range: tv
+[16:00:43]      + chroma location: left
+[16:00:43] sync: expecting 150 video frames
+[16:00:43] encavcodecInit: VP9 encoder
+[16:00:43] encavcodec: encoding at CQ 22.00
+[16:00:43] encavcodec: encoding with stored aspect 1/1
+[16:00:44] sync: first pts video is 0
+[16:00:44] sync: Chapter 1 at frame 1 time 0
+[16:00:49] reader: done. 1 scr changes
+[16:01:15] work: average encoding speed for job is 10.003151 fps
+[16:01:15] comb detect: heavy 0 | light 1 | uncombed 149 | total 150
+[16:01:15] decomb: deinterlaced 0 | blended 1 | unfiltered 149 | total 150
+[16:01:15] vfr: 150 frames output, 0 dropped
+[16:01:15] vfr: lost time: 0 (0 frames)
+[16:01:15] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[16:01:15] h264-decoder done: 150 frames, 0 decoder errors
+[16:01:15] sync: got 150 frames, 150 expected
+[16:01:15] sync: framerate min 23.976 fps, max 23.976 fps, avg 23.976 fps
+[16:01:16] mux: track 0, 150 frames, 4661940 bytes, 5961.32 kbps, fifo 256
+[16:01:16] Finished work at: Fri Oct 17 16:01:16 2025
+
+[16:01:16] libhb: work result = 0

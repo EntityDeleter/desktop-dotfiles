@@ -1,0 +1,367 @@
+Handbrake Version: 20250906052339-dddf75f75-makepkg (2025100401)
+
+(fr.handbrake.ghb:5): GLib-GIO-CRITICAL **: 17:28:58.083: g_bus_watch_name_on_connection: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+
+(fr.handbrake.ghb:5): GLib-GIO-CRITICAL **: 17:28:58.083: g_dbus_connection_signal_subscribe: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+
+(fr.handbrake.ghb:5): GLib-GIO-CRITICAL **: 17:28:58.083: g_dbus_connection_call_internal: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+[17:28:58] gtkgui: Modified Custom Preset: /Custom/CPU (With FIlters)
+[17:28:58] Starting work at: Mon Oct  6 17:28:58 2025
+
+[17:28:58] 1 job(s) to process
+[17:28:58] json job:
+{
+    "Audio": {
+        "AudioList": [
+            {
+                "Bitrate": 160,
+                "CompressionLevel": -1.0,
+                "DRC": 0.0,
+                "DitherMethod": "auto",
+                "Encoder": "copy:opus",
+                "Gain": 0.0,
+                "Mixdown": "none",
+                "Name": "Stereo",
+                "NormalizeMixLevel": false,
+                "PresetEncoder": "av_aac",
+                "Quality": -3.0,
+                "Samplerate": 0,
+                "Track": 0
+            }
+        ],
+        "CopyMask": [
+            "copy:aac"
+        ],
+        "FallbackEncoder": "av_aac"
+    },
+    "Destination": {
+        "AlignAVStart": false,
+        "ChapterList": [
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 0,
+                    "Seconds": 2,
+                    "Ticks": 204120
+                },
+                "Name": ""
+            }
+        ],
+        "ChapterMarkers": false,
+        "File": "/home/sudar/Videos/HandBrake/2_Second_Video_VP9.mkv",
+        "InlineParameterSets": false,
+        "Mux": "mkv",
+        "Options": {
+            "IpodAtom": false,
+            "Optimize": false
+        }
+    },
+    "Filters": {
+        "FilterList": [
+            {
+                "ID": 3,
+                "Settings": {
+                    "plane": "0",
+                    "skip-bottom": "4",
+                    "skip-left": "1",
+                    "skip-right": "1",
+                    "skip-top": "4"
+                }
+            },
+            {
+                "ID": 4,
+                "Settings": {
+                    "block-height": "16",
+                    "block-thresh": "40",
+                    "block-width": "16",
+                    "filter-mode": "2",
+                    "mode": "3",
+                    "motion-thresh": "1",
+                    "spatial-metric": "2",
+                    "spatial-thresh": "1"
+                }
+            },
+            {
+                "ID": 6,
+                "Settings": {
+                    "mode": "15"
+                }
+            },
+            {
+                "ID": 11,
+                "Settings": {
+                    "mode": 0
+                }
+            },
+            {
+                "ID": 12,
+                "Settings": {
+                    "strength": "strong",
+                    "thresh": "20"
+                }
+            },
+            {
+                "ID": 14,
+                "Settings": {
+                    "cb-frame-count": 1,
+                    "cb-origin-tune": 0.7,
+                    "cb-patch-size": 7,
+                    "cb-prefilter": 0,
+                    "cb-range": 5,
+                    "cb-strength": 6.0,
+                    "y-frame-count": 2,
+                    "y-origin-tune": 0.8,
+                    "y-patch-size": 7,
+                    "y-prefilter": 0,
+                    "y-range": 3,
+                    "y-strength": 6.0
+                }
+            },
+            {
+                "ID": 15,
+                "Settings": {
+                    "cb-size": 7,
+                    "cb-strength": 1.2
+                }
+            },
+            {
+                "ID": 20,
+                "Settings": {
+                    "crop-bottom": 36,
+                    "crop-left": 0,
+                    "crop-right": 0,
+                    "crop-top": 36,
+                    "height": 1080,
+                    "width": 1920
+                }
+            },
+            {
+                "ID": 22,
+                "Settings": {
+                    "cb-kernel": "isolap",
+                    "cb-strength": 0.2,
+                    "y-kernel": "isolap",
+                    "y-strength": 0.2
+                }
+            },
+            {
+                "ID": 28,
+                "Settings": {
+                    "bottom": "0",
+                    "color": "black",
+                    "left": "0",
+                    "right": "0",
+                    "top": "0"
+                }
+            },
+            {
+                "ID": 30,
+                "Settings": {
+                    "desat": "0",
+                    "matrix": "bt2020ncl",
+                    "primaries": "bt2020",
+                    "tonemap": "hable",
+                    "transfer": "bt2020-10"
+                }
+            }
+        ]
+    },
+    "Metadata": {},
+    "PAR": {
+        "Den": 17,
+        "Num": 15
+    },
+    "SequenceID": 0,
+    "Source": {
+        "Angle": 0,
+        "HWDecode": 0,
+        "KeepDuplicateTitles": false,
+        "Path": "/home/sudar/Videos/YouTube/2_Second_Video.webm",
+        "Range": {
+            "End": 1,
+            "Start": 1,
+            "Type": "chapter"
+        },
+        "Title": 1
+    },
+    "Subtitle": {
+        "Search": {
+            "Burn": true,
+            "Default": false,
+            "Enable": false,
+            "Forced": false
+        },
+        "SubtitleList": []
+    },
+    "Video": {
+        "AdapterIndex": -1,
+        "AsyncDepth": 0,
+        "ChromaLocation": 0,
+        "ColorInputFormat": 0,
+        "ColorMatrix": 1,
+        "ColorOutputFormat": 0,
+        "ColorPrimaries": 1,
+        "ColorRange": 0,
+        "ColorTransfer": 1,
+        "Encoder": "VP9",
+        "HardwareDecode": 0,
+        "Level": "auto",
+        "MultiPass": true,
+        "Options": "",
+        "PasshtruHDRDynamicMetadata": 6,
+        "Preset": "veryslow",
+        "Profile": "auto",
+        "Quality": 1.0,
+        "Tune": "",
+        "Turbo": true
+    }
+}
+[17:28:58] CPU: Intel(R) Xeon(R) W-2135 CPU @ 3.70GHz
+[17:28:58]  - logical processor count: 12
+[17:28:58] Intel Quick Sync Video support: no
+[17:28:58] hb_scan: path=/home/sudar/Videos/YouTube/2_Second_Video.webm, title_index=1
+Input #0, matroska,webm, from '/home/sudar/Videos/YouTube/2_Second_Video.webm':
+  Metadata:
+    ENCODER         : Lavf62.3.100
+  Duration: 00:00:02.27, start: 0.000000, bitrate: 197 kb/s
+  Stream #0:0(eng): Video: vp9 (Profile 0), yuv420p(tv, bt709), 640x480, SAR 1:1 DAR 4:3, 30 fps, 30 tbr, 1k tbn (default)
+      Metadata:
+        DURATION        : 00:00:02.166000000
+  Stream #0:1(eng): Audio: opus, 48000 Hz, stereo, fltp (default)
+      Metadata:
+        DURATION        : 00:00:02.268000000
+[17:28:58] scan: decoding previews for title 1
+[17:28:58] scan: audio 0x1: opus, rate=48000Hz, bitrate=1 English (Opus, 2.0 ch)
+[17:28:58] scan: 10 previews, 640x480, 30.000 fps, autocrop = 36/36/0/0, aspect 4:3, PAR 1:1, color profile: 1-1-1, chroma location: unspecified
+[17:28:58] libhb: scan thread found 1 valid title(s)
+[17:28:58] Starting Task: Analysis Pass
+[17:28:58] NLMeans using SSE2 optimizations
+[17:28:58] NLMeans using 12 threads
+[17:28:58] job configuration:
+[17:28:58]  * source
+[17:28:58]    + /home/sudar/Videos/YouTube/2_Second_Video.webm
+[17:28:58]    + title 1, chapter(s) 1 to 1
+[17:28:58]    + container: matroska,webm
+[17:28:58]    + data rate: 197 kbps
+[17:28:58]  * destination
+[17:28:58]    + /home/sudar/Videos/HandBrake/2_Second_Video_VP9.mkv
+[17:28:58]    + container: Matroska (libavformat)
+[17:28:58]  * video track
+[17:28:58]    + decoder: vp9 8-bit (yuv420p)
+[17:28:58]    + filters
+[17:28:58]      + Detelecine (pullup) (skip-left=1:skip-right=1:skip-top=4:skip-bottom=4:plane=0)
+[17:28:58]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=1:spatial-thresh=1:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[17:28:58]      + Decomb (mode=47)
+[17:28:58]      + Framerate Shaper (mode=0)
+[17:28:58]        + frame rate: same as source (around 30.000 fps)
+[17:28:58]      + Deblock (strength=strong:thresh=20)
+[17:28:58]      + Denoise (nlmeans) (y-strength=6:y-origin-tune=0.8:y-patch-size=7:y-range=3:y-frame-count=2:y-prefilter=0:cb-strength=6:cb-origin-tune=0.7:cb-patch-size=7:cb-range=5:cb-frame-count=1:cb-prefilter=0)
+[17:28:58]      + Chroma Smooth (cb-strength=1.2:cb-size=7)
+[17:28:58]      + Crop and Scale (width=1920:height=1080:crop-top=36:crop-bottom=36:crop-left=0:crop-right=0)
+[17:28:58]        + source: 640 * 480, crop (36/36/0/0): 640 * 408, scale: 1920 * 1080
+[17:28:58]      + Sharpen (lapsharp) (y-strength=0.2:y-kernel=isolap:cb-strength=0.2:cb-kernel=isolap)
+[17:28:58]      + Pad (color=black:top=0:bottom=0:left=0:right=0)
+[17:28:58]      + Colorspace (primaries=bt2020:transfer=bt2020-10:matrix=bt2020ncl:tonemap=hable:desat=0)
+[17:28:58]    + Output geometry
+[17:28:58]      + storage dimensions: 1920 x 1080
+[17:28:58]      + pixel aspect ratio: 15 : 17
+[17:28:58]      + display dimensions: 1694 x 1080
+[17:28:58]    + encoder: VP9 (libvpx)
+[17:28:58]      + preset:  veryslow
+[17:28:58]      + profile: auto
+[17:28:58]      + level:   auto
+[17:28:58]      + quality: 1.00 (CQ)
+[17:28:58]      + color profile: 9-14-9
+[17:28:58]      + color range: tv
+[17:28:58]      + chroma location: unspecified
+[17:28:58]  * audio track 1
+[17:28:58]    + name: Stereo
+[17:28:58]    + decoder: English (Opus, 2.0 ch) (track 1, id 0x1)
+[17:28:58]      + samplerate: 48000 Hz
+[17:28:58]    + Opus Passthru
+[17:28:58] sync: expecting 68 video frames
+[17:28:58] encavcodecInit: VP9 encoder
+[17:28:58] encavcodec: encoding at CQ 1.00
+[17:28:58] encavcodec: encoding with stored aspect 15/17
+[17:28:58] sync: first pts video is 0
+[17:28:58] sync: Chapter 1 at frame 1 time 0
+[17:28:58] sync: first pts audio 0x1 is 585
+[17:28:58] reader: done. 1 scr changes
+[17:28:59] work: average encoding speed for job is 0.000000 fps
+[17:28:59] comb detect: heavy 0 | light 0 | uncombed 64 | total 64
+[17:28:59] decomb: deinterlaced 0 | blended 0 | unfiltered 64 | total 64
+[17:28:59] vfr: 62 frames output, 2 dropped
+[17:28:59] vfr: lost time: 9000 (0 frames)
+[17:28:59] vfr: gained time: 9000 (4 frames) (0 not accounted for)
+[17:28:59] opus-decoder done: 113 frames, 0 decoder errors
+[17:28:59] vp9-decoder done: 65 frames, 0 decoder errors
+[17:28:59] sync: got 65 frames, 68 expected
+[17:28:59] sync: framerate min 30.000 fps, max 30.000 fps, avg 30.000 fps
+[17:28:59] Starting Task: Encoding Pass
+[17:28:59] NLMeans using SSE2 optimizations
+[17:28:59] NLMeans using 12 threads
+[17:28:59] job configuration:
+[17:28:59]  * source
+[17:28:59]    + /home/sudar/Videos/YouTube/2_Second_Video.webm
+[17:28:59]    + title 1, chapter(s) 1 to 1
+[17:28:59]    + container: matroska,webm
+[17:28:59]    + data rate: 197 kbps
+[17:28:59]  * destination
+[17:28:59]    + /home/sudar/Videos/HandBrake/2_Second_Video_VP9.mkv
+[17:28:59]    + container: Matroska (libavformat)
+[17:28:59]  * video track
+[17:28:59]    + decoder: vp9 8-bit (yuv420p)
+[17:28:59]    + filters
+[17:28:59]      + Detelecine (pullup) (skip-left=1:skip-right=1:skip-top=4:skip-bottom=4:plane=0)
+[17:28:59]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=1:spatial-thresh=1:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[17:28:59]      + Decomb (mode=47)
+[17:28:59]      + Framerate Shaper (mode=0)
+[17:28:59]        + frame rate: same as source (around 30.000 fps)
+[17:28:59]      + Deblock (strength=strong:thresh=20)
+[17:28:59]      + Denoise (nlmeans) (y-strength=6:y-origin-tune=0.8:y-patch-size=7:y-range=3:y-frame-count=2:y-prefilter=0:cb-strength=6:cb-origin-tune=0.7:cb-patch-size=7:cb-range=5:cb-frame-count=1:cb-prefilter=0)
+[17:28:59]      + Chroma Smooth (cb-strength=1.2:cb-size=7)
+[17:28:59]      + Crop and Scale (width=1920:height=1080:crop-top=36:crop-bottom=36:crop-left=0:crop-right=0)
+[17:28:59]        + source: 640 * 480, crop (36/36/0/0): 640 * 408, scale: 1920 * 1080
+[17:28:59]      + Sharpen (lapsharp) (y-strength=0.2:y-kernel=isolap:cb-strength=0.2:cb-kernel=isolap)
+[17:28:59]      + Pad (color=black:top=0:bottom=0:left=0:right=0)
+[17:28:59]      + Colorspace (primaries=bt2020:transfer=bt2020-10:matrix=bt2020ncl:tonemap=hable:desat=0)
+[17:28:59]    + Output geometry
+[17:28:59]      + storage dimensions: 1920 x 1080
+[17:28:59]      + pixel aspect ratio: 15 : 17
+[17:28:59]      + display dimensions: 1694 x 1080
+[17:28:59]    + encoder: VP9 (libvpx)
+[17:28:59]      + preset:  veryslow
+[17:28:59]      + profile: auto
+[17:28:59]      + level:   auto
+[17:28:59]      + quality: 1.00 (CQ)
+[17:28:59]      + color profile: 9-14-9
+[17:28:59]      + color range: tv
+[17:28:59]      + chroma location: unspecified
+[17:28:59]  * audio track 1
+[17:28:59]    + name: Stereo
+[17:28:59]    + decoder: English (Opus, 2.0 ch) (track 1, id 0x1)
+[17:28:59]      + samplerate: 48000 Hz
+[17:28:59]    + Opus Passthru
+[17:28:59] sync: expecting 65 video frames
+[17:28:59] encavcodecInit: VP9 encoder
+[17:28:59] encavcodec: encoding at CQ 1.00
+[17:28:59] encavcodec: encoding with stored aspect 15/17
+[17:28:59] sync: first pts video is 0
+[17:28:59] sync: Chapter 1 at frame 1 time 0
+[17:28:59] sync: first pts audio 0x1 is 585
+[17:28:59] reader: done. 1 scr changes
+[17:29:18] work: average encoding speed for job is 0.000000 fps
+[17:29:18] comb detect: heavy 0 | light 0 | uncombed 64 | total 64
+[17:29:18] decomb: deinterlaced 0 | blended 0 | unfiltered 64 | total 64
+[17:29:18] vfr: 62 frames output, 2 dropped
+[17:29:18] vfr: lost time: 9000 (0 frames)
+[17:29:18] vfr: gained time: 9000 (4 frames) (0 not accounted for)
+[17:29:18] opus-decoder done: 113 frames, 0 decoder errors
+[17:29:18] vp9-decoder done: 65 frames, 0 decoder errors
+[17:29:18] sync: got 65 frames, 65 expected
+[17:29:18] sync: framerate min 30.000 fps, max 30.000 fps, avg 30.000 fps
+[17:29:18] mux: track 0, 62 frames, 324620 bytes, 1127.99 kbps, fifo 64
+[17:29:18] mux: track 1, 113 frames, 29564 bytes, 102.73 kbps, fifo 128
+[17:29:18] Finished work at: Mon Oct  6 17:29:18 2025
+
+[17:29:18] libhb: work result = 0

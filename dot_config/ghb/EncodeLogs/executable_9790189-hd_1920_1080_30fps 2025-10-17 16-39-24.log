@@ -1,0 +1,299 @@
+Handbrake Version: 20250906052339-dddf75f75-makepkg (2025100401)
+[16:39:24] gtkgui: Custom Preset: /Custom/CPU (With FIlters) (VP9)
+[16:39:24] Starting work at: Fri Oct 17 16:39:24 2025
+
+[16:39:24] 1 job(s) to process
+[16:39:24] json job:
+{
+    "Audio": {
+        "AudioList": [
+            {
+                "Bitrate": 160,
+                "CompressionLevel": -1.0,
+                "DRC": 0.0,
+                "DitherMethod": "auto",
+                "Encoder": "av_aac",
+                "Gain": 0.0,
+                "Mixdown": "stereo",
+                "Name": "Stereo",
+                "NormalizeMixLevel": false,
+                "PresetEncoder": "av_aac",
+                "Quality": -3.0,
+                "Samplerate": 0,
+                "Track": 0
+            }
+        ],
+        "CopyMask": [
+            "copy:aac"
+        ],
+        "FallbackEncoder": "av_aac"
+    },
+    "Destination": {
+        "AlignAVStart": false,
+        "ChapterList": [
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 0,
+                    "Seconds": 17,
+                    "Ticks": 1587750
+                },
+                "Name": ""
+            }
+        ],
+        "ChapterMarkers": false,
+        "File": "/mnt/iMac/DaVinci Resolve/IICAQM/9790189-hd_1920_1080_30fps.mkv",
+        "InlineParameterSets": false,
+        "Mux": "mkv",
+        "Options": {
+            "IpodAtom": false,
+            "Optimize": false
+        }
+    },
+    "Filters": {
+        "FilterList": [
+            {
+                "ID": 4,
+                "Settings": {
+                    "block-height": "16",
+                    "block-thresh": "40",
+                    "block-width": "16",
+                    "filter-mode": "2",
+                    "mode": "3",
+                    "motion-thresh": "3",
+                    "spatial-metric": "2",
+                    "spatial-thresh": "3"
+                }
+            },
+            {
+                "ID": 6,
+                "Settings": {
+                    "mode": "15"
+                }
+            },
+            {
+                "ID": 11,
+                "Settings": {
+                    "mode": 0
+                }
+            },
+            {
+                "ID": 20,
+                "Settings": {
+                    "crop-bottom": 0,
+                    "crop-left": 0,
+                    "crop-right": 0,
+                    "crop-top": 0,
+                    "height": 1080,
+                    "width": 1920
+                }
+            },
+            {
+                "ID": 28,
+                "Settings": {
+                    "bottom": "0",
+                    "color": "black",
+                    "left": "0",
+                    "right": "0",
+                    "top": "0"
+                }
+            }
+        ]
+    },
+    "Metadata": {
+        "CreationTime": "2021-10-04T22:27:20.000000Z"
+    },
+    "PAR": {
+        "Den": 1,
+        "Num": 1
+    },
+    "SequenceID": 0,
+    "Source": {
+        "Angle": 0,
+        "HWDecode": 0,
+        "KeepDuplicateTitles": false,
+        "Path": "/home/sudar/Downloads/9790189-hd_1920_1080_30fps.mp4",
+        "Range": {
+            "End": 1,
+            "Start": 1,
+            "Type": "chapter"
+        },
+        "Title": 1
+    },
+    "Subtitle": {
+        "Search": {
+            "Burn": true,
+            "Default": false,
+            "Enable": false,
+            "Forced": false
+        },
+        "SubtitleList": []
+    },
+    "Video": {
+        "AdapterIndex": -1,
+        "AsyncDepth": 0,
+        "ChromaLocation": 1,
+        "ColorInputFormat": 0,
+        "ColorMatrix": 1,
+        "ColorOutputFormat": 0,
+        "ColorPrimaries": 1,
+        "ColorRange": 0,
+        "ColorTransfer": 1,
+        "Encoder": "VP9",
+        "HardwareDecode": 0,
+        "Level": "auto",
+        "MultiPass": true,
+        "Options": "",
+        "PasshtruHDRDynamicMetadata": 6,
+        "Preset": "medium",
+        "Profile": "auto",
+        "Quality": 22.0,
+        "Tune": "",
+        "Turbo": true
+    }
+}
+[16:39:24] CPU: Intel(R) Xeon(R) W-2135 CPU @ 3.70GHz
+[16:39:24]  - logical processor count: 12
+[16:39:24] Intel Quick Sync Video support: no
+[16:39:24] hb_scan: path=/home/sudar/Downloads/9790189-hd_1920_1080_30fps.mp4, title_index=1
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/home/sudar/Downloads/9790189-hd_1920_1080_30fps.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41isomavc1
+    creation_time   : 2021-10-04T22:27:20.000000Z
+  Duration: 00:00:17.64, start: 0.000000, bitrate: 5740 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080, 5484 kb/s, 30 fps, 30 tbr, 30 tbn (default)
+      Metadata:
+        creation_time   : 2021-10-04T22:27:20.000000Z
+        handler_name    : L-SMASH Video Handler
+        vendor_id       : [0][0][0][0]
+        encoder         : AVC Coding
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 253 kb/s (default)
+      Metadata:
+        creation_time   : 2021-10-04T22:27:20.000000Z
+        handler_name    : L-SMASH Audio Handler
+        vendor_id       : [0][0][0][0]
+[16:39:24] scan: decoding previews for title 1
+[16:39:24] scan: audio 0x1: aac, rate=48000Hz, bitrate=253374 Unknown (AAC LC, 2.0 ch, 253 kbps)
+[16:39:24] scan: 10 previews, 1920x1080, 30.000 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1, color profile: 1-1-1, chroma location: left
+[16:39:24] libhb: scan thread found 1 valid title(s)
+[16:39:24] Starting Task: Analysis Pass
+[16:39:24] work: skipping crop/scale filter
+[16:39:24] job configuration:
+[16:39:24]  * source
+[16:39:24]    + /home/sudar/Downloads/9790189-hd_1920_1080_30fps.mp4
+[16:39:24]    + title 1, chapter(s) 1 to 1
+[16:39:24]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[16:39:24]    + data rate: 5740 kbps
+[16:39:24]  * destination
+[16:39:24]    + /mnt/iMac/DaVinci Resolve/IICAQM/9790189-hd_1920_1080_30fps.mkv
+[16:39:24]    + container: Matroska (libavformat)
+[16:39:24]  * video track
+[16:39:24]    + decoder: h264 8-bit (yuv420p)
+[16:39:24]      + bitrate 5484 kbps
+[16:39:24]    + filters
+[16:39:24]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=3:spatial-thresh=3:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[16:39:24]      + Decomb (mode=47)
+[16:39:24]      + Framerate Shaper (mode=0)
+[16:39:24]        + frame rate: same as source (around 30.000 fps)
+[16:39:24]      + Pad (color=black:top=0:bottom=0:left=0:right=0)
+[16:39:24]    + Output geometry
+[16:39:24]      + storage dimensions: 1920 x 1080
+[16:39:24]      + pixel aspect ratio: 1 : 1
+[16:39:24]      + display dimensions: 1920 x 1080
+[16:39:24]    + encoder: VP9 (libvpx)
+[16:39:24]      + preset:  medium
+[16:39:24]      + profile: auto
+[16:39:24]      + level:   auto
+[16:39:24]      + quality: 22.00 (CQ)
+[16:39:24]      + color profile: 1-1-1
+[16:39:24]      + color range: tv
+[16:39:24]      + chroma location: left
+[16:39:24]  * audio track 1
+[16:39:24]    + name: Stereo
+[16:39:24]    + decoder: Unknown (AAC LC, 2.0 ch, 253 kbps) (track 1, id 0x1)
+[16:39:24]      + bitrate: 253 kbps, samplerate: 48000 Hz
+[16:39:24]    + mixdown: Stereo
+[16:39:24]    + encoder: AAC (libavcodec)
+[16:39:24]      + bitrate: 160 kbps, samplerate: 48000 Hz
+[16:39:24] sync: expecting 529 video frames
+[16:39:24] encavcodecInit: VP9 encoder
+[16:39:24] encavcodec: encoding at CQ 22.00
+[16:39:24] encavcodec: encoding with stored aspect 1/1
+[16:39:25] sync: first pts video is 0
+[16:39:25] sync: Chapter 1 at frame 1 time 0
+[16:39:25] sync: first pts audio 0x1 is 0
+[16:39:31] reader: done. 1 scr changes
+[16:39:33] work: average encoding speed for job is 72.053764 fps
+[16:39:33] comb detect: heavy 0 | light 21 | uncombed 508 | total 529
+[16:39:33] decomb: deinterlaced 0 | blended 21 | unfiltered 508 | total 529
+[16:39:33] vfr: 529 frames output, 0 dropped
+[16:39:33] vfr: lost time: 0 (0 frames)
+[16:39:33] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[16:39:33] aac-decoder done: 827 frames, 0 decoder errors
+[16:39:33] h264-decoder done: 529 frames, 0 decoder errors
+[16:39:33] sync: got 529 frames, 529 expected
+[16:39:33] sync: framerate min 30.000 fps, max 30.000 fps, avg 30.000 fps
+[16:39:33] Starting Task: Encoding Pass
+[16:39:33] work: skipping crop/scale filter
+[16:39:33] job configuration:
+[16:39:33]  * source
+[16:39:33]    + /home/sudar/Downloads/9790189-hd_1920_1080_30fps.mp4
+[16:39:33]    + title 1, chapter(s) 1 to 1
+[16:39:33]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[16:39:33]    + data rate: 5740 kbps
+[16:39:33]  * destination
+[16:39:33]    + /mnt/iMac/DaVinci Resolve/IICAQM/9790189-hd_1920_1080_30fps.mkv
+[16:39:33]    + container: Matroska (libavformat)
+[16:39:33]  * video track
+[16:39:33]    + decoder: h264 8-bit (yuv420p)
+[16:39:33]      + bitrate 5484 kbps
+[16:39:33]    + filters
+[16:39:33]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=3:spatial-thresh=3:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[16:39:33]      + Decomb (mode=47)
+[16:39:33]      + Framerate Shaper (mode=0)
+[16:39:33]        + frame rate: same as source (around 30.000 fps)
+[16:39:33]      + Pad (color=black:top=0:bottom=0:left=0:right=0)
+[16:39:33]    + Output geometry
+[16:39:33]      + storage dimensions: 1920 x 1080
+[16:39:33]      + pixel aspect ratio: 1 : 1
+[16:39:33]      + display dimensions: 1920 x 1080
+[16:39:33]    + encoder: VP9 (libvpx)
+[16:39:33]      + preset:  medium
+[16:39:33]      + profile: auto
+[16:39:33]      + level:   auto
+[16:39:33]      + quality: 22.00 (CQ)
+[16:39:33]      + color profile: 1-1-1
+[16:39:33]      + color range: tv
+[16:39:33]      + chroma location: left
+[16:39:33]  * audio track 1
+[16:39:33]    + name: Stereo
+[16:39:33]    + decoder: Unknown (AAC LC, 2.0 ch, 253 kbps) (track 1, id 0x1)
+[16:39:33]      + bitrate: 253 kbps, samplerate: 48000 Hz
+[16:39:33]    + mixdown: Stereo
+[16:39:33]    + encoder: AAC (libavcodec)
+[16:39:33]      + bitrate: 160 kbps, samplerate: 48000 Hz
+[16:39:33] sync: expecting 529 video frames
+[16:39:33] encavcodecInit: VP9 encoder
+[16:39:33] encavcodec: encoding at CQ 22.00
+[16:39:33] encavcodec: encoding with stored aspect 1/1
+[16:39:33] sync: first pts video is 0
+[16:39:33] sync: Chapter 1 at frame 1 time 0
+[16:39:33] sync: first pts audio 0x1 is 0
+[16:41:07] reader: done. 1 scr changes
+[16:41:42] work: average encoding speed for job is 4.753703 fps
+[16:41:43] comb detect: heavy 0 | light 21 | uncombed 508 | total 529
+[16:41:43] decomb: deinterlaced 0 | blended 21 | unfiltered 508 | total 529
+[16:41:43] vfr: 529 frames output, 0 dropped
+[16:41:43] vfr: lost time: 0 (0 frames)
+[16:41:43] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[16:41:43] aac-decoder done: 827 frames, 0 decoder errors
+[16:41:43] h264-decoder done: 529 frames, 0 decoder errors
+[16:41:43] sync: got 529 frames, 529 expected
+[16:41:43] sync: framerate min 30.000 fps, max 30.000 fps, avg 30.000 fps
+[16:41:45] mux: track 0, 529 frames, 25676173 bytes, 11626.95 kbps, fifo 256
+[16:41:45] mux: track 1, 828 frames, 5036 bytes, 2.28 kbps, fifo 512
+[16:41:45] Finished work at: Fri Oct 17 16:41:45 2025
+
+[16:41:45] libhb: work result = 0
