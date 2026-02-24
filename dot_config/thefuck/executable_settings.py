@@ -1,3 +1,4 @@
+#!
 # The Fuck settings file
 #
 # The rules are defined as in the example bellow:
