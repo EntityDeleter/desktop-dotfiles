@@ -27,7 +27,7 @@
   <property name="last-focused-tab-right" type="int" value="0"/>
   <property name="last-toolbar-items" type="string" value="menu:0,back:1,forward:1,open-parent:1,open-home:1,new-tab:0,new-window:0,toggle-split-view:0,undo:0,redo:0,zoom-out:0,zoom-in:0,zoom-reset:0,view-as-icons:0,view-as-detailed-list:0,view-as-compact-list:0,view-switcher:0,location-bar:1,reload:0,search:1,uca-action-1756209639814675-1:0"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_25_PERCENT"/>
-  <property name="last-details-view-column-widths" type="string" value="150,139,131,123,50,132,74,116,1361,77,117,70,122,156"/>
+  <property name="last-details-view-column-widths" type="string" value="150,139,132,123,50,92,74,116,681,77,117,70,122,105"/>
   <property name="last-details-view-visible-columns" type="string" value="THUNAR_COLUMN_DATE_MODIFIED,THUNAR_COLUMN_NAME,THUNAR_COLUMN_SIZE,THUNAR_COLUMN_TYPE"/>
   <property name="last-details-view-column-order" type="string" value="THUNAR_COLUMN_NAME,THUNAR_COLUMN_SIZE,THUNAR_COLUMN_SIZE_IN_BYTES,THUNAR_COLUMN_TYPE,THUNAR_COLUMN_DATE_MODIFIED"/>
   <property name="misc-folder-item-count" type="string" value="THUNAR_FOLDER_ITEM_COUNT_ONLY_LOCAL"/>
@@ -45,6 +45,6 @@
   <property name="misc-always-enable-split-view" type="bool" value="true"/>
   <property name="misc-thumbnail-mode" type="string" value="THUNAR_THUMBNAIL_MODE_ALWAYS"/>
   <property name="last-tabs-left" type="array">
-    <value type="string" value="file:///mnt/Data/School/IGCSE/General"/>
+    <value type="string" value="file:///home/sudar/Music/Spotify/Tamil"/>
   </property>
 </channel>
