@@ -4,6 +4,5 @@ modelName=
 release=45
 
 [soe][RNNoise#0]
-bypass=true
 enableVad=true
 modelName=

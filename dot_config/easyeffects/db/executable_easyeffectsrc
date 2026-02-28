@@ -12,7 +12,7 @@ outputDevice=alsa_output.pci-0000_00_1f.3.analog-stereo
 plugins=level_meter#0,bass_loudness#0,bass_enhancer#0,exciter#0,crystalizer#0,rnnoise#0,crossfeed#0,stereo_tools#0,loudness#0,autogain#0
 usedPresets=Custom:1
 visiblePage=pluginsPage
-visiblePlugin=autogain#0
+visiblePlugin=rnnoise#0
 
 [Window]
 autostartOnLogin=true
