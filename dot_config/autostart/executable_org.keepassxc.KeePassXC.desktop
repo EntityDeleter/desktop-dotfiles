@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=KeePassXC
 GenericName=Password Manager
-Exec=keepassxc
+Exec=/usr/bin/keepassxc
 TryExec=keepassxc
 Icon=keepassxc
 StartupWMClass=keepassxc
