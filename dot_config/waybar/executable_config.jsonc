@@ -114,7 +114,7 @@
         "tooltip-format": "{percent}% {icon}",
         "justify": "center",
         "on-click": "swayosd-client --brightness 100",
-        "on-right-click": "swayosd-client --brightness 0",
+        "on-click-right": "swayosd-client --brightness 0",
     },
     "battery": {
         "states": {
