@@ -53,4 +53,8 @@ getsdf() {
 
 alias scan='scanimage -d "pixma:G3000_192.168.1.12" -p --resolution=600 -o '
 
-alias yt-dlp='sudo yt-dlp --config-locations /home/sudar/.config/yt-dlp/config '
+yt-dl() {
+  sudo yt-dlp --config-locations /home/sudar/.config/yt-dlp/config "$1"
+  sudo chmod 777 -R /home/sudar/Videos
+  sudo chown sudar:sudar -R /home/sudar/Videos
+}
