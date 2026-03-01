@@ -113,6 +113,8 @@
         "format-icons": ["", "", "", "", "", "", "", "", ""],
         "tooltip-format": "{percent}% {icon}",
         "justify": "center",
+        "on-click": "swayosd-client --brightness 100",
+        "on-right-click": "swayosd-client --brightness 0",
     },
     "battery": {
         "states": {
