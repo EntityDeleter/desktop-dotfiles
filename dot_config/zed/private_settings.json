@@ -1260,7 +1260,7 @@
         // Any addition to this list will be merged with the default list.
         // Globs are matched relative to the worktree root,
         // except when starting with a slash (/) or equivalent in Windows.
-        "provider": "supermaven",
+        "provider": "copilot",
         "disabled_globs": [
             "**/.env*",
             "**/*.pem",
