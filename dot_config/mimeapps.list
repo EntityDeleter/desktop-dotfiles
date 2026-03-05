@@ -1,7 +1,7 @@
 [Default Applications]
-text/html=zen.desktop
-x-scheme-handler/http=zen.desktop
-x-scheme-handler/https=zen.desktop
+text/html=userapp-Zen-B1FNL3.desktop
+x-scheme-handler/http=userapp-Zen-B1FNL3.desktop
+x-scheme-handler/https=userapp-Zen-B1FNL3.desktop
 x-scheme-handler/about=zen.desktop
 x-scheme-handler/unknown=zen.desktop
 application/x-trash=libreoffice-writer.desktop
@@ -13,13 +13,13 @@ application/vnd.appimage=kitty-open.desktop
 x-scheme-handler/beeper=beepertexts.desktop
 video/mp4=io.github.celluloid_player.Celluloid.desktop
 application/pdf=zen.desktop
-x-scheme-handler/chrome=zen.desktop
-application/x-extension-htm=zen.desktop
-application/x-extension-html=zen.desktop
-application/x-extension-shtml=zen.desktop
-application/xhtml+xml=zen.desktop
-application/x-extension-xhtml=zen.desktop
-application/x-extension-xht=zen.desktop
+x-scheme-handler/chrome=userapp-Zen-B1FNL3.desktop
+application/x-extension-htm=userapp-Zen-B1FNL3.desktop
+application/x-extension-html=userapp-Zen-B1FNL3.desktop
+application/x-extension-shtml=userapp-Zen-B1FNL3.desktop
+application/xhtml+xml=userapp-Zen-B1FNL3.desktop
+application/x-extension-xhtml=userapp-Zen-B1FNL3.desktop
+application/x-extension-xht=userapp-Zen-B1FNL3.desktop
 application/pgp-keys=org.mozilla.Thunderbird.desktop
 x-scheme-handler/pdf=zen.desktop
 application/octet-stream=dev.zed.Zed.desktop
@@ -44,9 +44,9 @@ application/octet-stream=dev.zed.Zed.desktop;
 image/x-adobe-dng=org.darktable.darktable.desktop;net.lutris.affinity-canva-6.desktop;
 application/vnd.microsoft.portable-executable=steam.desktop;
 audio/x-mpegurl=dev.zed.Zed.desktop;
-x-scheme-handler/http=zen.desktop;
-x-scheme-handler/https=zen.desktop;
-x-scheme-handler/chrome=zen.desktop;
+x-scheme-handler/http=userapp-Zen-B1FNL3.desktop;zen.desktop;
+x-scheme-handler/https=userapp-Zen-B1FNL3.desktop;zen.desktop;
+x-scheme-handler/chrome=userapp-Zen-B1FNL3.desktop;zen.desktop;
 
 [Removed Associations]
 application/pdf=userapp-tdf %F-58H8E3.desktop;userapp-tdf-5EBBF3.desktop;userapp-kitty -e "tdf %F"-ZO16E3.desktop;userapp-kitty -e bash -c 'tdf "$@"' _ %F\n-TP2LF3.desktop;
