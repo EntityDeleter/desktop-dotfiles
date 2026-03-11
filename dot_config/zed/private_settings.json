@@ -816,28 +816,28 @@
             {
                 "provider": "ollama",
                 "model": "GPT-OSS-20B",
-                "enable_thinking": false
+                "enable_thinking": true,
             },
             {
                 "provider": "ollama",
                 "model": "QWEN-3.5-0.8B",
-                "enable_thinking": false
+                "enable_thinking": true,
             },
             {
                 "provider": "ollama",
                 "model": "QWEN-3.5-9B",
-                "enable_thinking": false
+                "enable_thinking": true,
             },
             {
                 "provider": "ollama",
                 "model": "QWEN-3.5-9B:latest",
-                "enable_thinking": false
+                "enable_thinking": true,
             },
             {
                 "provider": "ollama",
                 "model": "GPT-OSS-20B:latest",
-                "enable_thinking": false
-            }
+                "enable_thinking": true,
+            },
         ],
         "tool_permissions": {
             "default": "allow",
@@ -1291,7 +1291,7 @@
             "prompt_format": "qwen",
             "model": "QWEN-3.5-0.8B",
         },
-        "provider": "zed",
+        "provider": "none",
         "disabled_globs": [
             "**/.env*",
             "**/*.pem",
