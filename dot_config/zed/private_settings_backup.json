@@ -336,7 +336,7 @@
     // For example, when you select text and type (, Zed will surround the text with ().
     "use_auto_surround": true,
     /// Whether indentation should be adjusted based on the context whilst typing.
-    "auto_indent": "syntax_aware",
+    "auto_indent": true,
     // Whether indentation of pasted content should be adjusted based on the context.
     "auto_indent_on_paste": true,
     // Controls how the editor handles the autoclosed characters.
@@ -815,28 +815,28 @@
         "favorite_models": [
             {
                 "provider": "ollama",
-                "model": "GLM-4.7-FLASH-30B-GGUF:latest",
-                "enable_thinking": false,
+                "model": "GPT-OSS-20B",
+                "enable_thinking": true,
             },
             {
                 "provider": "ollama",
-                "model": "GPT-OSS-20B:latest",
-                "enable_thinking": false,
+                "model": "QWEN-3.5-0.8B",
+                "enable_thinking": true,
             },
             {
                 "provider": "ollama",
-                "model": "QWEN-3.5-27B-GGUF:latest",
-                "enable_thinking": false,
-            },
-            {
-                "provider": "ollama",
-                "model": "QWEN-3.5-4B-GGUF:latest",
-                "enable_thinking": false,
+                "model": "QWEN-3.5-9B",
+                "enable_thinking": true,
             },
             {
                 "provider": "ollama",
                 "model": "QWEN-3.5-9B:latest",
-                "enable_thinking": false,
+                "enable_thinking": true,
+            },
+            {
+                "provider": "ollama",
+                "model": "GPT-OSS-20B:latest",
+                "enable_thinking": true,
             },
         ],
         "tool_permissions": {
@@ -860,7 +860,7 @@
             "enable_thinking": true,
             "provider": "ollama",
             // The model to use.
-            "model": "QWEN-3.5-9B:latest",
+            "model": "GPT-OSS-20B:latest",
         },
         // Additional parameters for language model requests. When making a request to a model, parameters will be taken
         // from the last entry in this list that matches the model's provider and name. In each entry, both provider
@@ -894,7 +894,7 @@
         "single_file_review": true,
         // When enabled, show voting thumbs for feedback on agent edits.
         "enable_feedback": true,
-        "default_profile": "ask",
+        "default_profile": "write",
         "profiles": {
             "write": {
                 "name": "Write",
