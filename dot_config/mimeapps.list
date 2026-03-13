@@ -1,7 +1,7 @@
 [Default Applications]
-text/html=userapp-Zen-B1FNL3.desktop
-x-scheme-handler/http=userapp-Zen-B1FNL3.desktop
-x-scheme-handler/https=userapp-Zen-B1FNL3.desktop
+text/html=zen.desktop
+x-scheme-handler/http=zen.desktop
+x-scheme-handler/https=zen.desktop
 x-scheme-handler/about=zen.desktop
 x-scheme-handler/unknown=zen.desktop
 application/x-trash=libreoffice-writer.desktop
