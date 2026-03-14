@@ -815,37 +815,28 @@
         "favorite_models": [
             {
                 "provider": "ollama",
-                "model": "GLM-4.7-FLASH-30B-GGUF:latest",
+                "model": "GLM-4.7-FLASH-30B-GGUF",
                 "enable_thinking": true,
             },
             {
                 "provider": "ollama",
-                "model": "GPT-OSS-20B:latest",
+                "model": "GPT-OSS-20B",
+                "enable_thinking": true,
+                "effort": "high",
+            },
+            {
+                "provider": "ollama",
+                "model": "QWEN-3.5-27B-GGUF",
                 "enable_thinking": true,
             },
             {
                 "provider": "ollama",
-                "model": "QWEN-3.5-27B-GGUF:latest",
+                "model": "QWEN-3.5-4B GGUF",
                 "enable_thinking": true,
             },
             {
                 "provider": "ollama",
-                "model": "QWEN-3.5-4B-GGUF:latest",
-                "enable_thinking": true,
-            },
-            {
-                "provider": "ollama",
-                "model": "QWEN-3.5-9B:latest",
-                "enable_thinking": true,
-            },
-            {
-                "provider": "google",
-                "model": "gemini-2.5-flash",
-                "enable_thinking": true,
-            },
-            {
-                "provider": "google",
-                "model": "gemini-3-flash-preview",
+                "model": "QWEN-3.5-9B",
                 "enable_thinking": true,
             },
         ],
@@ -868,9 +859,9 @@
         "default_model": {
             // The provider to use.
             "enable_thinking": true,
-            "provider": "google",
+            "provider": "ollama",
             // The model to use.
-            "model": "gemini-2.5-flash-lite",
+            "model": "QWEN-3.5-4B-GGUF:latest",
         },
         // Additional parameters for language model requests. When making a request to a model, parameters will be taken
         // from the last entry in this list that matches the model's provider and name. In each entry, both provider
@@ -904,7 +895,7 @@
         "single_file_review": true,
         // When enabled, show voting thumbs for feedback on agent edits.
         "enable_feedback": true,
-        "default_profile": "ask",
+        "default_profile": "write",
         "profiles": {
             "write": {
                 "name": "Write",
@@ -1869,7 +1860,50 @@
         //            "api_url": "https://generativelanguage.googleapis.com"
         //        },
         "ollama": {
-            "api_url": "http://100.69.242.6:11434",
+            "api_url": "http://localhost:11434",
+            "auto_discover": false,
+            "available_models": [
+                {
+                    "name": "GLM-4.7-FLASH-30B-GGUF",
+                    "display_name": "GLM 4.7 FLASH 30B",
+                    "max_tokens": 16384,
+                    "supports_tools": true,
+                    "supports_thinking": true,
+                    "supports_images": false,
+                },
+                {
+                    "name": "GPT-OSS-20B",
+                    "display_name": "GPT OSS 20B",
+                    "max_tokens": 131072,
+                    "supports_tools": true,
+                    "supports_thinking": true,
+                    "supports_images": false,
+                },
+                {
+                    "name": "QWEN-3.5-9B",
+                    "display_name": "QWEN 3.5 9B",
+                    "max_tokens": 262144,
+                    "supports_tools": true,
+                    "supports_thinking": true,
+                    "supports_images": true,
+                },
+                {
+                    "name": "QWEN-3.5-27B-GGUF",
+                    "display_name": "QWEN 3.5 35B A3B",
+                    "max_tokens": 65536,
+                    "supports_tools": true,
+                    "supports_thinking": true,
+                    "supports_images": true,
+                },
+                {
+                    "name": "QWEN-3.5-4B GGUF",
+                    "display_name": "QWEN 3.5 4B",
+                    "max_tokens": 65536,
+                    "supports_tools": true,
+                    "supports_thinking": true,
+                    "supports_images": true,
+                },
+            ],
         },
         //        },
         //        "openai": {
