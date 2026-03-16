@@ -73,6 +73,9 @@ source /home/sudar/.zshrc.d/bottomplugins.zsh
 # Completions:
 source /home/sudar/.zshrc.d/completions.zsh
 
+# llama.cpp Completions
+source /home/sudar/.zshrc.d/llama-cpp-completions.bash
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
