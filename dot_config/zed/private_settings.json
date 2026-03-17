@@ -863,10 +863,10 @@
         // The default model to use when creating new threads.
         "default_model": {
             // The provider to use.
-            "enable_thinking": true,
-            "provider": "ollama",
+            "enable_thinking": false,
+            "provider": "llama.cpp",
             // The model to use.
-            "model": "GPT-OSS-20B",
+            "model": "gpt-oss-20b-mxfp4",
         },
         // Additional parameters for language model requests. When making a request to a model, parameters will be taken
         // from the last entry in this list that matches the model's provider and name. In each entry, both provider
@@ -1871,7 +1871,37 @@
         //        "openai": {
         //            "api_url": "https://api.openai.com/v1"
         //        },
-        "openai_compatible": {},
+        "openai_compatible": {
+            "llama.cpp": {
+                "api_url": "http://127.0.0.1:11434/v1",
+                "available_models": [
+                    {
+                        "name": "gpt-oss-20b-mxfp4",
+                        "display_name": "GPT OSS 20B MXFP4",
+                        "max_tokens": 131072,
+                        "capabilities": {
+                            "tools": true,
+                            "images": false,
+                            "parallel_tool_calls": true,
+                            "prompt_cache_key": true,
+                            "chat_completions": true,
+                        },
+                    },
+                    {
+                        "name": "Qwen3.5-4B-Q8_0",
+                        "display_name": "Qwen3.5 4B Q8_0",
+                        "max_tokens": 262144,
+                        "capabilities": {
+                            "tools": true,
+                            "images": true,
+                            "parallel_tool_calls": true,
+                            "prompt_cache_key": true,
+                            "chat_completions": true,
+                        },
+                    },
+                ],
+            },
+        },
         //        "open_router": {
         //            "api_url": "https://openrouter.ai/api/v1"
         //        },
