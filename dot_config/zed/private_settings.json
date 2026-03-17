@@ -1864,57 +1864,14 @@
         //        "google": {
         //            "api_url": "https://generativelanguage.googleapis.com"
         //        },
-        "ollama": {
-            "api_url": "http://localhost:11434",
-            "auto_discover": false,
-            "available_models": [
-                {
-                    "name": "GLM-4.7-FLASH-30B-GGUF",
-                    "display_name": "GLM 4.7 FLASH 30B",
-                    "max_tokens": 16384,
-                    "supports_tools": true,
-                    "supports_thinking": true,
-                    "supports_images": false,
-                },
-                {
-                    "name": "GPT-OSS-20B",
-                    "display_name": "GPT OSS 20B",
-                    "max_tokens": 131072,
-                    "supports_tools": true,
-                    "supports_thinking": true,
-                    "supports_images": false,
-                },
-                {
-                    "name": "QWEN-3.5-9B",
-                    "display_name": "QWEN 3.5 9B",
-                    "max_tokens": 262144,
-                    "supports_tools": true,
-                    "supports_thinking": true,
-                    "supports_images": true,
-                },
-                {
-                    "name": "QWEN-3.5-27B-GGUF",
-                    "display_name": "QWEN 3.5 35B A3B",
-                    "max_tokens": 65536,
-                    "supports_tools": true,
-                    "supports_thinking": true,
-                    "supports_images": true,
-                },
-                {
-                    "name": "QWEN-3.5-4B-GGUF",
-                    "display_name": "QWEN 3.5 4B",
-                    "max_tokens": 65536,
-                    "supports_tools": true,
-                    "supports_thinking": true,
-                    "supports_images": true,
-                },
-            ],
-        },
+        //        "ollama": {
+        //            "api_url": "http://localhost:11434",
+        //        },
         //        },
         //        "openai": {
         //            "api_url": "https://api.openai.com/v1"
         //        },
-        //        "openai_compatible": {},
+        "openai_compatible": {},
         //        "open_router": {
         //            "api_url": "https://openrouter.ai/api/v1"
         //        },
