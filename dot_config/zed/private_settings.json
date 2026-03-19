@@ -1946,6 +1946,18 @@
                             "prompt_cache_key": true,
                             "chat_completions": true
                         }
+                    },
+                    {
+                        "name": "DeepSeek-R1-0528-Qwen3-8B-Q8_0",
+                        "display_name": "DeepSeek R1 0528 Qwen3 8B Q8_0",
+                        "max_tokens": 131072,
+                        "capabilities": {
+                            "tools": true,
+                            "images": false,
+                            "parallel_tool_calls": true,
+                            "prompt_cache_key": true,
+                            "chat_completions": true
+                        }
                     }
                 ]
             }
