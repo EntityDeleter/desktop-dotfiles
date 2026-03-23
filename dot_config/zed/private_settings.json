@@ -1876,18 +1876,6 @@
                 "api_url": "http://127.0.0.1:11434/v1",
                 "available_models": [
                     {
-                        "name": "gpt-oss-20b-mxfp4",
-                        "display_name": "GPT OSS 20B MXFP4",
-                        "max_tokens": 131072,
-                        "capabilities": {
-                            "tools": true,
-                            "images": false,
-                            "parallel_tool_calls": true,
-                            "prompt_cache_key": true,
-                            "chat_completions": true
-                        }
-                    },
-                    {
                         "name": "Qwen3.5-4B-Q8_0",
                         "display_name": "Qwen3.5 4B Q8_0",
                         "max_tokens": 262144,
@@ -1900,12 +1888,24 @@
                         }
                     },
                     {
-                        "name": "Qwen3.5-9B-Q8_0",
-                        "display_name": "Qwen3.5 9B Q8_0",
+                        "name": "Qwen3.5-9B-UD-Q5_K_XL",
+                        "display_name": "Qwen3.5 9B UD Q5_K_XL",
                         "max_tokens": 262144,
                         "capabilities": {
                             "tools": true,
                             "images": true,
+                            "parallel_tool_calls": true,
+                            "prompt_cache_key": true,
+                            "chat_completions": true
+                        }
+                    },
+                    {
+                        "name": "gpt-oss-20b-mxfp4",
+                        "display_name": "GPT OSS 20B MXFP4",
+                        "max_tokens": 131072,
+                        "capabilities": {
+                            "tools": true,
+                            "images": false,
                             "parallel_tool_calls": true,
                             "prompt_cache_key": true,
                             "chat_completions": true
@@ -1915,18 +1915,6 @@
                         "name": "GLM-4.7-Flash-REAP-23B-A3B-UD-Q5_K_XL",
                         "display_name": "GLM 4.7 Flash REAP 23B A3B UD Q5_K_XL",
                         "max_tokens": 202752,
-                        "capabilities": {
-                            "tools": true,
-                            "images": true,
-                            "parallel_tool_calls": true,
-                            "prompt_cache_key": true,
-                            "chat_completions": true
-                        }
-                    },
-                    {
-                        "name": "Qwen3.5-35B-A3B-UD-IQ4_XS",
-                        "display_name": "Qwen3.5 35B A3B UD IQ4_XS",
-                        "max_tokens": 262144,
                         "capabilities": {
                             "tools": true,
                             "images": true,
@@ -1948,12 +1936,12 @@
                         }
                     },
                     {
-                        "name": "DeepSeek-R1-0528-Qwen3-8B-Q8_0",
-                        "display_name": "DeepSeek R1 0528 Qwen3 8B Q8_0",
-                        "max_tokens": 131072,
+                        "name": "Qwen3.5-35B-A3B-UD-IQ4_XS",
+                        "display_name": "Qwen3.5 35B A3B UD IQ4_XS",
+                        "max_tokens": 262144,
                         "capabilities": {
                             "tools": true,
-                            "images": false,
+                            "images": true,
                             "parallel_tool_calls": true,
                             "prompt_cache_key": true,
                             "chat_completions": true
