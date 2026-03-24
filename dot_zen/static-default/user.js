@@ -1060,3 +1060,5 @@ user_pref("dom.flyweb.enabled", false);
 // IDN Punycode - Shows ASCII for international domains (cosmetic, not breaking)
 user_pref("network.IDN_show_punycode", true);
 
+// Make Obsidian open links
+user_pref("network.protocol-handler.expose.obsidian", false);
