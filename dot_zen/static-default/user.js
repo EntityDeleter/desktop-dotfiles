@@ -520,10 +520,10 @@ user_pref("browser.cache.disk.parent_directory", "/run/user/1000/firefox");
 user_pref("browser.cache.disk_cache_ssl", false);
 
 // Disable disk cache
-user_pref("browser.cache.disk.enable", true);
+user_pref("browser.cache.disk.enable", false);
 
 // Enable memory cache
-user_pref("browser.cache.memory.enable", false);
+user_pref("browser.cache.memory.enable", true);
 
 // Disable offline cache
 user_pref("browser.cache.offline.enable", false);
@@ -762,8 +762,11 @@ user_pref("browser.urlbar.trimURLs", false);
 // Filter out javascript: URLs from address bar
 user_pref("browser.urlbar.filter.javascript", true);
 
-// Enable keyword search (use default search engine from address bar)
-user_pref("keyword.enabled", true);
+// Disable searching on lookup fail
+user_pref("keyword.enabled", false);
+user_pref("browser.urlbar.suggest.searches", false);
+user_pref("browser.fixup.alternate.enabled", false);
+
 
 // ================================================
 // SEARCH ENGINE
@@ -940,8 +943,11 @@ user_pref("browser.fixup.hide_user_pass", true);
 // Only send pings to same host
 user_pref("browser.send_pings.require_same_host", true);
 
-// Disable X11 clipboard autocopy
+// Disable X11 lipboard autocopy
 user_pref("clipboard.autocopy", false);
+
+// Disable websites from accessing clipboard
+user_pref("dom.event.clipboardevents.enabled", false);
 
 // Force usage of XDG desktop portals
 user_pref("widget.use-xdg-desktop-portal.file-picker", 1);
