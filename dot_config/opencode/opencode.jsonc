@@ -16,7 +16,7 @@
             "npm": "@ai-sdk/openai-compatible",
             "name": "llama.cpp",
             "options": {
-                "baseURL": "http://127.0.0.1:11434/v1",
+                "baseURL": "http://100.69.242.6:11434/v1",
                 "apiKey": "{file:/home/sudar/.config/opencode/apikey.txt}"
             },
             "models": {
