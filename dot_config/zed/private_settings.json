@@ -812,39 +812,6 @@
     },
     "agent": {
         // Whether the agent is enabled.
-        "favorite_models": [
-            {
-                "provider": "ollama",
-                "model": "GLM-4.7-FLASH-30B-GGUF",
-                "enable_thinking": true
-            },
-            {
-                "provider": "ollama",
-                "model": "GPT-OSS-20B",
-                "enable_thinking": true,
-                "effort": "high"
-            },
-            {
-                "provider": "ollama",
-                "model": "QWEN-3.5-27B-GGUF",
-                "enable_thinking": true
-            },
-            {
-                "provider": "ollama",
-                "model": "QWEN-3.5-4B GGUF",
-                "enable_thinking": true
-            },
-            {
-                "provider": "ollama",
-                "model": "QWEN-3.5-9B",
-                "enable_thinking": true
-            },
-            {
-                "provider": "ollama",
-                "model": "QWEN-3.5-4B-GGUF",
-                "enable_thinking": false
-            }
-        ],
         "tool_permissions": {
             "default": "allow"
         },
@@ -1292,11 +1259,6 @@
         // Any addition to this list will be merged with the default list.
         // Globs are matched relative to the worktree root,
         // except when starting with a slash (/) or equivalent in Windows.
-        "ollama": {
-            "max_output_tokens": 64,
-            "prompt_format": "qwen",
-            "model": "QWEN-3.5-0.8B"
-        },
         "provider": "none",
         "disabled_globs": [
             "**/.env*",
@@ -1873,7 +1835,7 @@
         //        },
         "openai_compatible": {
             "llama.cpp": {
-                "api_url": "http://127.0.0.1:11434/v1",
+                "api_url": "http://100.69.242.6:11434/v1",
                 "available_models": [
                     {
                         "name": "Qwen3.5-4B-Q8_0",
