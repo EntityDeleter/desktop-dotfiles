@@ -1963,6 +1963,13 @@
                     }
                 }
             }
+        },
+        "tailwindcss-language-server": {
+            "settings": {
+                "experimental": {
+                    "classRegex": ["class=\"([^\"]*)\""]
+                }
+            }
         }
         //        "ty": {
         //            "settings": {
