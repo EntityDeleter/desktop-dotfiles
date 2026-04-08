@@ -938,13 +938,13 @@
         "expand_terminal_card": true
     },
     // The settings for slash commands.
-    "slash_commands": {
-        // Settings for the `/project` slash command.
-        // "project": {
-        // Whether `/project` is enabled.
-        // "enabled": false
-        // }
-    },
+    // "slash_commands": {
+    // Settings for the `/project` slash command.
+    // "project": {
+    // Whether `/project` is enabled.
+    // "enabled": false
+    // }
+    // },
     // Whether the screen sharing icon is shown in the os status bar.
     "show_call_status_icon": true,
     // Whether to use language servers to provide code intelligence.
@@ -1278,7 +1278,7 @@
         //     "mode": "eager"
         // 2. Display predictions inline only when holding a modifier key (alt by default).
         //     "mode": "subtle"
-        "mode": "eager",
+        "mode": "eager"
         // Copilot-specific settings
         // "copilot": {
         //   "enterprise_uri": "",
@@ -1287,7 +1287,7 @@
         // },
         // Whether edit predictions are enabled when editing text threads.
         // This setting has no effect if globally disabled.
-        "enabled_in_text_threads": true
+        // "enabled_in_text_threads": true
     },
     // Settings specific to journaling
     "journal": {
@@ -1838,33 +1838,21 @@
                 "api_url": "http://100.69.242.6:11434/v1",
                 "available_models": [
                     {
-                        "name": "Qwen3.5-4B-Q8_0",
-                        "display_name": "Qwen3.5 4B Q8_0",
-                        "max_tokens": 262144,
-                        "capabilities": {
-                            "tools": true,
-                            "images": true,
-                            "parallel_tool_calls": true,
-                            "prompt_cache_key": true,
-                            "chat_completions": true
-                        }
-                    },
-                    {
-                        "name": "Qwen3.5-9B-UD-Q5_K_XL",
-                        "display_name": "Qwen3.5 9B UD Q5_K_XL",
-                        "max_tokens": 262144,
-                        "capabilities": {
-                            "tools": true,
-                            "images": true,
-                            "parallel_tool_calls": true,
-                            "prompt_cache_key": true,
-                            "chat_completions": true
-                        }
-                    },
-                    {
                         "name": "GLM-4.7-Flash-REAP-23B-A3B-UD-Q5_K_XL",
                         "display_name": "GLM 4.7 Flash REAP 23B A3B UD Q5_K_XL",
                         "max_tokens": 202752,
+                        "capabilities": {
+                            "tools": true,
+                            "images": false,
+                            "parallel_tool_calls": true,
+                            "prompt_cache_key": true,
+                            "chat_completions": true
+                        }
+                    },
+                    {
+                        "name": "gemma-4-26B-A4B-it-UD-Q4_K_XL",
+                        "display_name": "gemma 4 26B A4B it UD Q4_K_XL",
+                        "max_tokens": 262144,
                         "capabilities": {
                             "tools": true,
                             "images": true,

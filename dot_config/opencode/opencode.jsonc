@@ -20,38 +20,24 @@
                 "apiKey": "{file:/home/sudar/.config/opencode/apikey.txt}"
             },
             "models": {
-                "Qwen3.5-4B-Q8_0": {
-                    "id": "Qwen3.5-4B-Q8_0",
-                    "name": "Qwen3.5 4B Q8_0",
-                    "family": "qwen35",
-                    "attachment": true,
-                    "reasoning": true,
-                    "temperature": true,
-                    "tool_call": true,
-                    "interleaved": true,
-                    "modalities": {
-                        "output": ["text", "image"],
-                        "input": ["text"]
-                    }
-                },
-                "Qwen3.5-9B-UD-Q5_K_XL": {
-                    "id": "Qwen3.5-9B-UD-Q5_K_XL",
-                    "name": "Qwen3.5 9B UD Q5_K_XL",
-                    "family": "qwen35",
-                    "attachment": true,
-                    "reasoning": true,
-                    "temperature": true,
-                    "tool_call": true,
-                    "interleaved": true,
-                    "modalities": {
-                        "output": ["text", "image"],
-                        "input": ["text"]
-                    }
-                },
                 "GLM-4.7-Flash-REAP-23B-A3B-UD-Q5_K_XL": {
                     "id": "GLM-4.7-Flash-REAP-23B-A3B-UD-Q5_K_XL",
                     "name": "GLM 4.7 Flash REAP 23B A3B UD Q5_K_XL",
                     "family": "glm4moelite",
+                    "attachment": true,
+                    "reasoning": true,
+                    "temperature": true,
+                    "tool_call": true,
+                    "interleaved": true,
+                    "modalities": {
+                        "output": ["text"],
+                        "input": ["text"]
+                    }
+                },
+                "gemma-4-26B-A4B-it-UD-Q4_K_XL": {
+                    "id": "gemma-4-26B-A4B-it-UD-Q4_K_XL",
+                    "name": "gemma 4 26B A4B it UD Q4_K_XL",
+                    "family": "gemma4",
                     "attachment": true,
                     "reasoning": true,
                     "temperature": true,
