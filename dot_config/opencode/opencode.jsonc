@@ -20,11 +20,25 @@
                 "apiKey": "{file:/home/sudar/.config/opencode/apikey.txt}"
             },
             "models": {
+                "gpt-oss-20b-mxfp4": {
+                    "id": "gpt-oss-20b-mxfp4",
+                    "name": "gpt oss 20b mxfp4",
+                    "family": "gptoss",
+                    "attachment": false,
+                    "reasoning": true,
+                    "temperature": true,
+                    "tool_call": true,
+                    "interleaved": true,
+                    "modalities": {
+                        "output": ["text"],
+                        "input": ["text"]
+                    }
+                },
                 "GLM-4.7-Flash-REAP-23B-A3B-UD-Q5_K_XL": {
                     "id": "GLM-4.7-Flash-REAP-23B-A3B-UD-Q5_K_XL",
                     "name": "GLM 4.7 Flash REAP 23B A3B UD Q5_K_XL",
                     "family": "glm4moelite",
-                    "attachment": true,
+                    "attachment": false,
                     "reasoning": true,
                     "temperature": true,
                     "tool_call": true,

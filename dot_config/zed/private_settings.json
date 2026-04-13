@@ -802,14 +802,6 @@
         // For example: typing `:wave:` gets replaced with `👋`.
         "auto_replace_emoji_shortcode": true
     },
-    "notification_panel": {
-        // Whether to show the notification panel button in the status bar.
-        "button": true,
-        // Where to dock the notification panel. Can be 'left' or 'right'.
-        "dock": "right",
-        // Default width of the notification panel.
-        "default_width": 380
-    },
     "agent": {
         // Whether the agent is enabled.
         "tool_permissions": {
@@ -873,6 +865,7 @@
                 "name": "Write",
                 "enable_all_context_servers": true,
                 "tools": {
+                    "search_web": true,
                     "copy_path": true,
                     "create_directory": true,
                     "delete_path": true,
@@ -887,8 +880,7 @@
                     "read_file": true,
                     "grep": true,
                     "terminal": true,
-                    "thinking": true,
-                    "web_search": true
+                    "thinking": true
                 }
             },
             "ask": {
@@ -896,6 +888,7 @@
                 // We don't know which of the context server tools are safe for the "Ask" profile, so we don't enable them by default.
                 // "enable_all_context_servers": true,
                 "tools": {
+                    "search_web": true,
                     "contents": true,
                     "diagnostics": true,
                     "fetch": true,
@@ -906,8 +899,7 @@
                     "read_file": false,
                     "open": true,
                     "grep": true,
-                    "thinking": true,
-                    "web_search": true
+                    "thinking": true
                 }
             },
             "minimal": {
@@ -927,7 +919,7 @@
         // its response, or needs user input.
 
         // Default: false
-        "play_sound_when_agent_done": true,
+        "play_sound_when_agent_done": "always",
         /// Whether to have edit cards in the agent panel expanded, showing a preview of the full diff.
         ///
         /// Default: true
@@ -1837,6 +1829,18 @@
             "llama.cpp": {
                 "api_url": "http://100.69.242.6:11434/v1",
                 "available_models": [
+                    {
+                        "name": "gpt-oss-20b-mxfp4",
+                        "display_name": "gpt oss 20b mxfp4",
+                        "max_tokens": 202752,
+                        "capabilities": {
+                            "tools": true,
+                            "images": false,
+                            "parallel_tool_calls": true,
+                            "prompt_cache_key": true,
+                            "chat_completions": true
+                        }
+                    },
                     {
                         "name": "GLM-4.7-Flash-REAP-23B-A3B-UD-Q5_K_XL",
                         "display_name": "GLM 4.7 Flash REAP 23B A3B UD Q5_K_XL",
