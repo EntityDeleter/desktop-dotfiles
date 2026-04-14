@@ -804,6 +804,7 @@
     },
     "agent": {
         // Whether the agent is enabled.
+        "flexible": false,
         "tool_permissions": {
             "default": "allow"
         },
@@ -816,16 +817,15 @@
         // Where to dock the agent panel. Can be 'left', 'right' or 'bottom'.
         "dock": "right",
         // Default width when the agent panel is docked to the left or right.
-        "default_width": 640,
         // Default height when the agent panel is docked to the bottom.
         "default_height": 320,
         // The default model to use when creating new threads.
         "default_model": {
             // The provider to use.
-            "enable_thinking": true,
+            "enable_thinking": false,
             "provider": "llama.cpp",
             // The model to use.
-            "model": "GLM-4.7-Flash-REAP-23B-A3B-UD-Q5_K_XL"
+            "model": "Qwen3.5-35B-A3B-UD-IQ4_XS"
         },
         // Additional parameters for language model requests. When making a request to a model, parameters will be taken
         // from the last entry in this list that matches the model's provider and name. In each entry, both provider
@@ -1832,7 +1832,10 @@
                     {
                         "name": "gpt-oss-20b-mxfp4",
                         "display_name": "gpt oss 20b mxfp4",
-                        "max_tokens": 202752,
+                        "max_tokens": 131072,
+                        "max_completion_tokens": 131072,
+                        "max_output_tokens": 131072,
+                        "reasoning_effort": "xhigh",
                         "capabilities": {
                             "tools": true,
                             "images": false,
@@ -1845,6 +1848,9 @@
                         "name": "GLM-4.7-Flash-REAP-23B-A3B-UD-Q5_K_XL",
                         "display_name": "GLM 4.7 Flash REAP 23B A3B UD Q5_K_XL",
                         "max_tokens": 202752,
+                        "max_completion_tokens": 202752,
+                        "max_output_tokens": 202752,
+                        "reasoning_effort": "xhigh",
                         "capabilities": {
                             "tools": true,
                             "images": false,
@@ -1857,6 +1863,9 @@
                         "name": "gemma-4-26B-A4B-it-UD-Q4_K_XL",
                         "display_name": "gemma 4 26B A4B it UD Q4_K_XL",
                         "max_tokens": 262144,
+                        "max_completion_tokens": 262144,
+                        "max_output_tokens": 262144,
+                        "reasoning_effort": "xhigh",
                         "capabilities": {
                             "tools": true,
                             "images": true,
@@ -1869,6 +1878,9 @@
                         "name": "Nemotron-3-Nano-30B-A3B-IQ4_NL",
                         "display_name": "Nemotron 3 Nano 30B A3B IQ4_NL",
                         "max_tokens": 1048576,
+                        "max_completion_tokens": 1048576,
+                        "max_output_tokens": 1048576,
+                        "reasoning_effort": "xhigh",
                         "capabilities": {
                             "tools": true,
                             "images": false,
@@ -1881,6 +1893,9 @@
                         "name": "Qwen3.5-35B-A3B-UD-IQ4_XS",
                         "display_name": "Qwen3.5 35B A3B UD IQ4_XS",
                         "max_tokens": 262144,
+                        "max_completion_tokens": 262144,
+                        "max_output_tokens": 262144,
+                        "reasoning_effort": "xhigh",
                         "capabilities": {
                             "tools": true,
                             "images": true,
@@ -2072,7 +2087,20 @@
     // Configures context servers for use by the agent.
     "context_servers": {},
     // Configures agent servers available in the agent panel.
-    "agent_servers": {},
+    "agent_servers": {
+        "opencode": {
+            "favorite_config_option_values": {
+                "model": [
+                    "llama.cpp/gpt-oss-20b-mxfp4/high",
+                    "llama.cpp/gemma-4-26B-A4B-it-UD-Q4_K_XL/high",
+                    "llama.cpp/Nemotron-3-Nano-30B-A3B-IQ4_NL/high",
+                    "llama.cpp/Qwen3.5-35B-A3B-UD-IQ4_XS",
+                    "llama.cpp/GLM-4.7-Flash-REAP-23B-A3B-UD-Q5_K_XL"
+                ]
+            },
+            "type": "registry"
+        }
+    },
     "debugger": {
         "stepping_granularity": "line",
         "save_breakpoints": true,
