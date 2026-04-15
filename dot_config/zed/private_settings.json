@@ -919,7 +919,7 @@
         // its response, or needs user input.
 
         // Default: false
-        "play_sound_when_agent_done": "always",
+        "play_sound_when_agent_done": true,
         /// Whether to have edit cards in the agent panel expanded, showing a preview of the full diff.
         ///
         /// Default: true
@@ -1833,9 +1833,8 @@
                         "name": "gpt-oss-20b-mxfp4",
                         "display_name": "gpt oss 20b mxfp4",
                         "max_tokens": 131072,
-                        "max_completion_tokens": 131072,
-                        "max_output_tokens": 131072,
-                        "reasoning_effort": "xhigh",
+                        "max_completion_tokens": 32768,
+                        "max_output_tokens": 32768,
                         "capabilities": {
                             "tools": true,
                             "images": false,
@@ -1845,12 +1844,11 @@
                         }
                     },
                     {
-                        "name": "GLM-4.7-Flash-REAP-23B-A3B-UD-Q5_K_XL",
+                        "name": "GLM-4.7-Flash-REAP-23B-A3B-UD-Q5_K_XL-tools",
                         "display_name": "GLM 4.7 Flash REAP 23B A3B UD Q5_K_XL",
                         "max_tokens": 202752,
-                        "max_completion_tokens": 202752,
-                        "max_output_tokens": 202752,
-                        "reasoning_effort": "xhigh",
+                        "max_completion_tokens": 128000,
+                        "max_output_tokens": 128000,
                         "capabilities": {
                             "tools": true,
                             "images": false,
@@ -1863,24 +1861,8 @@
                         "name": "gemma-4-26B-A4B-it-UD-Q4_K_XL",
                         "display_name": "gemma 4 26B A4B it UD Q4_K_XL",
                         "max_tokens": 262144,
-                        "max_completion_tokens": 262144,
-                        "max_output_tokens": 262144,
-                        "reasoning_effort": "xhigh",
-                        "capabilities": {
-                            "tools": true,
-                            "images": true,
-                            "parallel_tool_calls": true,
-                            "prompt_cache_key": true,
-                            "chat_completions": true
-                        }
-                    },
-                    {
-                        "name": "Nemotron-3-Nano-30B-A3B-IQ4_NL",
-                        "display_name": "Nemotron 3 Nano 30B A3B IQ4_NL",
-                        "max_tokens": 1048576,
-                        "max_completion_tokens": 1048576,
-                        "max_output_tokens": 1048576,
-                        "reasoning_effort": "xhigh",
+                        "max_completion_tokens": 32768,
+                        "max_output_tokens": 32768,
                         "capabilities": {
                             "tools": true,
                             "images": false,
@@ -1890,12 +1872,25 @@
                         }
                     },
                     {
-                        "name": "Qwen3.5-35B-A3B-UD-IQ4_XS",
+                        "name": "Nemotron-Cascade-2-30B-A3B-IQ4_XS",
+                        "display_name": "Nemotron Cascade 2 30B A3B IQ4_XS",
+                        "max_tokens": 262144,
+                        "max_completion_tokens": 32768,
+                        "max_output_tokens": 32768,
+                        "capabilities": {
+                            "tools": true,
+                            "images": false,
+                            "parallel_tool_calls": true,
+                            "prompt_cache_key": true,
+                            "chat_completions": true
+                        }
+                    },
+                    {
+                        "name": "Qwen3.5-35B-A3B-UD-IQ4_XS-tools",
                         "display_name": "Qwen3.5 35B A3B UD IQ4_XS",
                         "max_tokens": 262144,
-                        "max_completion_tokens": 262144,
-                        "max_output_tokens": 262144,
-                        "reasoning_effort": "xhigh",
+                        "max_completion_tokens": 65536,
+                        "max_output_tokens": 65536,
                         "capabilities": {
                             "tools": true,
                             "images": true,
