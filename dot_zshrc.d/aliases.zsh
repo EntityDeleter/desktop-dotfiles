@@ -6,6 +6,8 @@ alias yay="yay --sudo=sudo-rs"
 
 alias cd="z"
 
+alias rm="rm-improved --graveyard /tmp/graveyard-sudar -i "
+
 # alias sudo="sudo-rs "
 # alias visudo="visudo-rs "
 # alias sudoedit="sudoedit-rs "
