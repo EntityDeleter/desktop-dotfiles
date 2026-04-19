@@ -76,9 +76,9 @@
                         "input": ["text"]
                     }
                 },
-                "Qwen3.5-35B-A3B-UD-IQ4_XS-tools": {
-                    "id": "Qwen3.5-35B-A3B-UD-IQ4_XS-tools",
-                    "name": "Qwen3.5 35B A3B UD IQ4_XS",
+                "Qwen3.6-35B-A3B-UD-IQ4_XS-tools": {
+                    "id": "Qwen3.6-35B-A3B-UD-IQ4_XS-tools",
+                    "name": "Qwen3.6 35B A3B UD IQ4_XS",
                     "family": "qwen35moe",
                     "attachment": true,
                     "reasoning": true,
