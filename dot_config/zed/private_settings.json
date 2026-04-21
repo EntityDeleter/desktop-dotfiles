@@ -817,12 +817,13 @@
         // Where to dock the agent panel. Can be 'left', 'right' or 'bottom'.
         "dock": "right",
         // Default width when the agent panel is docked to the left or right.
+        "default_width": 450,
         // Default height when the agent panel is docked to the bottom.
         "default_height": 320,
         // The default model to use when creating new threads.
         "default_model": {
             // The provider to use.
-            "enable_thinking": false,
+            "enable_thinking": true,
             "provider": "llama.cpp",
             // The model to use.
             "model": "Qwen3.6-35B-A3B-UD-IQ4_XS"
@@ -919,7 +920,7 @@
         // its response, or needs user input.
 
         // Default: false
-        "play_sound_when_agent_done": true,
+        "play_sound_when_agent_done": "always",
         /// Whether to have edit cards in the agent panel expanded, showing a preview of the full diff.
         ///
         /// Default: true
@@ -2089,8 +2090,8 @@
                     "llama.cpp/gpt-oss-20b-mxfp4/high",
                     "llama.cpp/gemma-4-26B-A4B-it-UD-Q4_K_XL/high",
                     "llama.cpp/Nemotron-3-Nano-30B-A3B-IQ4_NL/high",
-                    "llama.cpp/Qwen3.6-35B-A3B-UD-IQ4_XS",
-                    "llama.cpp/GLM-4.7-Flash-REAP-23B-A3B-UD-Q5_K_XL"
+                    "llama.cpp/Qwen3.6-35B-A3B-UD-IQ4_XS-tools",
+                    "llama.cpp/GLM-4.7-Flash-REAP-23B-A3B-UD-Q5_K_XL-tools"
                 ]
             },
             "type": "registry"
