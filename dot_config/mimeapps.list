@@ -28,6 +28,7 @@ application/vnd.microsoft.portable-executable=steam.desktop
 inode/directory=thunar.desktop
 x-scheme-handler/obsidian=obsidian.desktop
 text/markdown=dev.zed.Zed-Preview.desktop
+x-scheme-handler/cavalry=Cavalry.desktop
 
 [Added Associations]
 application/x-trash=libreoffice-writer.desktop;
@@ -49,7 +50,7 @@ audio/x-mpegurl=dev.zed.Zed.desktop;
 x-scheme-handler/http=userapp-Zen-B1FNL3.desktop;zen.desktop;
 x-scheme-handler/https=userapp-Zen-B1FNL3.desktop;zen.desktop;
 x-scheme-handler/chrome=userapp-Zen-B1FNL3.desktop;zen.desktop;
-text/markdown=obsidian.desktop;dev.zed.Zed-Preview.desktop;
+text/markdown=dev.zed.Zed.desktop;obsidian.desktop;dev.zed.Zed-Preview.desktop;
 
 [Removed Associations]
 application/pdf=userapp-tdf %F-58H8E3.desktop;userapp-tdf-5EBBF3.desktop;userapp-kitty -e "tdf %F"-ZO16E3.desktop;userapp-kitty -e bash -c 'tdf "$@"' _ %F\n-TP2LF3.desktop;

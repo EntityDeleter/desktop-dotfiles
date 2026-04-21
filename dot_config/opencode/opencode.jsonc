@@ -52,14 +52,14 @@
                     "id": "gemma-4-26B-A4B-it-UD-Q4_K_XL",
                     "name": "gemma 4 26B A4B it UD Q4_K_XL",
                     "family": "gemma4",
-                    "attachment": false,
+                    "attachment": true,
                     "reasoning": true,
                     "temperature": true,
                     "tool_call": true,
                     "interleaved": true,
                     "modalities": {
                         "output": ["text"],
-                        "input": ["text"]
+                        "input": ["text", "image"]
                     }
                 },
                 "Nemotron-3-Nano-30B-A3B-IQ4_NL": {
@@ -86,8 +86,8 @@
                     "tool_call": true,
                     "interleaved": true,
                     "modalities": {
-                        "output": ["text", "image"],
-                        "input": ["text"]
+                        "output": ["text"],
+                        "input": ["text", "image"]
                     }
                 }
             }
