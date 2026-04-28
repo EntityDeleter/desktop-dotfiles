@@ -1,5 +1,5 @@
-selected_tab: oc_page
-selected_gpu: 10DE:1B80-1028:3366-0000:4f:00.0
+selected_tab: thermals_page
+selected_gpu: 10DE:1B80-1028:3366-0000:17:00.0
 plots_time_period: 60
 plots_per_row: 2
 stats_poll_interval_ms: 500
@@ -14,3 +14,14 @@ gpus:
       - FanPwm
     - - PowerCurrent
       - PowerCap
+  10DE:1B80-1028:3366-0000:17:00.0:
+    plots:
+    - - !Temperature GPU
+      - !Temperature GPU Hotspot
+    - - GpuClock
+      - VramClock
+    - - FanRpm
+      - FanPwm
+    - - PowerCurrent
+      - PowerCap
+theme: automatic
