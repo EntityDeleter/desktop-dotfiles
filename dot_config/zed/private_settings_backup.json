@@ -817,16 +817,16 @@
         // Where to dock the agent panel. Can be 'left', 'right' or 'bottom'.
         "dock": "right",
         // Default width when the agent panel is docked to the left or right.
-        "default_width": 380,
+        "default_width": 450,
         // Default height when the agent panel is docked to the bottom.
         "default_height": 320,
         // The default model to use when creating new threads.
         "default_model": {
             // The provider to use.
-            "enable_thinking": false,
+            "enable_thinking": true,
             "provider": "llama.cpp",
             // The model to use.
-            "model": "Qwen3.6-35B-A3B-UD-IQ4_XS"
+            "model": "Qwen3.6-35B-A3B-UD-Q5_K_M-tools"
         },
         // Additional parameters for language model requests. When making a request to a model, parameters will be taken
         // from the last entry in this list that matches the model's provider and name. In each entry, both provider
@@ -920,7 +920,7 @@
         // its response, or needs user input.
 
         // Default: false
-        "play_sound_when_agent_done": true,
+        "play_sound_when_agent_done": "always",
         /// Whether to have edit cards in the agent panel expanded, showing a preview of the full diff.
         ///
         /// Default: true
@@ -1859,14 +1859,14 @@
                         }
                     },
                     {
-                        "name": "gemma-4-26B-A4B-it-UD-Q4_K_XL",
-                        "display_name": "gemma 4 26B A4B it UD Q4_K_XL",
+                        "name": "gemma-4-26B-A4B-it-Q8_0",
+                        "display_name": "gemma 4 26B A4B it Q8_0",
                         "max_tokens": 262144,
                         "max_completion_tokens": 32768,
                         "max_output_tokens": 32768,
                         "capabilities": {
                             "tools": true,
-                            "images": false,
+                            "images": true,
                             "parallel_tool_calls": true,
                             "prompt_cache_key": true,
                             "chat_completions": true
@@ -1887,8 +1887,8 @@
                         }
                     },
                     {
-                        "name": "Qwen3.6-35B-A3B-UD-IQ4_XS-tools",
-                        "display_name": "Qwen3.6 35B A3B UD IQ4_XS",
+                        "name": "Qwen3.6-35B-A3B-UD-Q5_K_M-tools",
+                        "display_name": "Qwen3.6 35B A3B UD Q5_K_M",
                         "max_tokens": 262144,
                         "max_completion_tokens": 65536,
                         "max_output_tokens": 65536,
@@ -2088,10 +2088,10 @@
             "favorite_config_option_values": {
                 "model": [
                     "llama.cpp/gpt-oss-20b-mxfp4/high",
-                    "llama.cpp/gemma-4-26B-A4B-it-UD-Q4_K_XL/high",
+                    "llama.cpp/gemma-4-26B-A4B-it-Q8_0/high",
                     "llama.cpp/Nemotron-3-Nano-30B-A3B-IQ4_NL/high",
-                    "llama.cpp/Qwen3.6-35B-A3B-UD-IQ4_XS",
-                    "llama.cpp/GLM-4.7-Flash-REAP-23B-A3B-UD-Q5_K_XL"
+                    "llama.cpp/Qwen3.6-35B-A3B-UD-Q5_K_M-tools",
+                    "llama.cpp/GLM-4.7-Flash-REAP-23B-A3B-UD-Q5_K_XL-tools"
                 ]
             },
             "type": "registry"
