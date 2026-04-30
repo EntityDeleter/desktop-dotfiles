@@ -117,6 +117,7 @@
         "@tarquinen/opencode-dcp@latest",
         "opencode-power-pack@git+https://github.com/waybarrios/opencode-power-pack.git",
         "superpowers@git+https://github.com/obra/superpowers.git",
-        "opencode-handoff"
+        "opencode-handoff",
+        "@warp-dot-dev/opencode-warp@0.1.5"
     ]
 }
