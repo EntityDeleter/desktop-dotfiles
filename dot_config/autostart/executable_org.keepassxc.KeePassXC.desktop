@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=KeePassXC
 GenericName=Password Manager
-Exec=env KPXC_CONFIG_LOCAL=/home/sudar/.config/keepassxc/keepassxc-cache.ini KPXC_INITIAL_DIR="/mnt/Data/Passwords, Passcodes, and Keys" /usr/bin/keepassxc %f
+Exec=env QT_QPA_PLATFORM=xcb KPXC_CONFIG_LOCAL=/home/sudar/.config/keepassxc/keepassxc-cache.ini KPXC_INITIAL_DIR="/mnt/Data/Passwords, Passcodes, and Keys" /usr/bin/keepassxc %f
 TryExec=keepassxc
 Icon=keepassxc
 StartupWMClass=keepassxc
