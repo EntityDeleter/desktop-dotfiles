@@ -60,3 +60,5 @@ yt-dlp() {
   sudo chmod 777 -R /home/sudar/Videos
   sudo chown sudar:sudar -R /home/sudar/Videos
 }
+
+alias shellcheck='shellcheck -a -Cauto -o all --shell=bash -S style -W 5 -x '
